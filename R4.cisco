@@ -47,5 +47,18 @@ router bgp 700
  neighbor 3.3.3.1 remote-as 600
  neighbor 3.3.3.1 ebgp-multihop 2
  neighbor 3.3.3.1 update-source Loopback1
+ neighbor 3.3.3.1 route-map BGP-path-20 in
  no auto-summary
+!
+access-list 20 permit 3.3.3.3
+access-list 20 permit 2.2.2.3
+access-list 20 permit 6.6.6.3
+access-list 20 permit 5.5.5.3
+no cdp log mismatch duplex
+!
+!
+!
+route-map BGP-path-20 permit 10
+ match ip address 20
+ set metric 5000
 !

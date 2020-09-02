@@ -44,8 +44,18 @@ router bgp 500
  neighbor 2.2.2.1 remote-as 600
  neighbor 2.2.2.1 ebgp-multihop 2
  neighbor 2.2.2.1 update-source Loopback1
+ neighbor 2.2.2.1 route-map BGP-path-10 in
  neighbor 4.4.4.1 remote-as 700
  neighbor 4.4.4.1 ebgp-multihop 2
  neighbor 4.4.4.1 update-source Loopback1
  no auto-summary
+!
+access-list 10 permit 2.2.2.2 0.0.0.0
+access-list 10 permit 3.3.3.2 0.0.0.0
+access-list 10 permit 6.6.6.2 0.0.0.0
+access-list 10 permit 5.5.5.2 0.0.0.0
+!
+route-map BGP-path-1 permit 10
+ match ip address 10
+ set weight 6000
 !
