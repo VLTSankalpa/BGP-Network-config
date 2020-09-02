@@ -1,4 +1,6 @@
-# BGP-Network-config
+# Initial Configurations
+
+## BGP-Network-config
 Section 1: BGP Basics
 
 Section 2: Internal BGP Neighbors
