@@ -47,5 +47,6 @@ router bgp 500
  neighbor 4.4.4.1 remote-as 700
  neighbor 4.4.4.1 ebgp-multihop 2
  neighbor 4.4.4.1 update-source Loopback1
+ neighbor 4.4.4.1 weight 4000
  no auto-summary
 !
