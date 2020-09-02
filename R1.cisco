@@ -53,4 +53,5 @@ router bgp 500
 !
 route-map MED permit 10
  set metric 120
+ set as-path prepend 500
 !

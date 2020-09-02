@@ -45,6 +45,7 @@ router bgp 600
  no synchronization
  !!!!!!!!!!!!!!!!!!!!!bgp default local-preference 400
  bgp log-neighbor-changes
+ bgp always-compare-med 
  network 2.2.2.2 mask 255.255.255.255
  network 2.2.2.3 mask 255.255.255.255
  neighbor 1.1.1.1 remote-as 500

@@ -9,7 +9,7 @@ Tracing the route to 2.2.2.2
   3 10.2.3.2 44 msec 60 msec 64 msec
 
 ! ruturn traffic path for R2
-R2#traceroute 1.1.1.1
+R2#traceroute 1.1.1.2
 
 Type escape sequence to abort.
 Tracing the route to 1.1.1.1

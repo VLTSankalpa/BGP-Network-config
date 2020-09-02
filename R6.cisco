@@ -39,6 +39,7 @@ router isis 1
 router bgp 600
  no synchronization
  bgp log-neighbor-changes
+ bgp always-compare-med
  network 6.6.6.2 mask 255.255.255.255
  network 6.6.6.3 mask 255.255.255.255
  neighbor 2.2.2.1 remote-as 600
