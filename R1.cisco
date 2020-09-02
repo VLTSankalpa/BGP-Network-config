@@ -44,9 +44,13 @@ router bgp 500
  neighbor 2.2.2.1 remote-as 600
  neighbor 2.2.2.1 ebgp-multihop 2
  neighbor 2.2.2.1 update-source Loopback1
+ neighbor 2.2.2.1 route-map MED out
  neighbor 4.4.4.1 remote-as 700
  neighbor 4.4.4.1 ebgp-multihop 2
  neighbor 4.4.4.1 update-source Loopback1
  neighbor 4.4.4.1 weight 4000
  no auto-summary
+!
+route-map MED permit 10
+ set metric 120
 !
