@@ -50,6 +50,7 @@ router bgp 600
  neighbor 1.1.1.1 remote-as 500
  neighbor 1.1.1.1 ebgp-multihop 2
  neighbor 1.1.1.1 update-source Loopback1
+ neighbor 1.1.1.1 route-map BGP-path-AS-path in
  neighbor 3.3.3.1 remote-as 600
  neighbor 3.3.3.1 update-source Loopback1
  neighbor 3.3.3.1 route-reflector-client
@@ -63,4 +64,10 @@ router bgp 600
  neighbor 6.6.6.1 route-reflector-client
  neighbor 6.6.6.1 next-hop-self
  no auto-summary
+!
+access-list 1 permit 4.4.4.2 0.0.0.0
+!
+route-map BGP-path-AS-path permit 10
+ match ip address 1
+ set local-preference 400
 !

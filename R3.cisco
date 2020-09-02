@@ -58,6 +58,7 @@ router bgp 600
  neighbor 4.4.4.1 remote-as 700
  neighbor 4.4.4.1 ebgp-multihop 2
  neighbor 4.4.4.1 update-source Loopback1
+ neighbor 4.4.4.1 route-map BGP-path-AS-path-2 out
  neighbor 5.5.5.1 remote-as 600
  neighbor 5.5.5.1 update-source Loopback1
  neighbor 5.5.5.1 route-reflector-client
@@ -67,4 +68,10 @@ router bgp 600
  neighbor 6.6.6.1 route-reflector-client
  neighbor 6.6.6.1 next-hop-self
  no auto-summary
+!
+access-list 2 permit 2.2.2.0 0.0.0.255
+!
+route-map BGP-path-AS-path-2 permit 10
+ match ip address 2
+ set as-path prepend 600 600 600 600
 !

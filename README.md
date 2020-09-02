@@ -1,25 +1,12 @@
-# BGP-Network-config
-Section 1: BGP Basics
+# Influencing BGP Route Selection Using AS-path Preprend
 
-Section 2: Internal BGP Neighbors
+access-list 2 permit 2.2.2.0 0.0.0.255
+!
+route-map BGP-path-AS-path-2 permit 10
+ match ip address 2
+ set as-path prepend 600 600 600 600
+!
+router bgp 600
+ neighbor 4.4.4.1 route-map BGP-path-AS-path-2 out
 
-Section 3: External BGP neighbors
-
-Section 4: BGP Attributes
-
-Section 5: Influencing BGP Route Selection using Weight & Local Preference
-
-Section 6: Influencing BGP Route Selection Using AS-path Preprend & MED
-
-Section 7: BGP Summarization
-
-Section 8: BGP Communities
-
-Section 9: Route Filtering in BGP
-
-Section 10: AS-Path Filters
-
-Section 11: BGP Advance Options
-
-Section 12: BGP for IPV6 Networks
-
+## advertise 2.2.2.2 & 2.2.2.3 networks with prepend AS path. due to implicit deny at the end of act 2 other any of routes will not advertise over R3.
