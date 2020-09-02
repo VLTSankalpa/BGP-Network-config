@@ -1,0 +1,53 @@
+hostname R5
+!
+no ip domain lookup
+!
+interface FastEthernet0/0
+ no shut
+!
+interface Loopback1
+ ip address 5.5.5.1 255.255.255.255
+ ip router isis 1
+!
+interface Loopback2
+ ip address 5.5.5.2 255.255.255.255
+!
+interface Loopback3
+ ip address 5.5.5.3 255.255.255.255
+!
+interface Loopback4
+ ip address 5.5.5.4 255.255.255.255
+!
+interface FastEthernet0/0.25
+ encapsulation dot1Q 25
+ ip address 10.2.5.5 255.255.255.0
+ ip router isis 1
+!
+interface FastEthernet0/0.35
+ encapsulation dot1Q 35
+ ip address 10.3.5.5 255.255.255.0
+ ip router isis 1
+!
+interface FastEthernet0/0.56
+ encapsulation dot1Q 56
+ ip address 10.5.6.5 255.255.255.0
+ ip router isis 1
+!
+line con 0
+ exec-timeout 0 0
+!
+router isis 1
+ net 00.0000.0000.0005.00
+ is-type level-2-only
+ passive-interface Loopback1
+!
+router bgp 600
+ no synchronization
+ bgp log-neighbor-changes
+ network 5.5.5.2 mask 255.255.255.255
+ network 5.5.5.3 mask 255.255.255.255
+ neighbor 2.2.2.1 remote-as 600
+ neighbor 2.2.2.1 update-source Loopback1
+ neighbor 3.3.3.1 remote-as 600
+ neighbor 3.3.3.1 update-source Loopback1
+ no auto-summary
