@@ -1,6 +1,11 @@
+
+en
+conf t
 hostname R4
 !
 no ip domain lookup
+!
+no cdp log mismatch duplex
 !
 interface FastEthernet0/0
  no shut
@@ -49,3 +54,4 @@ router bgp 700
  neighbor 3.3.3.1 update-source Loopback1
  no auto-summary
 !
+do wr

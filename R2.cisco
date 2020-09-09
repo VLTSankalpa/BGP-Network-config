@@ -1,4 +1,8 @@
+en
+conf t
 hostname R2
+!
+no cdp log mismatch duplex
 !
 no ip domain lookup
 !
@@ -64,3 +68,4 @@ router bgp 600
  neighbor 6.6.6.1 next-hop-self
  no auto-summary
 !
+do wr

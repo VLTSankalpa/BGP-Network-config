@@ -1,4 +1,8 @@
+en
+conf t
 hostname R5
+!
+no cdp log mismatch duplex
 !
 no ip domain lookup
 !
@@ -51,3 +55,5 @@ router bgp 600
  neighbor 3.3.3.1 remote-as 600
  neighbor 3.3.3.1 update-source Loopback1
  no auto-summary
+!
+do wr

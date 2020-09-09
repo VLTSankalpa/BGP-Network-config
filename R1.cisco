@@ -1,4 +1,8 @@
+en
+conf t
 hostname R1
+!
+no cdp log mismatch duplex
 !
 no ip domain lookup
 !
@@ -49,3 +53,4 @@ router bgp 500
  neighbor 4.4.4.1 update-source Loopback1
  no auto-summary
 !
+do wr
