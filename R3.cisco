@@ -2,7 +2,7 @@ hostname R3
 !
 no ip domain lookup
 !
-interface FastEthernet0/0
+interface GigabitEthernet0/0
  no shut
 !
 interface Loopback1
@@ -18,22 +18,22 @@ interface Loopback3
 interface Loopback4
  ip address 3.3.3.4 255.255.255.255
 !
-interface FastEthernet0/0.23
+interface GigabitEthernet0/0.23
  encapsulation dot1Q 23
  ip address 10.2.3.3 255.255.255.0
  ip router isis 1
 !
-interface FastEthernet0/0.34
+interface GigabitEthernet0/0.34
  encapsulation dot1Q 34
  ip address 10.3.4.3 255.255.255.0
  ip router isis 1
 !
-interface FastEthernet0/0.35
+interface GigabitEthernet0/0.35
  encapsulation dot1Q 35
  ip address 10.3.5.3 255.255.255.0
  ip router isis 1
 !
-interface FastEthernet0/0.36
+interface GigabitEthernet0/0.36
  encapsulation dot1Q 36
  ip address 10.3.6.3 255.255.255.0
  ip router isis 1

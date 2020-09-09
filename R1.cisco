@@ -2,7 +2,7 @@ hostname R1
 !
 no ip domain lookup
 !
-interface FastEthernet0/0
+interface GigabitEthernet0/0
  no shut
 !
 interface Loopback1
@@ -18,12 +18,12 @@ interface Loopback3
 interface Loopback4
  ip address 1.1.1.4 255.255.255.255
 !
-interface FastEthernet0/0.12
+interface GigabitEthernet0/0.12
  encapsulation dot1Q 12
  ip address 10.1.2.1 255.255.255.0
  ip router isis 1
 !
-interface FastEthernet0/0.14
+interface GigabitEthernet0/0.14
  encapsulation dot1Q 14
  ip address 10.1.4.1 255.255.255.0
  ip router isis 1
