@@ -7,7 +7,7 @@ no ip domain lookup
 !
 no cdp log mismatch duplex
 !
-interface FastEthernet0/0
+interface GigabitEthernet0/0
  no shut
 !
 interface Loopback1
@@ -23,12 +23,15 @@ interface Loopback3
 interface Loopback4
  ip address 4.4.4.4 255.255.255.255
 !
-interface FastEthernet0/0.34
+interface Loopback5
+ ip address 4.4.4.5 255.255.255.255
+!
+interface GigabitEthernet0/0.34
  encapsulation dot1Q 34
  ip address 10.3.4.4 255.255.255.0
  ip router isis 1
 !
-interface FastEthernet0/0.14
+interface GigabitEthernet0/0.14
  encapsulation dot1Q 14
  ip address 10.1.4.4 255.255.255.0
  ip router isis 1
@@ -46,6 +49,8 @@ router bgp 700
  bgp log-neighbor-changes
  network 4.4.4.2 mask 255.255.255.255
  network 4.4.4.3 mask 255.255.255.255
+ network 4.4.4.4 mask 255.255.255.255
+ network 4.4.4.5 mask 255.255.255.255
  neighbor 1.1.1.1 remote-as 500
  neighbor 1.1.1.1 ebgp-multihop 2
  neighbor 1.1.1.1 update-source Loopback1
