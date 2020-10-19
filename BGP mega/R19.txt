@@ -1,0 +1,60 @@
+hostname R19
+!
+no ip domain lookup
+!
+router isis 1
+ net 05.0000.0000.0019.00
+exit
+!
+interface Loopback0
+ ip address 19.19.19.1 255.255.255.0
+ ip router isis 1
+!
+interface FastEthernet0/0
+ ip address 10.15.19.19 255.255.255.0
+ no shut
+!
+interface FastEthernet1/0
+ ip address 10.19.22.19 255.255.255.0
+ no shut
+ ip router isis 1
+!
+interface FastEthernet2/0
+ ip address 10.6.19.19 255.255.255.0
+ no shut
+!
+interface FastEthernet3/0
+ ip address 10.19.23.19 255.255.255.0
+ no shut
+ ip router isis 1
+!
+line con 0
+ no exec-timeout 0
+!
+router isis 1
+ passive-interface Loopback0
+is-type level-2
+exit
+!
+router bgp 100
+ bgp router-id 19.19.19.1
+ bgp log-neighbor-changes
+ neighbor 10.15.19.15 remote-as 123
+ neighbor 10.15.19.15 next-hop-self
+ neighbor 10.15.19.15 send-community
+ neighbor 10.15.19.15 allowas-in
+
+ neighbor 10.6.19.6 remote-as 123
+ neighbor 10.6.19.6 next-hop-self
+ neighbor 10.6.19.6 send-community
+ neighbor 10.6.19.6 allowas-in
+
+ neighbor 22.22.22.1 remote-as 100
+ neighbor 22.22.22.1 next-hop-self
+ neighbor 22.22.22.1 send-community
+ neighbor 22.22.22.1 update-source Loopback0
+
+ neighbor 23.23.23.1 remote-as 100
+ neighbor 23.23.23.1 next-hop-self
+ neighbor 23.23.23.1 send-community
+ neighbor 23.23.23.1 update-source Loopback0

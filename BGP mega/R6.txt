@@ -1,0 +1,69 @@
+hostname R6
+!
+no ip domain lookup
+!
+router isis 1
+ net 01.0000.0000.0006.00
+exit
+!
+interface Loopback0
+ ip address 6.6.6.1 255.255.255.0
+ ip router isis 1
+!
+interface FastEthernet0/0
+ ip address 10.5.6.6 255.255.255.0
+ no shut
+ ip router isis 1
+!
+interface FastEthernet1/0
+ ip address 10.1.6.6 255.255.255.0
+ no shut
+ ip router isis 1
+!
+interface FastEthernet2/0
+ ip address 10.6.22.6 255.255.255.0
+ no shut
+!
+interface FastEthernet3/0
+ ip address 10.6.19.6 255.255.255.0
+ no shut
+!
+line con 0
+ no exec-timeout 0
+!
+router isis 1
+ passive-interface Loopback0
+ is-type level-1
+exit
+!
+router bgp 65001
+ template peer-policy IBGP_RR
+  next-hop-self
+  send-community
+ exit-peer-policy
+ !
+ template peer-session IBGP
+  remote-as 65001
+  update-source Loopback0
+ exit-peer-session
+ !
+ bgp router-id 6.6.6.1
+ bgp log-neighbor-changes
+ bgp confederation identifier 123
+ neighbor 1.1.1.1 inherit peer-session IBGP
+ neighbor 2.2.2.1 inherit peer-session IBGP
+ neighbor 10.6.19.19 remote-as 100
+ neighbor 10.6.19.19 next-hop-self
+ neighbor 10.6.19.19 send-community
+ neighbor 10.6.22.22 remote-as 100
+ neighbor 10.6.22.22 next-hop-self
+ neighbor 10.6.22.22 send-community
+ !
+ address-family ipv4
+  neighbor 1.1.1.1 activate
+  neighbor 1.1.1.1 inherit peer-policy IBGP_RR
+  neighbor 2.2.2.1 activate
+  neighbor 2.2.2.1 inherit peer-policy IBGP_RR
+  no auto-summary
+  no synchronization
+ exit-address-family

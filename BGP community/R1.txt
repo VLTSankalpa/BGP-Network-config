@@ -1,0 +1,199 @@
+
+!
+upgrade fpd auto
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R1
+!
+boot-start-marker
+boot-end-marker
+!
+logging message-counter syslog
+!
+no aaa new-model
+ip source-route
+ip cef
+!
+!
+!
+!
+no ip domain lookup
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+archive
+ log config
+  hidekeys
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 192.168.1.1 255.255.255.0
+!
+interface Loopback1
+ ip address 1.1.1.1 255.255.255.255
+!
+interface Loopback2
+ ip address 1.1.1.2 255.255.255.255
+!
+interface Loopback3
+ ip address 1.1.1.3 255.255.255.255
+!
+interface Loopback4
+ ip address 1.1.1.4 255.255.255.255
+!
+interface Loopback5
+ ip address 1.1.1.5 255.255.255.255
+!
+interface Loopback6
+ ip address 1.1.1.6 255.255.255.255
+!
+interface Loopback7
+ ip address 1.1.7.1 255.255.255.252
+!
+interface Loopback8
+ ip address 1.1.8.1 255.255.255.248
+!
+interface Loopback9
+ ip address 1.1.9.1 255.255.255.240
+!
+interface Loopback10
+ ip address 1.1.10.1 255.255.255.224
+!
+interface Loopback11
+ ip address 1.1.11.1 255.255.255.192
+!
+interface Loopback12
+ ip address 1.1.12.1 255.255.255.128
+!
+interface FastEthernet0/0
+ ip address 10.1.2.1 255.255.255.0
+ duplex half
+!
+interface FastEthernet1/0
+ ip address 10.1.4.1 255.255.255.0
+ duplex half
+!
+interface FastEthernet2/0
+ ip address 10.1.5.1 255.255.255.0
+ duplex half
+!
+interface FastEthernet3/0
+ no ip address
+ shutdown
+ duplex half
+!
+router bgp 123
+ no synchronization
+ bgp log-neighbor-changes
+ network 1.1.7.0 mask 255.255.255.252 route-map COM8
+ network 1.1.8.0 mask 255.255.255.248 route-map COM8
+ network 1.1.9.0 mask 255.255.255.240 route-map COM8
+ network 1.1.10.0 mask 255.255.255.224 route-map COM9
+ network 1.1.11.0 mask 255.255.255.192 route-map COM9
+ network 1.1.12.0 mask 255.255.255.128 route-map COM9
+ network 10.1.2.0 mask 255.255.255.0
+ network 10.1.4.0 mask 255.255.255.0
+ network 10.1.5.0 mask 255.255.255.0
+ network 192.168.1.0
+ redistribute connected route-map CONNECTED_COM7
+ neighbor 10.1.2.2 remote-as 123
+ neighbor 10.1.2.2 next-hop-self
+ neighbor 10.1.2.2 send-community
+ neighbor 10.1.4.4 remote-as 400
+ neighbor 10.1.4.4 send-community
+ neighbor 10.1.4.4 route-map COM13 in
+ neighbor 10.1.5.5 remote-as 500
+ neighbor 10.1.5.5 send-community
+ no auto-summary
+!
+ip forward-protocol nd
+ip http server
+no ip http secure-server
+!
+ip bgp-community new-format
+ip community-list 10 permit 500:10
+!
+!
+access-list 30 permit 1.1.7.0 0.0.0.3
+access-list 30 permit 1.1.8.0 0.0.0.7
+access-list 30 permit 1.1.9.0 0.0.0.15
+access-list 40 permit 1.1.10.0 0.0.0.31
+access-list 40 permit 1.1.11.0 0.0.0.63
+access-list 40 permit 1.1.12.0 0.0.0.127
+!
+!
+!
+!
+route-map COM13 permit 10
+ match community 10
+ set local-preference 400
+!
+route-map COM13 permit 20
+!
+route-map CONNECTED_COM7 permit 10
+ match interface Loopback1 Loopback2 Loopback3 Loopback4 Loopback5 Loopback6
+ set community local-AS
+!
+route-map CONNECTED_COM7 permit 20
+!
+route-map COM9 permit 10
+ match ip address 40
+ set community no-export
+!
+route-map COM9 permit 20
+!
+route-map COM8 permit 10
+ match ip address 30
+ set community local-AS
+!
+route-map COM8 permit 20
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+gatekeeper
+ shutdown
+!
+!
+line con 0
+ exec-timeout 0 0
+ stopbits 1
+line aux 0
+ stopbits 1
+line vty 0 4
+ login
+!
+end

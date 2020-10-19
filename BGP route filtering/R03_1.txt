@@ -1,0 +1,342 @@
+﻿Connected to Dynamips VM "R1" (ID 1, type c3725) - Console port
+Press ENTER to get the prompt.
+ address 1.1.9.1 255.255.255.240
+!
+interface Loopback10
+ ip address 1.1.10.1 255.255.255.224
+!
+interface Loopback11
+ ip address 1.1.11.1 255.255.255.192
+!
+interface Loopback12
+ ip address 1.1.12.1 255.255.255.128
+!
+interface FastEthernet0/0
+ ip address 10.1.2.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ ip address 10.1.4.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+router bgp 100
+ no synchronization
+ bgp log-neighbor-changes
+ network 1.1.1.1 mask 255.255.255.255
+ network 1.1.1.2 mask 255.255.255.255
+ network 1.1.1.3 mask 255.255.255.255
+ network 1.1.1.4 mask 255.255.255.255
+ network 1.1.1.5 mask 255.255.255.255
+ network 1.1.1.6 mask 255.255.255.255
+ network 1.1.7.0 mask 255.255.255.252
+ network 1.1.8.0 mask 255.255.255.248
+ network 1.1.9.0 mask 255.255.255.240
+ network 1.1.10.0 mask 255.255.255.224
+ network 1.1.11.0 mask 255.255.255.192
+ network 1.1.12.0 mask 255.255.255.128
+ network 10.1.2.0 mask 255.255.255.0
+ network 10.1.4.0 mask 255.255.255.0
+ neighbor 10.1.2.2 remote-as 200
+ neighbor 10.1.2.2 ebgp-multihop 8
+ neighbor 10.1.4.4 remote-as 400
+ neighbor 10.1.4.4 ebgp-multihop 8
+ no auto-summary
+!
+ip forward-protocol nd
+!
+!
+ip http server
+no ip http secure-server
+!
+!
+!
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ exec-timeout 0 0
+line aux 0
+line vty 0 4
+ login
+!
+!
+end
+
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#show ip b
+BGP table version is 57, local router ID is 1.1.12.1
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*> 1.1.1.1/32       0.0.0.0                  0         32768 i
+*> 1.1.1.2/32       0.0.0.0                  0         32768 i
+*> 1.1.1.3/32       0.0.0.0                  0         32768 i
+*> 1.1.1.4/32       0.0.0.0                  0         32768 i
+*> 1.1.1.5/32       0.0.0.0                  0         32768 i
+*> 1.1.1.6/32       0.0.0.0                  0         32768 i
+*> 1.1.7.0/30       0.0.0.0                  0         32768 i
+*> 1.1.8.0/29       0.0.0.0                  0         32768 i
+*> 1.1.9.0/28       0.0.0.0                  0         32768 i
+*> 1.1.10.0/27      0.0.0.0                  0         32768 i
+*> 1.1.11.0/26      0.0.0.0                  0         32768 i
+*> 1.1.12.0/25      0.0.0.0                  0         32768 i
+*  10.1.2.0/24      10.1.2.2                 0             0 200 i
+*>                  0.0.0.0                  0         32768 i
+*  10.1.4.0/24      10.1.4.4                 0             0 400 i
+*>                  0.0.0.0                  0         32768 i
+*  10.2.3.0/24      10.1.4.4                               0 400 300 i
+*>                  10.1.2.2                 0             0 200 i
+*> 10.3.4.0/24      10.1.4.4                 0             0 400 i
+*                   10.1.2.2                               0 200 300 i
+R1#
+*Mar  1 01:33:55.211: %BGP-5-ADJCHANGE: neighbor 10.1.4.4 Down BGP Notification sent
+*Mar  1 01:33:55.211: %BGP-3-NOTIFICATION: sent to neighbor 10.1.4.4 4/0 (hold time expired) 0 bytes 
+*Mar  1 01:34:23.311: %BGP-5-ADJCHANGE: neighbor 10.1.2.2 Down BGP Notification sent
+*Mar  1 01:34:23.311: %BGP-3-NOTIFICATION: sent to neighbor 10.1.2.2 4/0 (hold time expired) 0 bytes 
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+*Mar  1 01:36:31.247: %BGP-5-ADJCHANGE: neighbor 10.1.4.4 Up 
+*Mar  1 01:36:51.427: %BGP-5-ADJCHANGE: neighbor 10.1.2.2 Up 
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#wr
+Building configuration...
+[OK]
+R1#
+R1#
+R1#terminal length 0
+R1#write
+Building configuration...
+[OK]
+R1#quit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R1 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+R1>
+R1>
+R1>
+R1>
+R1>
+R1>wr
+Translating "wr"
+
+Translating "wr"
+
+% Unknown command or computer name, or unable to find computer address
+R1>
+R1>
+R1>
+R1>en
+R1#wr
+Building configuration...
+[OK]
+R1#
+R1#
+R1#terminal length 0
+R1#write
+Building configuration...
+[OK]
+R1#quit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R1 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+

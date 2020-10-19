@@ -1,0 +1,4447 @@
+﻿Connected to Dynamips VM "R4" (ID 4, type c3725) - Console port
+Press ENTER to get the prompt.
+ROMMON emulation microcode.
+
+                           Launching IOS image at 0x80008000...
+
+                                                               Smart Init is disabled. IOMEM set to: 5  
+
+                                                                                                        Using iomem percentage: 5
+
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software, 3700 Software (C3725-ADVENTERPRISEK9-M), Version 12.4(15)T7, RELEASE SOFTWARE (fc3)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2008 by Cisco Systems, Inc.
+Compiled Wed 13-Aug-08 21:36 by prod_rel_team
+Image text-base: 0x60008930, data-base: 0x63652000
+
+
+Original NVCONFIG doesnt have correct MAGIC number
+
+Backup NVCONFIG also doesnt have correct MAGIC number
+
+ BIST FAILED...
+Unknown file system detected.
+Use format command to format the card as DOS File System.
+Or use erase command to format the card as Low End File System.
+
+Unknown file system detected.
+Use format command to format the card as DOS File System.
+Or use erase command to format the card as Low End File System.
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+Cisco 3725 (R7000) processor (revision 0.1) with 249856K/12288K bytes of memory.
+Processor board ID FTX0945W0MY
+R7000 CPU at 240MHz, Implementation 39, Rev 2.1, 256KB L2, 512KB L3 Cache
+3 FastEthernet interfaces
+DRAM configuration is 64 bits wide with parity enabled.
+55K bytes of NVRAM.
+131072K bytes of ATA System CompactFlash (Read/Write)
+131072K bytes of ATA Slot0 CompactFlash (Read/Write)
+
+
+         --- System Configuration Dialog ---
+
+Would you like to enter the initial configuration dialog? [yes/no]: Installed image archive
+
+% Please answer 'yes' or 'no'.
+Would you like to enter the initial configuration dialog? [yes/no]: no
+
+
+Press RETURN to get started!
+
+
+*Mar  1 00:00:04.235: %LINEPROTO-5-UPDOWN: Line protocol on Interface VoIP-Null0, changed state to up
+*Mar  1 00:00:04.239: %LINEPROTO-5-UPDOWN: Line protocol on Interface IPv6-mpls, changed state to up
+*Mar  1 00:00:04.243: %LINK-3-UPDOWN: Interface FastEthernet1/0, changed state to up
+*Mar  1 00:00:05.239: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/0, changed state to up
+*Mar  1 00:03:56.351: %LINK-5-CHANGED: Interface FastEthernet0/0, changed state to administratively down
+*Mar  1 00:03:56.455: %SYS-5-RESTART: System restarted --
+Cisco IOS Software, 3700 Software (C3725-ADVENTERPRISEK9-M), Version 12.4(15)T7, RELEASE SOFTWARE (fc3)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2008 by Cisco Systems, Inc.
+Compiled Wed 13-Aug-08 21:36 by prod_rel_team
+*Mar  1 00:03:56.471: %SNMP-5-COLDSTART: SNMP agent on host Router is undergoing a cold start
+*Mar  1 00:03:56.543: %CRYPTO-6-ISAKMP_ON_OFF: ISAKMP is OFF
+*Mar  1 00:03:56.543: %CRYPTO-6-GDOI_ON_OFF: GDOI is OFF
+*Mar  1 00:03:56.543: %LINK-5-CHANGED: Interface FastEthernet0/1, changed state to administratively down
+*Mar  1 00:03:57.351: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to down
+*Mar  1 00:03:57.543: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to down
+*Mar  1 00:03:58.143: %LINK-5-CHANGED: Interface FastEthernet1/0, changed state to administratively down
+*Mar  1 00:03:59.143: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/0, changed state to down
+Router>
+Router>
+Router>
+Router>
+Router>
+Router>
+Router>
+Router>
+Router>
+Router>
+Router>
+Router>
+Router>en
+Router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#hos
+Router(config)#hostname R4
+R4(config)#
+R4(config)#
+R4(config)#
+R4(config)#
+R4(config)#
+R4(config)#
+R4(config)#
+R4(config)#
+R4(config)#
+R4(config)#line con 0
+R4(config-line)#no exec-
+R4(config-line)#no exec-t
+R4(config-line)#no exec-timeout ?
+  <cr>
+
+R4(config-line)#no exec-timeout 
+R4(config-line)#
+R4(config-line)#
+R4(config-line)#
+R4(config-line)#
+R4(config-line)#
+R4(config-line)#
+R4(config-line)#
+R4(config-line)#
+R4(config-line)#
+R4(config-line)#exit
+R4(config)#no ip domain lookup
+R4(config)#
+R4(config)#
+R4(config)#
+R4(config)#
+R4(config)#
+R4(config)#
+R4(config)#do wr
+Building configuration...
+[OK]
+R4(config)#
+R4(config)#
+R4(config)#
+R4(config)#
+R4(config)#term
+R4(config)#terminal-queue le
+R4(config)#termin^Z         
+% Incomplete command.
+
+R4#
+R4#
+R4#
+R4#
+R4#ter
+*Mar  1 00:09:41.835: %SYS-5-CONFIG_I: Configured from console by console
+R4#terminal le
+R4#terminal length 0
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R4(config)#interface FastEthernet0/0
+R4(config-if)# ip address 10.3.4.4 255.255.255.0
+R4(config-if)# no shut
+R4(config-if)#!
+R4(config-if)#interface FastEthernet0/1
+R4(config-if)# ip address 10.1.4.4 255.255.255.0
+R4(config-if)# no shut
+R4(config-if)#
+R4(config-if)#
+R4(config-if)#
+R4(config-if)#
+R4(config-if)#^Z
+R4#
+R4#
+*Mar  1 00:19:53.903: %LINK-3-UPDOWN: Interface FastEthernet0/0, changed state to up
+R4#
+R4#sh 
+*Mar  1 00:19:54.283: %SYS-5-CONFIG_I: Configured from console by console
+*Mar  1 00:19:54.903: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to upint br
+*Mar  1 00:19:55.271: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to up
+*Mar  1 00:19:56.271: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to upi
+          ^
+% Invalid input detected at '^' marker.
+
+R4#
+R4#
+R4#
+R4#sh ip int bri
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            10.3.4.4        YES manual up                    up      
+FastEthernet0/1            10.1.4.4        YES manual up                    up      
+FastEthernet1/0            unassigned      YES unset  administratively down down    
+R4#
+R4#
+R4#
+R4#
+R4#show cdp ne
+R4#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater
+
+Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
+R3               Fas 0/0            163         R S I     3725      Fas 0/1
+R4#
+R4#
+R4#
+R4#
+R4#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater
+
+Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
+R3               Fas 0/0            140         R S I     3725      Fas 0/1
+R1               Fas 0/1            178         R S I     3725      Fas 0/1
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#wr
+Building configuration...
+[OK]
+R4#
+R4#
+R4#
+R4#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R4(config)#router bgp 400
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#nei
+R4(config-router)#neighbor 10.3.4.3 nei
+R4(config-router)#neighbor 10.3.4.3 nei 
+R4(config-router)#neighbor 10.3.4.3 remot
+R4(config-router)#neighbor 10.3.4.3 remote-as 300
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#neighbor 10.1.4.1 remote-as 100
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+*Mar  1 00:30:23.287: %BGP-5-ADJCHANGE: neighbor 10.3.4.3 Up 
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+*Mar  1 00:30:44.499: %BGP-5-ADJCHANGE: neighbor 10.1.4.1 Up 
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#^Z
+R4#
+R4#
+R4#
+R4#
+R4#
+*Mar  1 00:32:51.531: %SYS-5-CONFIG_I: Configured from console by consoleinterface Loopback4
+    ^
+% Invalid input detected at '^' marker.
+
+R4# ip address 1.1.1.4 255.255.255.255
+     ^
+% Invalid input detected at '^' marker.
+
+R4#!
+R4#interface Loopback5
+    ^
+% Invalid input detected at '^' marker.
+
+R4# ip address 1.1.1.5 255.255.255.255
+     ^
+% Invalid input detected at '^' marker.
+
+R4#!
+R4#interface Loopback6
+    ^
+% Invalid input detected at '^' marker.
+
+R4# ip address 1.1.1.6 255.255.255.255
+     ^
+% Invalid input detected at '^' marker.
+
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#show bgp ipv4 unicast summary
+BGP router identifier 10.3.4.4, local AS number 400
+BGP table version is 1, main routing table version 1
+
+Neighbor        V    AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+10.1.4.1        4   100       6       6        1    0    0 00:02:12        0
+10.3.4.3        4   300       6       6        1    0    0 00:02:33        0
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#wr
+Building configuration...
+[OK]
+R4#
+R4#
+R4#
+R4#
+R4#wr
+Building configuration...
+[OK]
+R4#
+R4#
+R4#terminal length 0
+R4#write
+Building configuration...
+[OK]
+R4#quit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R4 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+R4>
+R4>
+R4>
+R4>
+R4>en
+R4#ter
+R4#terminal l
+R4#terminal len
+R4#terminal length 0
+R4#
+R4#
+R4#
+R4#sh run
+Building configuration...
+
+Current configuration : 953 bytes
+!
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R4
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no aaa new-model
+memory-size iomem 5
+ip cef
+!
+!
+!
+!
+no ip domain lookup
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+archive
+ log config
+  hidekeys
+! 
+!
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ ip address 10.3.4.4 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ ip address 10.1.4.4 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet1/0
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+!
+router bgp 400
+ no synchronization
+ bgp log-neighbor-changes
+ neighbor 10.1.4.1 remote-as 100
+ neighbor 10.3.4.3 remote-as 300
+ no auto-summary
+!
+ip forward-protocol nd
+!
+!
+ip http server
+no ip http secure-server
+!
+!
+!
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ exec-timeout 0 0
+line aux 0
+line vty 0 4
+!
+!
+end
+
+R4#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R4(config)#router bgp 400
+R4(config-router)# no synchronization
+R4(config-router)# bgp log-neighbor-changes
+R4(config-router)# neighbor 10.1.4.1 remote-as 100
+R4(config-router)# neighbor 10.1.4.1 eb           
+R4(config-router)# neighbor 10.1.4.1 ebgp-multihop 4
+R4(config-router)#neighbor 10.3.4.3 remote-as 300
+R4(config-router)#neighbor 10.3.4.3 e            
+R4(config-router)#neighbor 10.3.4.3 ebgp-multihop 4
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#^Z
+R4#wr
+*Mar  1 01:01:20.631: %SYS-5-CONFIG_I: Configured from console by console
+Building configuration...
+[OK]
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#show ip b
+BGP table version is 13, local router ID is 10.3.4.4
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*  1.1.1.1/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.2/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.3/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.4/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.5/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.6/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.7.0/30       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.8.0/29       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.9.0/28       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.10.0/27      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.11.0/26      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.12.0/25      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+R4#
+R4#
+R4#
+R4#
+R4#sh ip b 1.1.1.1 
+BGP routing table entry for 1.1.1.1/32, version 13
+Paths: (2 available, best #2, table Default-IP-Routing-Table)
+  Advertised to update-groups:
+        1
+  300 200 100
+    10.3.4.3 from 10.3.4.3 (10.3.4.3)
+      Origin incomplete, localpref 100, valid, external
+  100
+    10.1.4.1 from 10.1.4.1 (1.1.1.6)
+      Origin incomplete, metric 0, localpref 100, valid, external, best
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#terminal length 0
+R4#write
+Building configuration...
+[OK]
+R4#quit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R4 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+Connected to Dynamips VM "R4" (ID 4, type c3725) - Console port
+Press ENTER to get the prompt.
+onization
+ bgp log-neighbor-changes
+ neighbor 10.1.4.1 remote-as 100
+ neighbor 10.3.4.3 remote-as 300
+ no auto-summary
+!
+ip forward-protocol nd
+!
+!
+ip http server
+no ip http secure-server
+!
+!
+!
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ exec-timeout 0 0
+line aux 0
+line vty 0 4
+!
+!
+end
+
+R4#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R4(config)#router bgp 400
+R4(config-router)# no synchronization
+R4(config-router)# bgp log-neighbor-changes
+R4(config-router)# neighbor 10.1.4.1 remote-as 100
+R4(config-router)# neighbor 10.1.4.1 eb           
+R4(config-router)# neighbor 10.1.4.1 ebgp-multihop 4
+R4(config-router)#neighbor 10.3.4.3 remote-as 300
+R4(config-router)#neighbor 10.3.4.3 e            
+R4(config-router)#neighbor 10.3.4.3 ebgp-multihop 4
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#^Z
+R4#wr
+*Mar  1 01:01:20.631: %SYS-5-CONFIG_I: Configured from console by console
+Building configuration...
+[OK]
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#show ip b
+BGP table version is 13, local router ID is 10.3.4.4
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*  1.1.1.1/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.2/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.3/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.4/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.5/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.6/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.7.0/30       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.8.0/29       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.9.0/28       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.10.0/27      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.11.0/26      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.12.0/25      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+R4#
+R4#
+R4#
+R4#
+R4#sh ip b 1.1.1.1 
+BGP routing table entry for 1.1.1.1/32, version 13
+Paths: (2 available, best #2, table Default-IP-Routing-Table)
+  Advertised to update-groups:
+        1
+  300 200 100
+    10.3.4.3 from 10.3.4.3 (10.3.4.3)
+      Origin incomplete, localpref 100, valid, external
+  100
+    10.1.4.1 from 10.1.4.1 (1.1.1.6)
+      Origin incomplete, metric 0, localpref 100, valid, external, best
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#terminal length 0
+R4#write
+Building configuration...
+[OK]
+R4#quit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R4 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+R4>
+R4>
+R4>
+R4>
+R4>
+Connected to Dynamips VM "R4" (ID 4, type c3725) - Console port
+Press ENTER to get the prompt.
+
+ neighbor 10.1.4.1 remote-as 100
+ neighbor 10.3.4.3 remote-as 300
+ no auto-summary
+!
+ip forward-protocol nd
+!
+!
+ip http server
+no ip http secure-server
+!
+!
+!
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ exec-timeout 0 0
+line aux 0
+line vty 0 4
+!
+!
+end
+
+R4#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R4(config)#router bgp 400
+R4(config-router)# no synchronization
+R4(config-router)# bgp log-neighbor-changes
+R4(config-router)# neighbor 10.1.4.1 remote-as 100
+R4(config-router)# neighbor 10.1.4.1 eb           
+R4(config-router)# neighbor 10.1.4.1 ebgp-multihop 4
+R4(config-router)#neighbor 10.3.4.3 remote-as 300
+R4(config-router)#neighbor 10.3.4.3 e            
+R4(config-router)#neighbor 10.3.4.3 ebgp-multihop 4
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#^Z
+R4#wr
+*Mar  1 01:01:20.631: %SYS-5-CONFIG_I: Configured from console by console
+Building configuration...
+[OK]
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#show ip b
+BGP table version is 13, local router ID is 10.3.4.4
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*  1.1.1.1/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.2/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.3/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.4/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.5/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.6/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.7.0/30       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.8.0/29       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.9.0/28       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.10.0/27      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.11.0/26      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.12.0/25      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+R4#
+R4#
+R4#
+R4#
+R4#sh ip b 1.1.1.1 
+BGP routing table entry for 1.1.1.1/32, version 13
+Paths: (2 available, best #2, table Default-IP-Routing-Table)
+  Advertised to update-groups:
+        1
+  300 200 100
+    10.3.4.3 from 10.3.4.3 (10.3.4.3)
+      Origin incomplete, localpref 100, valid, external
+  100
+    10.1.4.1 from 10.1.4.1 (1.1.1.6)
+      Origin incomplete, metric 0, localpref 100, valid, external, best
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#terminal length 0
+R4#write
+Building configuration...
+[OK]
+R4#quit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R4 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+R4>
+R4>
+R4>
+R4>
+R4>
+R4>
+R4>
+R4>
+R4>
+R4>
+R4>
+R4>
+R4>
+R4>en
+R4#show ip b
+BGP table version is 13, local router ID is 10.3.4.4
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*  1.1.1.1/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.2/32       10.3.4.3                               0 300 200 100 ?
+Connected to Dynamips VM "R4" (ID 4, type c3725) - Console port
+Press ENTER to get the prompt.
+eb  
+R4(config-router)# neighbor 10.1.4.1 ebgp-multihop 4
+R4(config-router)#neighbor 10.3.4.3 remote-as 300
+R4(config-router)#neighbor 10.3.4.3 e            
+R4(config-router)#neighbor 10.3.4.3 ebgp-multihop 4
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#^Z
+R4#wr
+*Mar  1 01:01:20.631: %SYS-5-CONFIG_I: Configured from console by console
+Building configuration...
+[OK]
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#show ip b
+BGP table version is 13, local router ID is 10.3.4.4
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*  1.1.1.1/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.2/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.3/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.4/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.5/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.6/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.7.0/30       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.8.0/29       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.9.0/28       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.10.0/27      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.11.0/26      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.12.0/25      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+R4#
+R4#
+R4#
+R4#
+R4#sh ip b 1.1.1.1 
+BGP routing table entry for 1.1.1.1/32, version 13
+Paths: (2 available, best #2, table Default-IP-Routing-Table)
+  Advertised to update-groups:
+        1
+  300 200 100
+    10.3.4.3 from 10.3.4.3 (10.3.4.3)
+      Origin incomplete, localpref 100, valid, external
+  100
+    10.1.4.1 from 10.1.4.1 (1.1.1.6)
+      Origin incomplete, metric 0, localpref 100, valid, external, best
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#terminal length 0
+R4#write
+Building configuration...
+[OK]
+R4#quit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R4 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+R4>
+R4>
+R4>
+R4>
+R4>
+R4>
+R4>
+R4>
+R4>
+R4>
+R4>
+R4>
+R4>
+R4>en
+R4#show ip b
+BGP table version is 13, local router ID is 10.3.4.4
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*  1.1.1.1/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.2/32       10.3.4.3                               0 300 200 100 ?
+Connected to Dynamips VM "R4" (ID 4, type c3725) - Console port
+Press ENTER to get the prompt.
+ng IOS image at 0x80008000...
+
+                             Smart Init is disabled. IOMEM set to: 5  
+
+                                                                      Using iomem percentage: 5
+
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software, 3700 Software (C3725-ADVENTERPRISEK9-M), Version 12.4(15)T7, RELEASE SOFTWARE (fc3)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2008 by Cisco Systems, Inc.
+Compiled Wed 13-Aug-08 21:36 by prod_rel_team
+Image text-base: 0x60008930, data-base: 0x63652000
+
+
+ BIST FAILED...
+Unknown file system detected.
+Use format command to format the card as DOS File System.
+Or use erase command to format the card as Low End File System.
+
+Unknown file system detected.
+Use format command to format the card as DOS File System.
+Or use erase command to format the card as Low End File System.
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+Cisco 3725 (R7000) processor (revision 0.1) with 249856K/12288K bytes of memory.
+Processor board ID FTX0945W0MY
+R7000 CPU at 240MHz, Implementation 39, Rev 2.1, 256KB L2, 512KB L3 Cache
+3 FastEthernet interfaces
+DRAM configuration is 64 bits wide with parity enabled.
+55K bytes of NVRAM.
+131072K bytes of ATA System CompactFlash (Read/Write)
+131072K bytes of ATA Slot0 CompactFlash (Read/Write)
+Installed image archive
+
+
+
+Press RETURN to get started!
+
+
+*Mar  1 00:00:04.479: %LINEPROTO-5-UPDOWN: Line protocol on Interface VoIP-Null0, changed state to up
+*Mar  1 00:00:04.479: %LINEPROTO-5-UPDOWN: Line protocol on Interface IPv6-mpls, changed state to up
+*Mar  1 00:00:04.483: %LINK-3-UPDOWN: Interface FastEthernet1/0, changed state to up
+*Mar  1 00:00:04.911: %SYS-5-CONFIG_I: Configured from memory by console
+*Mar  1 00:00:05.051: %LINK-3-UPDOWN: Interface FastEthernet0/0, changed state to up
+*Mar  1 00:00:05.055: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to up
+*Mar  1 00:00:05.199: %SYS-5-RESTART: System restarted --
+Cisco IOS Software, 3700 Software (C3725-ADVENTERPRISEK9-M), Version 12.4(15)T7, RELEASE SOFTWARE (fc3)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2008 by Cisco Systems, Inc.
+Compiled Wed 13-Aug-08 21:36 by prod_rel_team
+*Mar  1 00:00:05.215: %SNMP-5-COLDSTART: SNMP agent on host R4 is undergoing a cold start
+*Mar  1 00:00:05.279: %CRYPTO-6-ISAKMP_ON_OFF: ISAKMP is OFF
+*Mar  1 00:00:05.279: %CRYPTO-6-GDOI_ON_OFF: GDOI is OFF
+*Mar  1 00:00:05.515: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/0, changed state to down
+*Mar  1 00:00:06.051: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up
+*Mar  1 00:00:06.055: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+*Mar  1 00:00:06.795: %LINK-5-CHANGED: Interface FastEthernet1/0, changed state to administratively down
+*Mar  1 00:00:14.999: %BGP-5-ADJCHANGE: neighbor 10.1.4.1 Up 
+*Mar  1 00:00:35.679: %BGP-5-ADJCHANGE: neighbor 10.3.4.3 Up 
+R4>
+R4>
+R4>
+R4>
+R4>
+R4>
+R4>
+R4>
+R4>
+R4>
+R4>en
+R4#show ip b
+BGP table version is 13, local router ID is 10.3.4.4
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*  1.1.1.1/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.2/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.3/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.4/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.5/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.6/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.7.0/30       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.8.0/29       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.9.0/28       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.10.0/27      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.11.0/26      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.12.0/25      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#terminal length 0
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#show ip b        
+BGP table version is 13, local router ID is 10.3.4.4
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*  1.1.1.1/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.2/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.3/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.4/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.5/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.6/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.7.0/30       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.8.0/29       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.9.0/28       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.10.0/27      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.11.0/26      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.12.0/25      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+R4#
+R4#
+R4#
+R4#
+R4#clear ip bgp * soft 
+R4#
+R4#
+R4#sh run
+Building configuration...
+
+Current configuration : 1030 bytes
+!
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R4
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no aaa new-model
+memory-size iomem 5
+ip cef
+!
+!
+!
+!
+no ip domain lookup
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+archive
+ log config
+  hidekeys
+! 
+!
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ ip address 10.3.4.4 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ ip address 10.1.4.4 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet1/0
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+!
+router bgp 400
+ no synchronization
+ bgp log-neighbor-changes
+ neighbor 10.1.4.1 remote-as 100
+ neighbor 10.1.4.1 ebgp-multihop 4
+ neighbor 10.3.4.3 remote-as 300
+ neighbor 10.3.4.3 ebgp-multihop 4
+ no auto-summary
+!
+ip forward-protocol nd
+!
+!
+ip http server
+no ip http secure-server
+!
+!
+!
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ exec-timeout 0 0
+line aux 0
+line vty 0 4
+ login
+!
+!
+end
+
+Connected to Dynamips VM "R4" (ID 4, type c3725) - Console port
+Press ENTER to get the prompt.
+  0 100 ?
+*  1.1.10.0/27      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.11.0/26      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.12.0/25      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#terminal length 0
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#show ip b        
+BGP table version is 13, local router ID is 10.3.4.4
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*  1.1.1.1/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.2/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.3/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.4/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.5/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.6/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.7.0/30       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.8.0/29       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.9.0/28       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.10.0/27      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.11.0/26      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.12.0/25      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+R4#
+R4#
+R4#
+R4#
+R4#clear ip bgp * soft 
+R4#
+R4#
+R4#sh run
+Building configuration...
+
+Current configuration : 1030 bytes
+!
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R4
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no aaa new-model
+memory-size iomem 5
+ip cef
+!
+!
+!
+!
+no ip domain lookup
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+archive
+ log config
+  hidekeys
+! 
+!
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ ip address 10.3.4.4 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ ip address 10.1.4.4 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet1/0
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+!
+router bgp 400
+ no synchronization
+ bgp log-neighbor-changes
+ neighbor 10.1.4.1 remote-as 100
+ neighbor 10.1.4.1 ebgp-multihop 4
+ neighbor 10.3.4.3 remote-as 300
+ neighbor 10.3.4.3 ebgp-multihop 4
+ no auto-summary
+!
+ip forward-protocol nd
+!
+!
+ip http server
+no ip http secure-server
+!
+!
+!
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ exec-timeout 0 0
+line aux 0
+line vty 0 4
+ login
+!
+!
+end
+
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+Connected to Dynamips VM "R4" (ID 4, type c3725) - Console port
+Press ENTER to get the prompt.
+ng IOS image at 0x80008000...
+
+                             Smart Init is disabled. IOMEM set to: 5  
+
+                                                                      Using iomem percentage: 5
+
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software, 3700 Software (C3725-ADVENTERPRISEK9-M), Version 12.4(15)T7, RELEASE SOFTWARE (fc3)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2008 by Cisco Systems, Inc.
+Compiled Wed 13-Aug-08 21:36 by prod_rel_team
+Image text-base: 0x60008930, data-base: 0x63652000
+
+
+ BIST FAILED...
+Unknown file system detected.
+Use format command to format the card as DOS File System.
+Or use erase command to format the card as Low End File System.
+
+Unknown file system detected.
+Use format command to format the card as DOS File System.
+Or use erase command to format the card as Low End File System.
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+Cisco 3725 (R7000) processor (revision 0.1) with 249856K/12288K bytes of memory.
+Processor board ID FTX0945W0MY
+R7000 CPU at 240MHz, Implementation 39, Rev 2.1, 256KB L2, 512KB L3 Cache
+3 FastEthernet interfaces
+DRAM configuration is 64 bits wide with parity enabled.
+55K bytes of NVRAM.
+131072K bytes of ATA System CompactFlash (Read/Write)
+131072K bytes of ATA Slot0 CompactFlash (Read/Write)
+Installed image archive
+
+
+
+Press RETURN to get started!
+
+
+*Mar  1 00:00:04.207: %LINEPROTO-5-UPDOWN: Line protocol on Interface VoIP-Null0, changed state to up
+*Mar  1 00:00:04.211: %LINEPROTO-5-UPDOWN: Line protocol on Interface IPv6-mpls, changed state to up
+*Mar  1 00:00:04.215: %LINK-3-UPDOWN: Interface FastEthernet1/0, changed state to up
+*Mar  1 00:00:04.619: %SYS-5-CONFIG_I: Configured from memory by console
+*Mar  1 00:00:04.755: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to up
+*Mar  1 00:00:04.759: %LINK-3-UPDOWN: Interface FastEthernet0/0, changed state to up
+*Mar  1 00:00:04.899: %SYS-5-RESTART: System restarted --
+Cisco IOS Software, 3700 Software (C3725-ADVENTERPRISEK9-M), Version 12.4(15)T7, RELEASE SOFTWARE (fc3)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2008 by Cisco Systems, Inc.
+Compiled Wed 13-Aug-08 21:36 by prod_rel_team
+*Mar  1 00:00:04.915: %SNMP-5-COLDSTART: SNMP agent on host R4 is undergoing a cold start
+*Mar  1 00:00:04.987: %CRYPTO-6-ISAKMP_ON_OFF: ISAKMP is OFF
+*Mar  1 00:00:04.987: %CRYPTO-6-GDOI_ON_OFF: GDOI is OFF
+*Mar  1 00:00:05.219: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/0, changed state to down
+*Mar  1 00:00:05.755: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+*Mar  1 00:00:05.759: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up
+*Mar  1 00:00:06.507: %LINK-5-CHANGED: Interface FastEthernet1/0, changed state to administratively down
+*Mar  1 00:00:37.671: %BGP-5-ADJCHANGE: neighbor 10.3.4.3 Up 
+*Mar  1 00:00:39.847: %BGP-5-ADJCHANGE: neighbor 10.1.4.1 Up 
+R4>
+R4>
+R4>
+R4>
+R4>
+R4>
+R4>
+R4>
+R4>
+R4>en
+R4#term
+R4#terminal le
+R4#terminal length 0
+R4#
+R4#
+R4#
+R4#
+R4#show ipb
+          ^
+% Invalid input detected at '^' marker.
+
+R4#show ip b
+BGP table version is 13, local router ID is 10.3.4.4
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*  1.1.1.1/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.2/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.3/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.4/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.5/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.6/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.7.0/30       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.8.0/29       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.9.0/28       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.10.0/27      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.11.0/26      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.12.0/25      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+R4#show bgp ipv4 unicast summary
+BGP router identifier 10.3.4.4, local AS number 400
+BGP table version is 13, main routing table version 13
+12 network entries using 1440 bytes of memory
+24 path entries using 1248 bytes of memory
+3/1 BGP path/bestpath attribute entries using 372 bytes of memory
+2 BGP AS-PATH entries using 48 bytes of memory
+0 BGP route-map cache entries using 0 bytes of memory
+0 BGP filter-list cache entries using 0 bytes of memory
+Bitfield cache entries: current 1 (at peak 1) using 32 bytes of memory
+BGP using 3140 total bytes of memory
+BGP activity 12/0 prefixes, 24/0 paths, scan interval 60 secs
+
+Neighbor        V    AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+10.1.4.1        4   100      13      13       13    0    0 00:09:08       12
+10.3.4.3        4   300      13      13       13    0    0 00:09:10       12
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#ping 1.1.1.1 
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 1.1.1.1, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 12/19/24 ms
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#ping 1.1.1.1
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 1.1.1.1, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 8/15/20 ms
+R4#
+R4#
+R4#
+R4#sh run
+Building configuration...
+
+Current configuration : 1030 bytes
+!
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R4
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no aaa new-model
+memory-size iomem 5
+ip cef
+!
+!
+!
+!
+no ip domain lookup
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+archive
+ log config
+  hidekeys
+! 
+!
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ ip address 10.3.4.4 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ ip address 10.1.4.4 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet1/0
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+!
+router bgp 400
+ no synchronization
+ bgp log-neighbor-changes
+ neighbor 10.1.4.1 remote-as 100
+ neighbor 10.1.4.1 ebgp-multihop 4
+ neighbor 10.3.4.3 remote-as 300
+ neighbor 10.3.4.3 ebgp-multihop 4
+ no auto-summary
+!
+ip forward-protocol nd
+!
+!
+ip http server
+no ip http secure-server
+!
+!
+!
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ exec-timeout 0 0
+line aux 0
+line vty 0 4
+ login
+!
+!
+end
+
+R4#
+R4#
+R4#sh ip b
+BGP table version is 13, local router ID is 10.3.4.4
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*  1.1.1.1/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.2/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.3/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.4/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.5/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.6/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.7.0/30       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.8.0/29       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.9.0/28       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.10.0/27      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.11.0/26      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.12.0/25      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#show ip b
+R4#show ip bgp nei
+R4#show ip bgp neighbors 10.1.4.1 AD
+R4#show ip bgp neighbors 10.1.4.1 ADvertised-routes 
+BGP table version is 13, local router ID is 10.3.4.4
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*> 1.1.1.1/32       10.1.4.1                 0             0 100 ?
+*> 1.1.1.2/32       10.1.4.1                 0             0 100 ?
+*> 1.1.1.3/32       10.1.4.1                 0             0 100 ?
+*> 1.1.1.4/32       10.1.4.1                 0             0 100 ?
+*> 1.1.1.5/32       10.1.4.1                 0             0 100 ?
+*> 1.1.1.6/32       10.1.4.1                 0             0 100 ?
+*> 1.1.7.0/30       10.1.4.1                 0             0 100 ?
+*> 1.1.8.0/29       10.1.4.1                 0             0 100 ?
+*> 1.1.9.0/28       10.1.4.1                 0             0 100 ?
+*> 1.1.10.0/27      10.1.4.1                 0             0 100 ?
+*> 1.1.11.0/26      10.1.4.1                 0             0 100 ?
+*> 1.1.12.0/25      10.1.4.1                 0             0 100 ?
+
+Total number of prefixes 12 
+R4#show ip bgp neighbors 10.3.4.4 ADvertised-routes 
+% No such neighbor or address family
+R4#
+R4#
+R4#
+R4#
+R4#show ip bgp neighbors 10.3.4.3 ADvertised-routes 
+BGP table version is 13, local router ID is 10.3.4.4
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*> 1.1.1.1/32       10.1.4.1                 0             0 100 ?
+*> 1.1.1.2/32       10.1.4.1                 0             0 100 ?
+*> 1.1.1.3/32       10.1.4.1                 0             0 100 ?
+*> 1.1.1.4/32       10.1.4.1                 0             0 100 ?
+*> 1.1.1.5/32       10.1.4.1                 0             0 100 ?
+*> 1.1.1.6/32       10.1.4.1                 0             0 100 ?
+*> 1.1.7.0/30       10.1.4.1                 0             0 100 ?
+*> 1.1.8.0/29       10.1.4.1                 0             0 100 ?
+*> 1.1.9.0/28       10.1.4.1                 0             0 100 ?
+*> 1.1.10.0/27      10.1.4.1                 0             0 100 ?
+*> 1.1.11.0/26      10.1.4.1                 0             0 100 ?
+*> 1.1.12.0/25      10.1.4.1                 0             0 100 ?
+
+Total number of prefixes 12 
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#sh ip b
+BGP table version is 13, local router ID is 10.3.4.4
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*  1.1.1.1/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.2/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.3/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.4/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.5/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.6/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.7.0/30       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.8.0/29       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.9.0/28       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.10.0/27      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.11.0/26      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.12.0/25      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R4(config)#ip acc
+R4(config)#acc   
+R4(config)#access-list 20 de
+R4(config)#access-list 20 deny 1.1.1.1 0.0.0.0
+R4(config)#access-list 20 deny 1.1.1.2 0.0.0.0
+R4(config)#acc
+R4(config)#access-list 20 per
+R4(config)#access-list 20 permit an
+R4(config)#access-list 20 permit any 
+R4(config)#
+R4(config)#
+R4(config)#
+R4(config)#
+R4(config)#rouetr
+R4(config)#router bg
+R4(config)#router bgp 400
+R4(config-router)#nei
+R4(config-router)#neighbor 10.3.4.3 des
+R4(config-router)#neighbor 10.3.4.3 dis         
+R4(config-router)#neighbor 10.3.4.3 d? 
+default-originate  description  disable-connected-check  distribute-list
+dmzlink-bw         
+
+R4(config-router)#neighbor 10.3.4.3 distr
+R4(config-router)#neighbor 10.3.4.3 distribute-list 20 ?
+  in   Filter incoming updates
+  out  Filter outgoing updates
+
+R4(config-router)#neighbor 10.3.4.3 distribute-list 20 in
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#^Z
+R4#
+R4#
+R4#
+*Mar  1 00:24:56.575: %SYS-5-CONFIG_I: Configured from console by consoleclear bgp ipv4 unicast * soft
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#clear bgp ipv4 unicast * soft
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#show ip b
+BGP table version is 13, local router ID is 10.3.4.4
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*> 1.1.1.1/32       10.1.4.1                 0             0 100 ?
+*> 1.1.1.2/32       10.1.4.1                 0             0 100 ?
+*  1.1.1.3/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.4/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.5/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.6/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.7.0/30       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.8.0/29       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.9.0/28       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.10.0/27      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.11.0/26      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.12.0/25      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R4(config)#ro
+R4(config)#router b
+R4(config)#router bgp 400
+R4(config-router)#no neighbor 10.3.4.3 distribute-list 20 in
+R4(config-router)#neighbor 10.1.4.1 distribute-list 20 in   
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#^Z
+R4#
+R4#
+*Mar  1 00:25:57.455: %SYS-5-CONFIG_I: Configured from console by consoleclear bgp ipv4 unicast * soft
+R4#
+R4#
+R4#
+R4#
+R4#clear bgp ipv4 unicast * soft
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#show ip 
+% Incomplete command.
+
+R4#sh ip b
+BGP table version is 17, local router ID is 10.3.4.4
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*> 1.1.1.1/32       10.3.4.3                               0 300 200 100 ?
+*> 1.1.1.2/32       10.3.4.3                               0 300 200 100 ?
+*  1.1.1.3/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.4/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.5/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.6/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.7.0/30       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.8.0/29       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.9.0/28       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.10.0/27      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.11.0/26      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.12.0/25      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+R4#
+R4#
+R4#
+R4#tra
+R4#traceroute 1.1.1.1
+
+Type escape sequence to abort.
+Tracing the route to 1.1.1.1
+
+  1 10.3.4.3 20 msec 20 msec 20 msec
+  2  *  * 
+R4#
+R4#
+R4#
+R4#trac
+R4#traceroute 1.1.1.1
+
+Type escape sequence to abort.
+Tracing the route to 1.1.1.1
+
+  1 10.3.4.3 12 msec 20 msec 20 msec
+  2  * 
+R4#
+R4#
+R4#
+R4#ping 1.1.1.1
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 1.1.1.1, timeout is 2 seconds:
+...
+Success rate is 0 percent (0/3)
+R4#
+R4#
+R4#
+R4#ping 10.1.4.1
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.1.4.1, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 8/12/20 ms
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#ping 1.1.1.3
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 1.1.1.3, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 16/20/24 ms
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#ping 1.1.1.1
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 1.1.1.1, timeout is 2 seconds:
+..
+Success rate is 0 percent (0/2)
+R4#
+R4#
+R4#
+Connected to Dynamips VM "R4" (ID 4, type c3725) - Console port
+Press ENTER to get the prompt.
+neighbor 10.1.4.1 distribute-list 20 in   
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#^Z
+R4#
+R4#
+*Mar  1 00:25:57.455: %SYS-5-CONFIG_I: Configured from console by consoleclear bgp ipv4 unicast * soft
+R4#
+R4#
+R4#
+R4#
+R4#clear bgp ipv4 unicast * soft
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#show ip 
+% Incomplete command.
+
+R4#sh ip b
+BGP table version is 17, local router ID is 10.3.4.4
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*> 1.1.1.1/32       10.3.4.3                               0 300 200 100 ?
+*> 1.1.1.2/32       10.3.4.3                               0 300 200 100 ?
+*  1.1.1.3/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.4/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.5/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.6/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.7.0/30       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.8.0/29       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.9.0/28       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.10.0/27      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.11.0/26      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.12.0/25      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+R4#
+R4#
+R4#
+R4#tra
+R4#traceroute 1.1.1.1
+
+Type escape sequence to abort.
+Tracing the route to 1.1.1.1
+
+  1 10.3.4.3 20 msec 20 msec 20 msec
+  2  *  * 
+R4#
+R4#
+R4#
+R4#trac
+R4#traceroute 1.1.1.1
+
+Type escape sequence to abort.
+Tracing the route to 1.1.1.1
+
+  1 10.3.4.3 12 msec 20 msec 20 msec
+  2  * 
+R4#
+R4#
+R4#
+R4#ping 1.1.1.1
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 1.1.1.1, timeout is 2 seconds:
+...
+Success rate is 0 percent (0/3)
+R4#
+R4#
+R4#
+R4#ping 10.1.4.1
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.1.4.1, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 8/12/20 ms
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#ping 1.1.1.3
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 1.1.1.3, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 16/20/24 ms
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#ping 1.1.1.1
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 1.1.1.1, timeout is 2 seconds:
+..
+Success rate is 0 percent (0/2)
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R4(config)#router bgp 400
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#red
+R4(config-router)#redistribute conn
+R4(config-router)#redistribute connected 
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#^Z
+R4#
+R4#
+R4#show i
+*Mar  1 01:40:56.467: %SYS-5-CONFIG_I: Configured from console by consolep b
+BGP table version is 28, local router ID is 10.3.4.4
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*> 1.1.1.1/32       10.3.4.3                               0 300 200 100 ?
+*> 1.1.1.2/32       10.3.4.3                               0 300 200 100 ?
+*> 1.1.1.3/32       10.1.4.1                 0             0 100 ?
+*> 1.1.1.4/32       10.1.4.1                 0             0 100 ?
+*> 1.1.1.5/32       10.1.4.1                 0             0 100 ?
+*> 1.1.1.6/32       10.1.4.1                 0             0 100 ?
+*> 1.1.7.0/30       10.1.4.1                 0             0 100 ?
+*> 1.1.8.0/29       10.1.4.1                 0             0 100 ?
+*> 1.1.9.0/28       10.1.4.1                 0             0 100 ?
+*> 1.1.10.0/27      10.1.4.1                 0             0 100 ?
+*> 1.1.11.0/26      10.1.4.1                 0             0 100 ?
+*> 1.1.12.0/25      10.1.4.1                 0             0 100 ?
+*  10.1.2.0/24      10.1.4.1                               0 100 200 ?
+*>                  10.3.4.3                               0 300 200 ?
+*> 10.1.4.0/24      0.0.0.0                  0         32768 ?
+*  10.2.3.0/24      10.1.4.1                               0 100 200 ?
+*>                  10.3.4.3                 0             0 300 ?
+*> 10.3.4.0/24      0.0.0.0                  0         32768 ?
+*                   10.3.4.3                 0             0 300 ?
+R4# 
+R4#
+R4#
+R4#
+*Mar  1 01:43:38.319: %BGP-5-ADJCHANGE: neighbor 10.3.4.3 Down BGP Notification sent
+*Mar  1 01:43:38.319: %BGP-3-NOTIFICATION: sent to neighbor 10.3.4.3 4/0 (hold time expired) 0 bytes 
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#ciscocisco
+Translating "ciscocisco"
+
+Translating "ciscocisco"
+
+% Unknown command or computer name, or unable to find computer address
+R4#show bgp ipv4 unicast summary
+BGP router identifier 10.3.4.4, local AS number 400
+BGP table version is 32, main routing table version 32
+14 network entries using 1680 bytes of memory
+14 path entries using 728 bytes of memory
+4/3 BGP path/bestpath attribute entries using 496 bytes of memory
+2 BGP AS-PATH entries using 48 bytes of memory
+0 BGP route-map cache entries using 0 bytes of memory
+0 BGP filter-list cache entries using 0 bytes of memory
+Bitfield cache entries: current 1 (at peak 2) using 32 bytes of memory
+BGP using 2984 total bytes of memory
+BGP activity 18/4 prefixes, 36/22 paths, scan interval 60 secs
+
+Neighbor        V    AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+10.1.4.1        4   100     114     124       32    0    0 01:43:59       12
+10.3.4.3        4   300     114     123        0    0    0 00:01:01 Active
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#show bgp ipv4 unicast summary
+BGP router identifier 10.3.4.4, local AS number 400
+BGP table version is 32, main routing table version 32
+14 network entries using 1680 bytes of memory
+14 path entries using 728 bytes of memory
+4/3 BGP path/bestpath attribute entries using 496 bytes of memory
+2 BGP AS-PATH entries using 48 bytes of memory
+0 BGP route-map cache entries using 0 bytes of memory
+0 BGP filter-list cache entries using 0 bytes of memory
+Bitfield cache entries: current 1 (at peak 2) using 32 bytes of memory
+BGP using 2984 total bytes of memory
+BGP activity 18/4 prefixes, 36/22 paths, scan interval 60 secs
+
+Neighbor        V    AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+10.1.4.1        4   100     123     133       32    0    0 01:52:41       12
+10.3.4.3        4   300     114     123        0    0    0 00:09:42 Active
+R4#
+*Mar  1 01:56:39.627: %BGP-5-ADJCHANGE: neighbor 10.3.4.3 Up 
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#ping 1.1.1.1                 
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 1.1.1.1, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 36/39/40 ms
+R4#
+R4#
+R4#
+R4#
+R4#trac
+R4#traceroute 1.1.1.1
+
+Type escape sequence to abort.
+Tracing the route to 1.1.1.1
+
+  1 10.3.4.3 16 msec 20 msec 20 msec
+  2 10.2.3.2 [AS 300] 40 msec 40 msec 40 msec
+  3 10.1.2.1 [AS 200] 32 msec *  36 msec
+R4#
+R4#
+R4#
+R4#ping 1.1.1.1      
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 1.1.1.1, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 28/30/32 ms
+R4#
+R4#
+R4#
+R4#
+R4#ping 1.1.1.1
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 1.1.1.1, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 28/31/32 ms
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#show ver
+R4#show version 
+Cisco IOS Software, 3700 Software (C3725-ADVENTERPRISEK9-M), Version 12.4(15)T7, RELEASE SOFTWARE (fc3)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2008 by Cisco Systems, Inc.
+Compiled Wed 13-Aug-08 21:36 by prod_rel_team
+
+ROM: ROMMON Emulation Microcode
+ROM: 3700 Software (C3725-ADVENTERPRISEK9-M), Version 12.4(15)T7, RELEASE SOFTWARE (fc3)
+
+R4 uptime is 2 hours, 5 minutes
+System returned to ROM by unknown reload cause - suspect boot_data[BOOT_COUNT] 0x0, BOOT_COUNT 0, BOOTDATA 19
+System image file is "tftp://255.255.255.255/unknown"
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+Cisco 3725 (R7000) processor (revision 0.1) with 249856K/12288K bytes of memory.
+Processor board ID FTX0945W0MY
+R7000 CPU at 240MHz, Implementation 39, Rev 2.1, 256KB L2, 512KB L3 Cache
+3 FastEthernet interfaces
+DRAM configuration is 64 bits wide with parity enabled.
+55K bytes of NVRAM.
+131072K bytes of ATA System CompactFlash (Read/Write)
+131072K bytes of ATA Slot0 CompactFlash (Read/Write)
+
+Configuration register is 0x2102
+
+R4#
+R4#
+R4#
+R4#
+R4#show ip b    
+BGP table version is 35, local router ID is 10.3.4.4
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*> 1.1.1.1/32       10.3.4.3                               0 300 200 100 ?
+*> 1.1.1.2/32       10.3.4.3                               0 300 200 100 ?
+*  1.1.1.3/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.4/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.5/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.6/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.7.0/30       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.8.0/29       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.9.0/28       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.10.0/27      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.11.0/26      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.12.0/25      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  10.1.2.0/24      10.3.4.3                               0 300 200 ?
+*>                  10.1.4.1                               0 100 200 ?
+*> 10.1.4.0/24      0.0.0.0                  0         32768 ?
+*> 10.2.3.0/24      10.3.4.3                 0             0 300 ?
+*                   10.1.4.1                               0 100 200 ?
+*  10.3.4.0/24      10.3.4.3                 0             0 300 ?
+*>                  0.0.0.0                  0         32768 ?
+R4#
+R4#
+R4#
+R4#trAC
+R4#trACeroute 1.1.1.1
+
+Type escape sequence to abort.
+Tracing the route to 1.1.1.1
+
+  1 10.3.4.3 12 msec 12 msec 8 msec
+  2 10.2.3.2 [AS 300] 20 msec 20 msec 20 msec
+  3 10.1.2.1 [AS 200] 28 msec *  28 msec
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#SHOW RUN
+Building configuration...
+
+Current configuration : 1181 bytes
+!
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R4
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no aaa new-model
+memory-size iomem 5
+ip cef
+!
+!
+!
+!
+no ip domain lookup
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+archive
+ log config
+  hidekeys
+! 
+!
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ ip address 10.3.4.4 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ ip address 10.1.4.4 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet1/0
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+!
+router bgp 400
+ no synchronization
+ bgp log-neighbor-changes
+ redistribute connected
+ neighbor 10.1.4.1 remote-as 100
+ neighbor 10.1.4.1 ebgp-multihop 4
+ neighbor 10.1.4.1 distribute-list 20 in
+ neighbor 10.3.4.3 remote-as 300
+ neighbor 10.3.4.3 ebgp-multihop 4
+ no auto-summary
+!
+ip forward-protocol nd
+!
+!
+ip http server
+no ip http secure-server
+!
+access-list 20 deny   1.1.1.1
+access-list 20 deny   1.1.1.2
+access-list 20 permit any
+!
+!
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ exec-timeout 0 0
+line aux 0
+line vty 0 4
+ login
+!
+!
+end
+
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R4(config)#pre
+R4(config)#ip pre   
+R4(config)#ip prefix-list CCIE den
+R4(config)#ip prefix-list CCIE deny 1.1.1.3/32
+R4(config)#ip prefix-list CCIE per            
+R4(config)#ip prefix-list CCIE permit 0.0.0.0/0 le
+R4(config)#ip prefix-list CCIE permit 0.0.0.0/0 le 32
+R4(config)#
+R4(config)#
+R4(config)#
+R4(config)#
+R4(config)#router bgp 400
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#nei
+R4(config-router)#neighbor 10.3.4.4 pri
+R4(config-router)#neighbor 10.3.4.4 pref
+R4(config-router)#neighbor 10.3.4.4 prefix-list CCIE in
+% Cannot configure the local system as neighbor
+R4(config-router)#neighbor 10.3.4.3 prefix-list CCIE in
+R4(config-router)#^Z
+R4#
+R4#
+R4#
+*Mar  1 03:03:18.275: %SYS-5-CONFIG_I: Configured from console by console
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#sh run
+Building configuration...
+
+Current configuration : 1314 bytes
+!
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R4
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no aaa new-model
+memory-size iomem 5
+ip cef
+!
+!
+!
+!
+no ip domain lookup
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+archive
+ log config
+  hidekeys
+! 
+!
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ ip address 10.3.4.4 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ ip address 10.1.4.4 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet1/0
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+!
+router bgp 400
+ no synchronization
+ bgp log-neighbor-changes
+ redistribute connected
+ neighbor 10.1.4.1 remote-as 100
+ neighbor 10.1.4.1 ebgp-multihop 4
+ neighbor 10.1.4.1 distribute-list 20 in
+ neighbor 10.3.4.3 remote-as 300
+ neighbor 10.3.4.3 ebgp-multihop 4
+ neighbor 10.3.4.3 prefix-list CCIE in
+ no auto-summary
+!
+ip forward-protocol nd
+!
+!
+ip http server
+no ip http secure-server
+!
+!
+ip prefix-list CCIE seq 5 deny 1.1.1.3/32
+ip prefix-list CCIE seq 10 permit 0.0.0.0/0 le 32
+access-list 20 deny   1.1.1.1
+access-list 20 deny   1.1.1.2
+access-list 20 permit any
+!
+!
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ exec-timeout 0 0
+line aux 0
+line vty 0 4
+ login
+!
+!
+end
+
+R4#  cconf t
+       ^
+% Invalid input detected at '^' marker.
+
+R4#
+R4#
+R4#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R4(config)#router bgp 400
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#no neighbor 10.3.4.3 prefix-list CCIE in
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#neighbor 10.1.4.1 pre
+R4(config-router)#neighbor 10.1.4.1 prefix-list CCIE in
+Prefix/distribute list can not co-exist
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#^Z
+R4#
+R4#
+R4#
+R4#sh r
+*Mar  1 03:07:31.227: %SYS-5-CONFIG_I: Configured from console by consoleun
+Building configuration...
+
+Current configuration : 1275 bytes
+!
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R4
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no aaa new-model
+memory-size iomem 5
+ip cef
+!
+!
+!
+!
+no ip domain lookup
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+archive
+ log config
+  hidekeys
+! 
+!
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ ip address 10.3.4.4 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ ip address 10.1.4.4 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet1/0
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+!
+router bgp 400
+ no synchronization
+ bgp log-neighbor-changes
+ redistribute connected
+ neighbor 10.1.4.1 remote-as 100
+ neighbor 10.1.4.1 ebgp-multihop 4
+ neighbor 10.1.4.1 distribute-list 20 in
+ neighbor 10.3.4.3 remote-as 300
+ neighbor 10.3.4.3 ebgp-multihop 4
+ no auto-summary
+!
+ip forward-protocol nd
+!
+!
+ip http server
+no ip http secure-server
+!
+!
+ip prefix-list CCIE seq 5 deny 1.1.1.3/32
+ip prefix-list CCIE seq 10 permit 0.0.0.0/0 le 32
+access-list 20 deny   1.1.1.1
+access-list 20 deny   1.1.1.2
+access-list 20 permit any
+!
+!
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ exec-timeout 0 0
+line aux 0
+line vty 0 4
+ login
+!
+!
+end
+
+R4#
+R4#
+R4#
+R4#
+R4#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R4(config)#router bgp 400
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#neighbor 10.1.4.1 pre
+R4(config-router)#neighbor 10.1.4.1 prefix-list CCIE in
+Prefix/distribute list can not co-exist
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+Connected to Dynamips VM "R4" (ID 4, type c3725) - Console port
+Press ENTER to get the prompt.
+ng IOS image at 0x80008000...
+
+                             Smart Init is disabled. IOMEM set to: 5  
+
+                                                                      Using iomem percentage: 5
+
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software, 3700 Software (C3725-ADVENTERPRISEK9-M), Version 12.4(15)T7, RELEASE SOFTWARE (fc3)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2008 by Cisco Systems, Inc.
+Compiled Wed 13-Aug-08 21:36 by prod_rel_team
+Image text-base: 0x60008930, data-base: 0x63652000
+
+
+ BIST FAILED...
+Unknown file system detected.
+Use format command to format the card as DOS File System.
+Or use erase command to format the card as Low End File System.
+
+Unknown file system detected.
+Use format command to format the card as DOS File System.
+Or use erase command to format the card as Low End File System.
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+Cisco 3725 (R7000) processor (revision 0.1) with 249856K/12288K bytes of memory.
+Processor board ID FTX0945W0MY
+R7000 CPU at 240MHz, Implementation 39, Rev 2.1, 256KB L2, 512KB L3 Cache
+3 FastEthernet interfaces
+DRAM configuration is 64 bits wide with parity enabled.
+55K bytes of NVRAM.
+131072K bytes of ATA System CompactFlash (Read/Write)
+131072K bytes of ATA Slot0 CompactFlash (Read/Write)
+Installed image archive
+
+
+
+Press RETURN to get started!
+
+
+*Mar  1 00:00:04.759: %LINEPROTO-5-UPDOWN: Line protocol on Interface VoIP-Null0, changed state to up
+*Mar  1 00:00:04.763: %LINEPROTO-5-UPDOWN: Line protocol on Interface IPv6-mpls, changed state to up
+*Mar  1 00:00:04.767: %LINK-3-UPDOWN: Interface FastEthernet1/0, changed state to up
+*Mar  1 00:00:05.207: %SYS-5-CONFIG_I: Configured from memory by console
+*Mar  1 00:00:05.363: %LINK-3-UPDOWN: Interface FastEthernet0/0, changed state to up
+*Mar  1 00:00:05.367: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to up
+*Mar  1 00:00:05.531: %SYS-5-RESTART: System restarted --
+Cisco IOS Software, 3700 Software (C3725-ADVENTERPRISEK9-M), Version 12.4(15)T7, RELEASE SOFTWARE (fc3)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2008 by Cisco Systems, Inc.
+Compiled Wed 13-Aug-08 21:36 by prod_rel_team
+*Mar  1 00:00:05.547: %SNMP-5-COLDSTART: SNMP agent on host R4 is undergoing a cold start
+*Mar  1 00:00:05.623: %CRYPTO-6-ISAKMP_ON_OFF: ISAKMP is OFF
+*Mar  1 00:00:05.623: %CRYPTO-6-GDOI_ON_OFF: GDOI is OFF
+*Mar  1 00:00:05.791: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/0, changed state to down
+*Mar  1 00:00:06.363: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up
+*Mar  1 00:00:06.367: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+*Mar  1 00:00:07.083: %LINK-5-CHANGED: Interface FastEthernet1/0, changed state to administratively down
+*Mar  1 00:00:37.683: %BGP-5-ADJCHANGE: neighbor 10.1.4.1 Up 
+*Mar  1 00:00:38.147: %BGP-5-ADJCHANGE: neighbor 10.3.4.3 Up 
+R4>
+R4>
+R4>
+R4>
+R4>
+R4>
+R4>
+R4>en
+R4#terminal length 0
+R4#
+R4#
+R4#
+R4#sh ip b
+BGP table version is 17, local router ID is 10.3.4.4
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*  1.1.1.1/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.2/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.3/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.4/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.5/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.6/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.7.0/30       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.8.0/29       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.9.0/28       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.10.0/27      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.11.0/26      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.12.0/25      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  10.1.2.0/24      10.3.4.3                               0 300 200 ?
+*>                  10.1.4.1                               0 100 200 ?
+*  10.2.3.0/24      10.1.4.1                               0 100 200 ?
+*>                  10.3.4.3                 0             0 300 ?
+r> 10.3.4.0/24      10.3.4.3                 0             0 300 ?
+R4#
+R4#
+R4#
+R4#show bgp ipv4 unicast summary
+BGP router identifier 10.3.4.4, local AS number 400
+BGP table version is 17, main routing table version 17
+15 network entries using 1800 bytes of memory
+29 path entries using 1508 bytes of memory
+6/3 BGP path/bestpath attribute entries using 744 bytes of memory
+5 BGP AS-PATH entries using 120 bytes of memory
+0 BGP route-map cache entries using 0 bytes of memory
+0 BGP filter-list cache entries using 0 bytes of memory
+Bitfield cache entries: current 1 (at peak 1) using 32 bytes of memory
+BGP using 4204 total bytes of memory
+BGP activity 15/0 prefixes, 29/0 paths, scan interval 60 secs
+
+Neighbor        V    AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+10.1.4.1        4   100       7       7       17    0    0 00:01:55       14
+10.3.4.3        4   300       7       7       17    0    0 00:01:55       15
+Connected to Dynamips VM "R4" (ID 4, type c3725) - Console port
+Press ENTER to get the prompt.
+Connected to Dynamips VM "R4" (ID 4, type c3725) - Console port
+Press ENTER to get the prompt.
+ROMMON emulation microcode.
+
+                           Launching IOS image at 0x80008000...
+
+                                                               Smart Init is disabled. IOMEM set to: 5  
+
+                                                                                                        Using iomem percentage: 5
+
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software, 3700 Software (C3725-ADVENTERPRISEK9-M), Version 12.4(15)T7, RELEASE SOFTWARE (fc3)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2008 by Cisco Systems, Inc.
+Compiled Wed 13-Aug-08 21:36 by prod_rel_team
+Image text-base: 0x60008930, data-base: 0x63652000
+
+
+Original NVCONFIG doesnt have correct MAGIC number
+
+Backup NVCONFIG also doesnt have correct MAGIC number
+
+ BIST FAILED...
+Unknown file system detected.
+Use format command to format the card as DOS File System.
+Or use erase command to format the card as Low End File System.
+
+Unknown file system detected.
+Use format command to format the card as DOS File System.
+Or use erase command to format the card as Low End File System.
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+Cisco 3725 (R7000) processor (revision 0.1) with 249856K/12288K bytes of memory.
+Processor board ID FTX0945W0MY
+R7000 CPU at 240MHz, Implementation 39, Rev 2.1, 256KB L2, 512KB L3 Cache
+2 FastEthernet interfaces
+DRAM configuration is 64 bits wide with parity enabled.
+55K bytes of NVRAM.
+131072K bytes of ATA System CompactFlash (Read/Write)
+131072K bytes of ATA Slot0 CompactFlash (Read/Write)
+
+
+         --- System Configuration Dialog ---
+
+Would you like to enter the initial configuration dialog? [yes/no]: Installed image archive
+
+% Please answer 'yes' or 'no'.
+Would you like to enter the initial configuration dialog? [yes/no]: 
+% Please answer 'yes' or 'no'.
+Would you like to enter the initial configuration dialog? [yes/no]: 
+% Please answer 'yes' or 'no'.
+Would you like to enter the initial configuration dialog? [yes/no]: no
+
+
+Press RETURN to get started!
+
+
+*Mar  1 00:00:04.339: %LINEPROTO-5-UPDOWN: Line protocol on Interface VoIP-Null0, changed state to up
+*Mar  1 00:00:04.339: %LINEPROTO-5-UPDOWN: Line protocol on Interface IPv6-mpls, changed state to up
+*Mar  1 00:01:52.695: %LINK-5-CHANGED: Interface FastEthernet0/0, changed state to administratively down
+*Mar  1 00:01:52.799: %SYS-5-RESTART: System restarted --
+Cisco IOS Software, 3700 Software (C3725-ADVENTERPRISEK9-M), Version 12.4(15)T7, RELEASE SOFTWARE (fc3)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2008 by Cisco Systems, Inc.
+Compiled Wed 13-Aug-08 21:36 by prod_rel_team
+*Mar  1 00:01:52.811: %SNMP-5-COLDSTART: SNMP agent on host Router is undergoing a cold start
+*Mar  1 00:01:52.863: %CRYPTO-6-ISAKMP_ON_OFF: ISAKMP is OFF
+*Mar  1 00:01:52.867: %CRYPTO-6-GDOI_ON_OFF: GDOI is OFF
+*Mar  1 00:01:52.871: %LINK-5-CHANGED: Interface FastEthernet0/1, changed state to administratively down
+*Mar  1 00:01:53.695: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to down
+*Mar  1 00:01:53.871: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to down
+Router>
+Router>
+Router>
+Router>
+Router>
+Router>en
+Router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#
+Router(config)#!
+Router(config)#version 12.4
+Router(config)#service timestamps debug datetime msec
+Router(config)#service timestamps log datetime msec
+Router(config)#no service password-encryption
+Router(config)#!
+Router(config)#hostname R4
+R4(config)#!
+R4(config)#boot-start-marker
+R4(config)#boot-end-marker
+R4(config)#!
+R4(config)#!
+R4(config)#no aaa new-model
+R4(config)#memory-size iomem 5
+R4(config)#ip cef
+R4(config)#!
+R4(config)#!
+R4(config)#!
+R4(config)#!
+R4(config)#no ip domain lookup
+R4(config)#!
+R4(config)#multilink bundle-name authenticated
+R4(config)#!
+R4(config)#!
+R4(config)#!
+R4(config)#!
+R4(config)#!
+R4(config)#!
+R4(config)#!
+R4(config)#!
+R4(config)#!
+R4(config)#!
+R4(config)#!
+R4(config)#!
+R4(config)#!
+R4(config)#!
+R4(config)#!
+R4(config)#!
+R4(config)#!
+R4(config)#!
+R4(config)#!
+R4(config)#!
+R4(config)#!
+R4(config)#archive
+R4(config-archive)# log config
+R4(config-archive-log-cfg)#  hidekeys
+R4(config-archive-log-cfg)#! 
+R4(config-archive-log-cfg)#!
+R4(config-archive-log-cfg)#!
+R4(config-archive-log-cfg)#!
+R4(config-archive-log-cfg)#!
+R4(config-archive-log-cfg)#!
+R4(config-archive-log-cfg)#!
+R4(config-archive-log-cfg)#!
+R4(config-archive-log-cfg)#interface FastEthernet0/0
+R4(config-if)# ip address 10.3.4.4 255.255.255.0
+R4(config-if)# duplex auto
+R4(config-if)# speed auto
+R4(config-if)#!
+R4(config-if)#interface FastEthernet0/1
+R4(config-if)# ip address 10.1.4.4 255.255.255.0
+R4(config-if)# duplex auto
+R4(config-if)# speed auto
+R4(config-if)#!
+R4(config-if)#interface FastEthernet1/0
+                        ^
+% Invalid input detected at '^' marker.
+
+R4(config)# no ip address
+% Incomplete command.
+
+R4(config)# shutdown
+% Incomplete command.
+
+R4(config)# duplex auto
+             ^
+% Invalid input detected at '^' marker.
+
+R4(config)# speed auto
+              ^
+% Invalid input detected at '^' marker.
+
+R4(config)#!
+R4(config)#router bgp 400
+R4(config-router)# no synchronization
+R4(config-router)# bgp log-neighbor-changes
+R4(config-router)# neighbor 10.1.4.1 remote-as 100
+R4(config-router)# neighbor 10.1.4.1 ebgp-multihop 4
+R4(config-router)# neighbor 10.3.4.3 remote-as 300
+R4(config-router)# neighbor 10.3.4.3 ebgp-multihop 4
+R4(config-router)# no auto-summary
+R4(config-router)#!
+R4(config-router)#ip forward-protocol nd
+R4(config)#!
+R4(config)#!
+R4(config)#ip http server
+R4(config)#no ip http secure-server
+R4(config)#!
+R4(config)#!
+R4(config)#!
+R4(config)#!
+R4(config)#!
+R4(config)#!
+R4(config)#!
+R4(config)#control-plane
+R4(config-cp)#!
+R4(config-cp)#!
+R4(config-cp)#!
+R4(config-cp)#!
+R4(config-cp)#!
+R4(config-cp)#!
+R4(config-cp)#!
+R4(config-cp)#!
+R4(config-cp)#!
+R4(config-cp)#!
+R4(config-cp)#line con 0
+R4(config-line)# exec-timeout 0 0
+R4(config-line)#line aux 0
+R4(config-line)#line vty 0 4
+R4(config-line)# login
+% Login disabled on line 98, until 'password' is set
+% Login disabled on line 99, until 'password' is set
+% Login disabled on line 100, until 'password' is set
+% Login disabled on line 101, until 'password' is set
+% Login disabled on line 102, until 'password' is set
+R4(config-line)#!
+R4(config-line)#!
+R4(config-line)#end
+R4#
+R4#
+R4#
+R4#
+R4#
+*Mar  1 00:03:07.139: %SYS-5-CONFIG_I: Configured from console by consolewr
+Building configuration...
+[OK]
+R4#show ip int bri
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            10.3.4.4        YES manual administratively down down    
+FastEthernet0/1            10.1.4.4        YES manual administratively down down    
+R4#
+R4#
+R4#
+R4#
+R4#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R4(config)#int fa 0/0
+R4(config-if)#no shut
+R4(config-if)#
+R4(config-if)#
+R4(config-if)#exit
+R4(config)#
+*Mar  1 00:05:43.787: %LINK-3-UPDOWN: Interface FastEthernet0/0, changed state to up
+*Mar  1 00:05:44.787: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to upint fa 0/1
+R4(config-if)#no shut
+R4(config-if)#
+*Mar  1 00:05:47.855: %BGP-5-ADJCHANGE: neighbor 10.3.4.3 Up ^Z
+R4#
+R4#
+R4#
+R4#
+R4#show ip int bri
+*Mar  1 00:05:50.007: %SYS-5-CONFIG_I: Configured from console by console
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            10.3.4.4        YES manual up                    up      
+FastEthernet0/1            10.1.4.4        YES manual up                    up      
+R4#
+*Mar  1 00:05:51.439: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to up
+*Mar  1 00:05:52.439: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+*Mar  1 00:06:11.379: %BGP-5-ADJCHANGE: neighbor 10.1.4.1 Up terminal length 0
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#terminal length 0
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#sh ip b
+BGP table version is 20, local router ID is 10.3.4.4
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*  1.1.1.1/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.2/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.3/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.4/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.5/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.6/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.7.0/30       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.8.0/29       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.9.0/28       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.10.0/27      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.11.0/26      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.12.0/25      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  10.1.2.0/24      10.3.4.3                               0 300 200 ?
+*>                  10.1.4.1                 0             0 100 ?
+r  10.1.4.0/24      10.3.4.3                               0 300 200 100 ?
+r>                  10.1.4.1                 0             0 100 ?
+*> 10.2.3.0/24      10.3.4.3                 0             0 300 ?
+*                   10.1.4.1                               0 100 200 ?
+r  10.3.4.0/24      10.1.4.1                               0 100 200 300 ?
+r>                  10.3.4.3                 0             0 300 ?
+R4#wr
+Building configuration...
+[OK]
+R4#
+R4#
+R4#terminal length 0
+R4#write
+Building configuration...
+[OK]
+R4#quit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R4 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+R4>
+R4>
+R4>en
+R4#terminal length 0
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#terminal length 0
+R4#show ip b
+BGP table version is 20, local router ID is 10.3.4.4
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*> 1.1.1.1/32       10.1.4.1                 0             0 100 ?
+*> 1.1.1.2/32       10.1.4.1                 0             0 100 ?
+*> 1.1.1.3/32       10.1.4.1                 0             0 100 ?
+*> 1.1.1.4/32       10.1.4.1                 0             0 100 ?
+*> 1.1.1.5/32       10.1.4.1                 0             0 100 ?
+*> 1.1.1.6/32       10.1.4.1                 0             0 100 ?
+*> 1.1.7.0/30       10.1.4.1                 0             0 100 ?
+*> 1.1.8.0/29       10.1.4.1                 0             0 100 ?
+*> 1.1.9.0/28       10.1.4.1                 0             0 100 ?
+*> 1.1.10.0/27      10.1.4.1                 0             0 100 ?
+*> 1.1.11.0/26      10.1.4.1                 0             0 100 ?
+*> 1.1.12.0/25      10.1.4.1                 0             0 100 ?
+*  10.1.2.0/24      10.3.4.3                               0 300 200 ?
+*>                  10.1.4.1                 0             0 100 ?
+r> 10.1.4.0/24      10.1.4.1                 0             0 100 ?
+*  10.2.3.0/24      10.1.4.1                               0 100 200 ?
+*>                  10.3.4.3                 0             0 300 ?
+r> 10.3.4.0/24      10.3.4.3                 0             0 300 ?
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#clear ip b
+R4#clear ip bgp ?
+  *                Clear all peers
+  <1-65535>        Clear peers with the AS number
+  A.B.C.D          BGP neighbor address to clear
+  X:X:X:X::X       BGP neighbor address to clear
+  all              All address families
+  dampening        Clear route flap dampening information
+  external         Clear all external peers
+  flap-statistics  Clear route flap statistics
+  ipv4             Address family
+  ipv6             Address family
+  nsap             Address family
+  peer-group       Clear all members of peer-group
+  table-map        Update BGP table-map configuration
+  vpnv4            Address family
+
+R4#clear ip bgp * ?
+  all    All address families
+  in     Soft reconfig inbound updates
+  ipv4   Address family
+  ipv6   Address family
+  nsap   Address family
+  out    Soft reconfig outbound updates
+  soft   Soft reconfig inbound and outbound updates
+  vpnv4  Address family
+  <cr>
+
+R4#clear ip bgp * 
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+*Mar  1 00:10:54.423: %BGP-5-ADJCHANGE: neighbor 10.1.4.1 Down User reset
+*Mar  1 00:10:54.427: %BGP-5-ADJCHANGE: neighbor 10.3.4.3 Down User reset
+*Mar  1 00:10:55.291: %BGP-5-ADJCHANGE: neighbor 10.1.4.1 Up 
+R4#
+R4#
+R4#
+R4#
+*Mar  1 00:10:57.023: %BGP-5-ADJCHANGE: neighbor 10.3.4.3 Up 
+R4#
+R4#
+R4#
+R4#show ip b
+
+R4#show ip b
+
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#show ip b
+
+R4#show bgp ipv4 unicast summary
+BGP router identifier 10.3.4.4, local AS number 400
+BGP table version is 19, main routing table version 19
+16 network entries using 1920 bytes of memory
+32 path entries using 1664 bytes of memory
+7/2 BGP path/bestpath attribute entries using 868 bytes of memory
+6 BGP AS-PATH entries using 144 bytes of memory
+0 BGP route-map cache entries using 0 bytes of memory
+0 BGP filter-list cache entries using 0 bytes of memory
+Bitfield cache entries: current 1 (at peak 1) using 32 bytes of memory
+BGP using 4628 total bytes of memory
+BGP activity 32/16 prefixes, 66/34 paths, scan interval 60 secs
+
+Neighbor        V    AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+10.1.4.1        4   100      19      16       19    0    0 00:00:31       16
+10.3.4.3        4   300      20      17       19    0    0 00:00:29       16
+R4#show bgp ipv4 unicast 
+BGP table version is 19, local router ID is 10.3.4.4
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*  1.1.1.1/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.2/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.3/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.4/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.5/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.1.6/32       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.7.0/30       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.8.0/29       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.9.0/28       10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.10.0/27      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.11.0/26      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  1.1.12.0/25      10.3.4.3                               0 300 200 100 ?
+*>                  10.1.4.1                 0             0 100 ?
+*  10.1.2.0/24      10.3.4.3                               0 300 200 ?
+*>                  10.1.4.1                 0             0 100 ?
+r  10.1.4.0/24      10.3.4.3                               0 300 200 100 ?
+r>                  10.1.4.1                 0             0 100 ?
+*> 10.2.3.0/24      10.3.4.3                 0             0 300 ?
+*                   10.1.4.1                               0 100 200 ?
+r> 10.3.4.0/24      10.3.4.3                 0             0 300 ?
+r                   10.1.4.1                               0 100 200 300 ?
+R4#
+R4#
+R4#
+R4#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R4(config)#router bgp 400
+R4(config-router)#no redistribute connected 
+R4(config-router)#^Z
+R4#wr
+Building configuration...
+
+*Mar  1 00:17:13.663: %SYS-5-CONFIG_I: Configured from console by console[OK]
+R4#
+R4#
+R4#
+R4#
+R4#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R4(config)#router bgp 400
+R4(config-router)#netwrok 10.0.0.0
+                      ^
+% Invalid input detected at '^' marker.
+
+R4(config-router)#^Z
+R4#
+R4#
+R4#
+R4#
+R4#
+*Mar  1 00:18:36.663: %SYS-5-CONFIG_I: Configured from console by consoleconf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R4(config)#router bgp 400
+R4(config-router)#network 10.0.0.0
+R4(config-router)#^Z
+R4#
+R4#
+R4#wr
+Building configuration...
+[OK]
+R4#
+*Mar  1 00:18:53.463: %SYS-5-CONFIG_I: Configured from console by console
+R4#
+R4#
+R4#
+R4#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R4(config)#router bgp 400
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#no network 10.0.0.0
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#net
+R4(config-router)#network 10.3.4.0 ma
+R4(config-router)#network 10.3.4.0 mask 255.255.255.0
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#network 10.1.4.0 mask 255.255.255.0
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#^Z
+R4#
+R4#
+R4#
+R4#sh
+*Mar  1 00:23:47.499: %SYS-5-CONFIG_I: Configured from console by conso   
+R4#
+R4#
+R4#
+R4#sh ip b
+BGP table version is 61, local router ID is 10.3.4.4
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*  10.1.2.0/24      10.3.4.3                               0 300 200 i
+*>                  10.1.4.1                 0             0 100 i
+*> 10.1.4.0/24      0.0.0.0                  0         32768 i
+*                   10.3.4.3                               0 300 200 100 i
+*                   10.1.4.1                 0             0 100 i
+*> 10.2.3.0/24      10.3.4.3                 0             0 300 i
+*                   10.1.4.1                               0 100 200 i
+*> 10.3.4.0/24      0.0.0.0                  0         32768 i
+*                   10.3.4.3                 0             0 300 i
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#show ip b
+BGP table version is 73, local router ID is 10.3.4.4
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*  1.1.1.1/32       10.3.4.3                               0 300 200 100 i
+*>                  10.1.4.1                 0             0 100 i
+*  1.1.1.2/32       10.3.4.3                               0 300 200 100 i
+*>                  10.1.4.1                 0             0 100 i
+*  1.1.1.3/32       10.3.4.3                               0 300 200 100 i
+*>                  10.1.4.1                 0             0 100 i
+*  1.1.1.4/32       10.3.4.3                               0 300 200 100 i
+*>                  10.1.4.1                 0             0 100 i
+*  1.1.1.5/32       10.3.4.3                               0 300 200 100 i
+*>                  10.1.4.1                 0             0 100 i
+*  1.1.1.6/32       10.3.4.3                               0 300 200 100 i
+*>                  10.1.4.1                 0             0 100 i
+*  1.1.7.0/30       10.3.4.3                               0 300 200 100 i
+*>                  10.1.4.1                 0             0 100 i
+*  1.1.8.0/29       10.3.4.3                               0 300 200 100 i
+*>                  10.1.4.1                 0             0 100 i
+*  1.1.9.0/28       10.3.4.3                               0 300 200 100 i
+*>                  10.1.4.1                 0             0 100 i
+*  1.1.10.0/27      10.3.4.3                               0 300 200 100 i
+*>                  10.1.4.1                 0             0 100 i
+*  1.1.11.0/26      10.3.4.3                               0 300 200 100 i
+*>                  10.1.4.1                 0             0 100 i
+*  1.1.12.0/25      10.3.4.3                               0 300 200 100 i
+*>                  10.1.4.1                 0             0 100 i
+*  10.1.2.0/24      10.3.4.3                               0 300 200 i
+*>                  10.1.4.1                 0             0 100 i
+*> 10.1.4.0/24      0.0.0.0                  0         32768 i
+*                   10.1.4.1                 0             0 100 i
+*> 10.2.3.0/24      10.3.4.3                 0             0 300 i
+*                   10.1.4.1                               0 100 200 i
+*> 10.3.4.0/24      0.0.0.0                  0         32768 i
+*                   10.3.4.3                 0             0 300 i
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#wr
+Building configuration...
+[OK]
+Connected to Dynamips VM "R4" (ID 4, type c3725) - Console port
+Press ENTER to get the prompt.
+1.4.0 mask 255.255.255.0
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#
+R4(config-router)#^Z
+R4#
+R4#
+R4#
+R4#sh
+*Mar  1 00:23:47.499: %SYS-5-CONFIG_I: Configured from console by conso   
+R4#
+R4#
+R4#
+R4#sh ip b
+BGP table version is 61, local router ID is 10.3.4.4
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*  10.1.2.0/24      10.3.4.3                               0 300 200 i
+*>                  10.1.4.1                 0             0 100 i
+*> 10.1.4.0/24      0.0.0.0                  0         32768 i
+*                   10.3.4.3                               0 300 200 100 i
+*                   10.1.4.1                 0             0 100 i
+*> 10.2.3.0/24      10.3.4.3                 0             0 300 i
+*                   10.1.4.1                               0 100 200 i
+*> 10.3.4.0/24      0.0.0.0                  0         32768 i
+*                   10.3.4.3                 0             0 300 i
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#show ip b
+BGP table version is 73, local router ID is 10.3.4.4
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*  1.1.1.1/32       10.3.4.3                               0 300 200 100 i
+*>                  10.1.4.1                 0             0 100 i
+*  1.1.1.2/32       10.3.4.3                               0 300 200 100 i
+*>                  10.1.4.1                 0             0 100 i
+*  1.1.1.3/32       10.3.4.3                               0 300 200 100 i
+*>                  10.1.4.1                 0             0 100 i
+*  1.1.1.4/32       10.3.4.3                               0 300 200 100 i
+*>                  10.1.4.1                 0             0 100 i
+*  1.1.1.5/32       10.3.4.3                               0 300 200 100 i
+*>                  10.1.4.1                 0             0 100 i
+*  1.1.1.6/32       10.3.4.3                               0 300 200 100 i
+*>                  10.1.4.1                 0             0 100 i
+*  1.1.7.0/30       10.3.4.3                               0 300 200 100 i
+*>                  10.1.4.1                 0             0 100 i
+*  1.1.8.0/29       10.3.4.3                               0 300 200 100 i
+*>                  10.1.4.1                 0             0 100 i
+*  1.1.9.0/28       10.3.4.3                               0 300 200 100 i
+*>                  10.1.4.1                 0             0 100 i
+*  1.1.10.0/27      10.3.4.3                               0 300 200 100 i
+*>                  10.1.4.1                 0             0 100 i
+*  1.1.11.0/26      10.3.4.3                               0 300 200 100 i
+*>                  10.1.4.1                 0             0 100 i
+*  1.1.12.0/25      10.3.4.3                               0 300 200 100 i
+*>                  10.1.4.1                 0             0 100 i
+*  10.1.2.0/24      10.3.4.3                               0 300 200 i
+*>                  10.1.4.1                 0             0 100 i
+*> 10.1.4.0/24      0.0.0.0                  0         32768 i
+*                   10.1.4.1                 0             0 100 i
+*> 10.2.3.0/24      10.3.4.3                 0             0 300 i
+*                   10.1.4.1                               0 100 200 i
+*> 10.3.4.0/24      0.0.0.0                  0         32768 i
+*                   10.3.4.3                 0             0 300 i
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#
+R4#wr
+Building configuration...
+[OK]
+R4#
+R4#
+R4#
+R4#
+R4#

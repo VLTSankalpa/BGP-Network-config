@@ -1,0 +1,56 @@
+hostname R16
+!
+no ip domain lookup
+!
+router isis 1
+ net 04.0000.0000.0016.00
+exit
+!
+interface Loopback0
+ ip address 16.16.16.1 255.255.255.0
+ ip router isis 1
+!
+interface FastEthernet0/0
+ ip address 10.15.16.16 255.255.255.0
+ no shut
+ ip router isis 1
+!
+interface FastEthernet1/0
+ ip address 10.16.17.16 255.255.255.0
+ no shut
+ ip router isis 1
+!
+line con 0
+ no exec-timeout 0
+!
+router isis 1
+ passive-interface Loopback0
+is-type level-1
+exit
+!
+router bgp 65004
+ template peer-policy IBGP_RR
+  next-hop-self
+  send-community
+ exit-peer-policy
+ !
+ template peer-session IBGP
+  remote-as 65004
+  update-source Loopback0
+ exit-peer-session
+ !
+ bgp router-id 16.16.16.1
+ bgp cluster-id 65004
+ bgp log-neighbor-changes
+ bgp confederation identifier 123
+ neighbor 13.13.13.1 inherit peer-session IBGP
+ neighbor 14.14.14.1 inherit peer-session IBGP
+ !
+ address-family ipv4
+  neighbor 13.13.13.1 activate
+  neighbor 13.13.13.1 inherit peer-policy IBGP_RR
+  neighbor 14.14.14.1 activate
+  neighbor 14.14.14.1 inherit peer-policy IBGP_RR
+  no auto-summary
+  no synchronization
+ exit-address-family

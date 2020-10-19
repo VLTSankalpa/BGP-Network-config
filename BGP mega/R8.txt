@@ -1,0 +1,59 @@
+hostname R8
+!
+no ip domain lookup
+!
+router isis 1
+ net 02.0000.0000.0008.00
+exit
+!
+interface Loopback0
+ ip address 8.8.8.1 255.255.255.0
+ ip router isis 1
+!
+interface FastEthernet0/0
+ ip address 10.7.8.8 255.255.255.0
+ no shut
+ ip router isis 1
+!
+interface FastEthernet1/0
+ ip address 10.8.9.8 255.255.255.0
+ no shut
+ ip router isis 1
+!
+interface FastEthernet2/0
+ ip address 10.8.21.8 255.255.255.0
+ no shut
+!
+line con 0
+ no exec-timeout 0
+!
+router isis 1
+ passive-interface Loopback0
+is-type level-1
+exit
+!
+router bgp 65002
+ template peer-policy IBGP_RR
+  next-hop-self
+  send-community
+ exit-peer-policy
+ !
+ template peer-session IBGP
+  remote-as 65002
+  update-source Loopback0
+ exit-peer-session
+ !
+ bgp router-id 8.8.8.1
+ bgp log-neighbor-changes
+ bgp confederation identifier 123
+ neighbor 7.7.7.1 inherit peer-session IBGP
+ neighbor 10.8.21.21 remote-as 100
+ neighbor 10.8.21.21 next-hop-self
+ neighbor 10.8.21.21 send-community
+ !
+ address-family ipv4
+  neighbor 7.7.7.1 activate
+  neighbor 7.7.7.1 inherit peer-policy IBGP_RR
+  no auto-summary
+  no synchronization
+ exit-address-family

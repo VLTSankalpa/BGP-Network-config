@@ -1,0 +1,6404 @@
+﻿Connected to Dynamips VM "R1" (ID 1, type c3725) - Console port
+Press ENTER to get the prompt.
+ROMMON emulation microcode.
+
+                           Launching IOS image at 0x80008000...
+
+                                                               Smart Init is disabled. IOMEM set to: 5  
+
+                                                                                                        Using iomem percentage: 5
+
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software, 3700 Software (C3725-ADVENTERPRISEK9-M), Version 12.4(15)T7, RELEASE SOFTWARE (fc3)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2008 by Cisco Systems, Inc.
+Compiled Wed 13-Aug-08 21:36 by prod_rel_team
+Image text-base: 0x60008930, data-base: 0x63652000
+
+
+Original NVCONFIG doesnt have correct MAGIC number
+
+Backup NVCONFIG also doesnt have correct MAGIC number
+
+ BIST FAILED...
+Unknown file system detected.
+Use format command to format the card as DOS File System.
+Or use erase command to format the card as Low End File System.
+
+Unknown file system detected.
+Use format command to format the card as DOS File System.
+Or use erase command to format the card as Low End File System.
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+Cisco 3725 (R7000) processor (revision 0.1) with 249856K/12288K bytes of memory.
+Processor board ID FTX0945W0MY
+R7000 CPU at 240MHz, Implementation 39, Rev 2.1, 256KB L2, 512KB L3 Cache
+18 FastEthernet interfaces
+DRAM configuration is 64 bits wide with parity enabled.
+55K bytes of NVRAM.
+131072K bytes of ATA System CompactFlash (Read/Write)
+131072K bytes of ATA Slot0 CompactFlash (Read/Write)
+
+
+         --- System Configuration Dialog ---
+
+Would you like to enter the initial configuration dialog? [yes/no]: Installed image archive
+
+% Please answer 'yes' or 'no'.
+Would you like to enter the initial configuration dialog? [yes/no]: no
+
+
+Press RETURN to get started!
+
+
+*Mar  1 00:00:03.919: %LINEPROTO-5-UPDOWN: Line protocol on Interface VoIP-Null0, changed state to up
+*Mar  1 00:00:03.923: %LINEPROTO-5-UPDOWN: Line protocol on Interface IPv6-mpls, changed state to up
+*Mar  1 00:00:03.927: %LINK-3-UPDOWN: Interface FastEthernet1/0, changed state to down
+*Mar  1 00:00:03.931: %LINK-3-UPDOWN: Interface FastEthernet1/1, changed state to down
+*Mar  1 00:00:03.931: %LINK-3-UPDOWN: Interface FastEthernet1/2, changed state to down
+*Mar  1 00:00:03.935: %LINK-3-UPDOWN: Interface FastEthernet1/3, changed state to down
+*Mar  1 00:00:03.935: %LINK-3-UPDOWN: Interface FastEthernet1/4, changed state to down
+*Mar  1 00:00:03.935: %LINK-3-UPDOWN: Interface FastEthernet1/5, changed state to down
+*Mar  1 00:00:03.939: %LINK-3-UPDOWN: Interface FastEthernet1/6, changed state to down
+*Mar  1 00:00:03.939: %LINK-3-UPDOWN: Interface FastEthernet1/7, changed state to down
+*Mar  1 00:00:03.943: %LINK-3-UPDOWN: Interface FastEthernet1/8, changed state to down
+
+Router>
+Route*Mar  1 00:00:03.943: %LINK-3-UPDOWN: Interface FastEthernet1/9, changed state to down
+*Mar  1 00:00:03.947: %LINK-3-UPDOWN: Interface FastEthernet1/10, changed state to down
+*Mar  1 00:00:03.947: %LINK-3-UPDOWN: Interface FastEthernet1/11, changed state to down
+*Mar  1 00:00:03.951: %LINK-3-UPDOWN: Interface FastEthernet1/12, changed state to down
+*Mar  1 00:00:03.951: %LINK-3-UPDOWN: Interface FastEthernet1/13, changed state to down
+*Mar  1 00:00:03.955: %LINK-3-UPDOWN: Interface FastEthernet1/14, changed state to down
+*Mar  1 00:00:03.955: %LINK-3-UPDOWN: Interface FastEthernet1/15, changed state to down
+*Mar  1 00:00:04.927: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/0, changed state to down
+*Mar  1 00:00:04.931: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/1, changed state to down
+*Mar  1 00:00:04.931: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/2, changed state to down
+*Mar  1 00:00:04.935: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/3, changed state to down
+*Mar  1 00:00:04.935: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/4, changed state to down
+*Mar  1 00:00:04.935: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/5, changed state to down
+*Mar  1 00:00:04.939: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/6, changed state to down
+*Mar  1 00:00:04.939: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/7, changed state to down
+*Mar  1 00:00:04.943: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/8, changed state to down
+*Mar  1 00:00:04.943: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/9, changed state to down
+*Mar  1 00:02:27.843: %LINK-5-CHANGED: Interface FastEthernet0/0, changed state to administratively down
+*Mar  1 00:02:27.959: %SYS-5-RESTART: System restarted --
+Cisco IOS Software, 3700 Software (C3725-ADVENTERPRISEK9-M), Version 12.4(15)T7, RELEASE SOFTWARE (fc3)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2008 by Cisco Systems, Inc.
+Compiled Wed 13-Aug-08 21:36 by prod_rel_team
+*Mar  1 00:02:27.975: %SNMP-5-COLDSTART: SNMP agent on host Router is undergoing a cold start
+*Mar  1 00:02:28.019: %LINK-5-CHANGED: Interface FastEthernet0/1, changed state to administratively down
+*Mar  1 00:02:28.035: %CRYPTO-6-ISAKMP_ON_OFF: ISAKMP is OFF
+*Mar  1 00:02:28.035: %CRYPTO-6-GDOI_ON_OFF: GDOI is OFF
+*Mar  1 00:02:28.731: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to up
+*Mar  1 00:02:28.843: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to down
+*Mar  1 00:02:29.019: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to down
+*Mar  1 00:02:30.503: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/15, changed state to up
+*Mar  1 00:02:30.511: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/14, changed state to up
+*Mar  1 00:02:30.515: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/13, changed state to up
+*Mar  1 00:02:30.515: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/12, changed state to up
+*Mar  1 00:02:30.515: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/11, changed state to up
+*Mar  1 00:02:30.519: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/10, changed state to up
+*Mar  1 00:02:30.519: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/9, changed state to up
+*Mar  1 00:02:30.519: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/8, changed state to up
+*Mar  1 00:02:30.523: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/7, changed state to up
+*Mar  1 00:02:30.523: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/6, changed state to upr>
+Router>
+Router>
+Router>
+Router>
+Router>
+Router>
+Router>
+Router>
+Router>en
+Router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#hos
+Router(config)#hostname R1
+R1(config)#
+R1(config)#
+R1(config)#
+R1(config)#
+R1(config)#
+R1(config)#
+R1(config)#
+R1(config)#
+R1(config)#
+R1(config)#line con 0
+R1(config-line)#no exec
+R1(config-line)#no exec-t
+R1(config-line)#no exec-timeout 0
+R1(config-line)#
+R1(config-line)#
+R1(config-line)#
+R1(config-line)#
+R1(config-line)#
+R1(config-line)#
+R1(config-line)#exiy
+                   ^
+% Invalid input detected at '^' marker.
+
+R1(config-line)#exit
+R1(config)#no ip domain lookup
+R1(config)#
+R1(config)#
+R1(config)#do wr
+Building configuration...
+[OK]
+R1(config)#
+R1(config)#
+R1(config)#
+R1(config)#
+R1(config)#
+R1(config)#do show inter bri
+R1(config)#do show inter bri
+show inter bri
+           ^
+% Invalid input detected at '^' marker.
+
+R1(config)#do show inter bir
+show inter bir
+           ^
+% Invalid input detected at '^' marker.
+
+R1(config)#
+R1(config)#
+R1(config)#
+R1(config)#
+R1(config)#^Z
+R1#show i
+*Mar  1 00:08:07.403: %SYS-5-CONFIG_I: Configured from console by consolen
+R1#show in
+R1#show inter
+R1#show interfaces bri
+R1#show interfaces bri
+R1#show interfaces bri
+                   ^
+% Invalid input detected at '^' marker.
+
+R1#
+R1#
+R1#show inte 
+R1#show interfaces des
+R1#show interfaces description 
+Interface                      Status         Protocol Description
+Fa0/0                          admin down     down     
+Fa0/1                          admin down     down     
+Fa1/0                          up             up       
+Fa1/1                          up             up       
+Fa1/2                          up             up       
+Fa1/3                          up             up       
+Fa1/4                          up             up       
+Fa1/5                          up             up       
+Fa1/6                          up             up       
+Fa1/7                          up             up       
+Fa1/8                          up             up       
+Fa1/9                          up             up       
+Fa1/10                         up             up       
+Fa1/11                         up             up       
+Fa1/12                         up             up       
+Fa1/13                         up             up       
+Fa1/14                         up             up       
+Fa1/15                         up             up       
+Vl1                            up             up       
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#show ip int bri
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            unassigned      YES unset  administratively down down    
+FastEthernet0/1            unassigned      YES unset  administratively down down    
+FastEthernet1/0            unassigned      YES unset  up                    up      
+FastEthernet1/1            unassigned      YES unset  up                    up      
+FastEthernet1/2            unassigned      YES unset  up                    up      
+FastEthernet1/3            unassigned      YES unset  up                    up      
+FastEthernet1/4            unassigned      YES unset  up                    up      
+FastEthernet1/5            unassigned      YES unset  up                    up      
+FastEthernet1/6            unassigned      YES unset  up                    up      
+FastEthernet1/7            unassigned      YES unset  up                    up      
+FastEthernet1/8            unassigned      YES unset  up                    up      
+FastEthernet1/9            unassigned      YES unset  up                    up      
+FastEthernet1/10           unassigned      YES unset  up                    up      
+FastEthernet1/11           unassigned      YES unset  up                    up      
+FastEthernet1/12           unassigned      YES unset  up                    up      
+FastEthernet1/13           unassigned      YES unset  up                    up      
+FastEthernet1/14           unassigned      YES unset  up                    up      
+FastEthernet1/15           unassigned      YES unset  up                    up      
+Vlan1                      unassigned      YES unset  up                    up      
+R1#
+R1#
+R1#
+R1#term
+R1#terminal le
+R1#terminal length 0
+R1#
+R1#
+R1#
+R1#
+R1#show ip int bri  
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            unassigned      YES unset  administratively down down    
+FastEthernet0/1            unassigned      YES unset  administratively down down    
+FastEthernet1/0            unassigned      YES unset  up                    up      
+FastEthernet1/1            unassigned      YES unset  up                    up      
+FastEthernet1/2            unassigned      YES unset  up                    up      
+FastEthernet1/3            unassigned      YES unset  up                    up      
+FastEthernet1/4            unassigned      YES unset  up                    up      
+FastEthernet1/5            unassigned      YES unset  up                    up      
+FastEthernet1/6            unassigned      YES unset  up                    up      
+FastEthernet1/7            unassigned      YES unset  up                    up      
+FastEthernet1/8            unassigned      YES unset  up                    up      
+FastEthernet1/9            unassigned      YES unset  up                    up      
+FastEthernet1/10           unassigned      YES unset  up                    up      
+FastEthernet1/11           unassigned      YES unset  up                    up      
+FastEthernet1/12           unassigned      YES unset  up                    up      
+FastEthernet1/13           unassigned      YES unset  up                    up      
+FastEthernet1/14           unassigned      YES unset  up                    up      
+FastEthernet1/15           unassigned      YES unset  up                    up      
+Vlan1                      unassigned      YES unset  up                    up      
+R1#
+R1#
+R1#
+R1#
+R1#wr
+Building configuration...
+[OK]
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#show cd
+R1#show cdp nei
+R1#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater
+
+Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#in
+R1(config)#interface fas
+R1(config)#interface fastEthernet 0/0
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#ip add
+R1(config-if)#ip address 10.1.2.1 255.255.255.0
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#no shut
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+*Mar  1 00:11:59.807: %LINK-3-UPDOWN: Interface FastEthernet0/0, changed state to up
+*Mar  1 00:12:00.807: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#exit
+R1(config)#interface fastEthernet 0/1       
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#ip address 10.1.4.1 255.255.255.0
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#no shut
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#^Z
+R1#
+R1#
+R1#
+R1#
+*Mar  1 00:12:29.883: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to up
+R1#wr
+Building configuration...
+
+*Mar  1 00:12:30.443: %SYS-5-CONFIG_I: Configured from console by console
+*Mar  1 00:12:30.883: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up[OK]
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#show run 
+Building configuration...
+
+Current configuration : 1216 bytes
+!
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no aaa new-model
+memory-size iomem 5
+ip cef
+!
+!
+!
+!
+no ip domain lookup
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+archive
+ log config
+  hidekeys
+! 
+!
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ ip address 10.1.2.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ ip address 10.1.4.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet1/0
+!
+interface FastEthernet1/1
+!
+interface FastEthernet1/2
+!
+interface FastEthernet1/3
+!
+interface FastEthernet1/4
+!
+interface FastEthernet1/5
+!
+interface FastEthernet1/6
+!
+interface FastEthernet1/7
+!
+interface FastEthernet1/8
+!
+interface FastEthernet1/9
+!
+interface FastEthernet1/10
+!
+interface FastEthernet1/11
+!
+interface FastEthernet1/12
+!
+interface FastEthernet1/13
+!
+interface FastEthernet1/14
+!
+interface FastEthernet1/15
+!
+interface Vlan1
+ no ip address
+!
+ip forward-protocol nd
+!
+!
+ip http server
+no ip http secure-server
+!
+!
+!
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ exec-timeout 0 0
+line aux 0
+line vty 0 4
+!
+!
+end
+
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater
+
+Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
+R2               Fas 0/0            149         R S I     3725      Fas 0/0
+R1#
+R1#
+R1#
+R1#sh ip int bri
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            10.1.2.1        YES manual up                    up      
+FastEthernet0/1            10.1.4.1        YES manual up                    up      
+FastEthernet1/0            unassigned      YES unset  up                    up      
+FastEthernet1/1            unassigned      YES unset  up                    up      
+FastEthernet1/2            unassigned      YES unset  up                    up      
+FastEthernet1/3            unassigned      YES unset  up                    up      
+FastEthernet1/4            unassigned      YES unset  up                    up      
+FastEthernet1/5            unassigned      YES unset  up                    up      
+FastEthernet1/6            unassigned      YES unset  up                    up      
+FastEthernet1/7            unassigned      YES unset  up                    up      
+FastEthernet1/8            unassigned      YES unset  up                    up      
+FastEthernet1/9            unassigned      YES unset  up                    up      
+FastEthernet1/10           unassigned      YES unset  up                    up      
+FastEthernet1/11           unassigned      YES unset  up                    up      
+FastEthernet1/12           unassigned      YES unset  up                    up      
+FastEthernet1/13           unassigned      YES unset  up                    up      
+FastEthernet1/14           unassigned      YES unset  up                    up      
+FastEthernet1/15           unassigned      YES unset  up                    up      
+Vlan1                      unassigned      YES unset  up                    up      
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater
+
+Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
+R2               Fas 0/0            147         R S I     3725      Fas 0/0
+R4               Fas 0/1            134         R S I     3725      Fas 0/1
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#wr
+Building configuration...
+[OK]
+R1#
+R1#
+R1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#in
+R1(config)#interface lo
+R1(config)#interface loopback 1
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+*Mar  1 00:21:39.699: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback1, changed state to up
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#ip add
+R1(config-if)#ip address 1.1.1.1 255.255.255.255 
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#exit
+R1(config)#interface loopback 2              
+R1(config-if)#ip address 1.1.1.1 255.255.255.255
+*Mar  1 00:22:21.535: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback2, changed state to up
+R1(config-if)#ip address 1.1.1.1 255.255.255.255
+R1(config-if)#ip address 1.1.1.1 255.255.255.255
+R1(config-if)#ip address 1.1.1.1 255.255.255.255
+R1(config-if)#ip address 1.1.1.2 255.255.255.255
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#exit
+R1(config)#interface loopback 3              
+R1(config-if)#exit                
+*Mar  1 00:22:39.127: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback3, changed state tip address 1.1.1.2 255.255.255.255
+R1(config-if)#ip address 1.1.1.2 255.255.255.255
+R1(config-if)#ip address 1.1.1.2 255.255.255.255
+R1(config-if)#ip address 1.1.1.2 255.255.255.255
+R1(config-if)#ip address 1.1.1.3 255.255.255.255
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#^Z
+R1#
+R1#
+R1#
+R1#
+R1#s
+*Mar  1 00:22:49.199: %SYS-5-CONFIG_I: Configured from console by consol    
+R1#
+R1#
+R1#
+R1#
+R1#sh ip int bri
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            10.1.2.1        YES manual up                    up      
+FastEthernet0/1            10.1.4.1        YES manual up                    up      
+FastEthernet1/0            unassigned      YES unset  up                    up      
+FastEthernet1/1            unassigned      YES unset  up                    up      
+FastEthernet1/2            unassigned      YES unset  up                    up      
+FastEthernet1/3            unassigned      YES unset  up                    up      
+FastEthernet1/4            unassigned      YES unset  up                    up      
+FastEthernet1/5            unassigned      YES unset  up                    up      
+FastEthernet1/6            unassigned      YES unset  up                    up      
+FastEthernet1/7            unassigned      YES unset  up                    up      
+FastEthernet1/8            unassigned      YES unset  up                    up      
+FastEthernet1/9            unassigned      YES unset  up                    up      
+FastEthernet1/10           unassigned      YES unset  up                    up      
+FastEthernet1/11           unassigned      YES unset  up                    up      
+FastEthernet1/12           unassigned      YES unset  up                    up      
+FastEthernet1/13           unassigned      YES unset  up                    up      
+FastEthernet1/14           unassigned      YES unset  up                    up      
+FastEthernet1/15           unassigned      YES unset  up                    up      
+Vlan1                      unassigned      YES unset  up                    up      
+Loopback1                  1.1.1.1         YES manual up                    up      
+Loopback2                  1.1.1.2         YES manual up                    up      
+Loopback3                  1.1.1.3         YES manual up                    up      
+R1#sh run in
+R1#sh run interface 
+% Incomplete command.
+
+R1#sho run in
+R1#sho run interface ?
+  Async              Async interface
+  BVI                Bridge-Group Virtual Interface
+  CDMA-Ix            CDMA Ix interface
+  CTunnel            CTunnel interface
+  Dialer             Dialer interface
+  FastEthernet       FastEthernet IEEE 802.3
+  Group-Async        Async Group interface
+  Lex                Lex interface
+  Loopback           Loopback interface
+  MFR                Multilink Frame Relay bundle interface
+  Multilink          Multilink-group interface
+  Null               Null interface
+  Port-channel       Ethernet Channel of interfaces
+  Tunnel             Tunnel interface
+  Vif                PGM Multicast Host interface
+  Virtual-PPP        Virtual PPP interface
+  Virtual-Template   Virtual Template interface
+  Virtual-TokenRing  Virtual TokenRing
+  Vlan               Vlan IEEE 802.1q
+  XTagATM            Extended Tag ATM interface
+  vmi                Virtual Multipoint Interface
+
+R1#sho run interface lo
+R1#sho run interface loopback 
+% Incomplete command.
+
+R1#
+R1#
+R1#
+R1#sh run
+Building configuration...
+
+Current configuration : 1390 bytes
+!
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no aaa new-model
+memory-size iomem 5
+ip cef
+!
+!
+!
+!
+no ip domain lookup
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+archive
+ log config
+  hidekeys
+! 
+!
+!
+!
+!
+!
+!
+!
+interface Loopback1
+ ip address 1.1.1.1 255.255.255.255
+!
+interface Loopback2
+ ip address 1.1.1.2 255.255.255.255
+!
+interface Loopback3
+ ip address 1.1.1.3 255.255.255.255
+!
+interface FastEthernet0/0
+ ip address 10.1.2.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ ip address 10.1.4.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet1/0
+!
+interface FastEthernet1/1
+!
+interface FastEthernet1/2
+!
+interface FastEthernet1/3
+!
+interface FastEthernet1/4
+!
+interface FastEthernet1/5
+!
+interface FastEthernet1/6
+!
+interface FastEthernet1/7
+!
+interface FastEthernet1/8
+!
+interface FastEthernet1/9
+!
+interface FastEthernet1/10
+!
+interface FastEthernet1/11
+!
+interface FastEthernet1/12
+!
+interface FastEthernet1/13
+!
+interface FastEthernet1/14
+!
+interface FastEthernet1/15
+!
+interface Vlan1
+ no ip address
+!
+ip forward-protocol nd
+!
+!
+ip http server
+no ip http secure-server
+!
+!
+!
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ exec-timeout 0 0
+line aux 0
+line vty 0 4
+!
+!
+end
+
+R1#
+R1#
+R1#
+R1#
+R1#c   
+% Ambiguous command:  "c   "
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#interface Loopback4
+R1(config-if)# ip address 1.1.1.4 255.255.255.255
+R1(config-if)#!
+R1(config-if)#interface Loopback5
+R1(config-if)# ip address 1.1.1.5 255.255.255.255
+R1(config-if)#!
+R1(config-if)#interface Loopback6
+R1(config-if)# ip address 1.1.1.6 255.255.255.255
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+*Mar  1 00:24:32.983: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback4, changed state to up
+*Mar  1 00:24:33.255: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback5, changed state to up
+*Mar  1 00:24:33.303: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback6, changed state to up
+R1(config-if)#^Z
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+*Mar  1 00:24:34.939: %SYS-5-CONFIG_I: Configured from console by console       
+R1#
+R1#
+R1#
+R1#
+R1#sh ip int bri
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            10.1.2.1        YES manual up                    up      
+FastEthernet0/1            10.1.4.1        YES manual up                    up      
+FastEthernet1/0            unassigned      YES unset  up                    up      
+FastEthernet1/1            unassigned      YES unset  up                    up      
+FastEthernet1/2            unassigned      YES unset  up                    up      
+FastEthernet1/3            unassigned      YES unset  up                    up      
+FastEthernet1/4            unassigned      YES unset  up                    up      
+FastEthernet1/5            unassigned      YES unset  up                    up      
+FastEthernet1/6            unassigned      YES unset  up                    up      
+FastEthernet1/7            unassigned      YES unset  up                    up      
+FastEthernet1/8            unassigned      YES unset  up                    up      
+FastEthernet1/9            unassigned      YES unset  up                    up      
+FastEthernet1/10           unassigned      YES unset  up                    up      
+FastEthernet1/11           unassigned      YES unset  up                    up      
+FastEthernet1/12           unassigned      YES unset  up                    up      
+FastEthernet1/13           unassigned      YES unset  up                    up      
+FastEthernet1/14           unassigned      YES unset  up                    up      
+FastEthernet1/15           unassigned      YES unset  up                    up      
+Vlan1                      unassigned      YES unset  up                    up      
+Loopback1                  1.1.1.1         YES manual up                    up      
+Loopback2                  1.1.1.2         YES manual up                    up      
+Loopback3                  1.1.1.3         YES manual up                    up      
+Loopback4                  1.1.1.4         YES manual up                    up      
+Loopback5                  1.1.1.5         YES manual up                    up      
+Loopback6                  1.1.1.6         YES manual up                    up      
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#router b
+R1(config)#router bgp 100
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#nei
+R1(config-router)#neighbor 10.1.2.2 re
+R1(config-router)#neighbor 10.1.2.2 remo
+R1(config-router)#neighbor 10.1.2.2 remot
+R1(config-router)#neighbor 10.1.2.2 remote-as 200
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#do       
+*Mar  1 00:27:46.443: %BGP-5-ADJCHANGE: neighbor 10.1.2.2 Up 
+                   ^
+% Invalid input detected at '^' marker.
+
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#nei
+R1(config-router)#neighbor 10.1.4.4 re
+R1(config-router)#neighbor 10.1.4.4 remot
+R1(config-router)#neighbor 10.1.4.4 remote-as 400
+R1(config-router)#
+*Mar  1 00:30:42.475: %BGP-5-ADJCHANGE: neighbor 10.1.4.4 Up 
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#^Z
+R1#
+R1#
+R1#
+R1#
+R1#
+*Mar  1 00:30:50.279: %SYS-5-CONFIG_I: Configured from console by console
+R1#
+R1#
+R1#
+R1#sh ip g
+R1#sh ip bgp
+R1#sh ip bgp 
+
+R1#show ip bgp
+
+R1#show bg
+R1#show bgp ?
+  all    All address families
+  ipv4   Address family
+  ipv6   Address family
+  nsap   Address family
+  vpnv4  Address family
+
+R1#show bgp ip
+R1#show bgp ipv4 ?
+  multicast  Address Family modifier
+  unicast    Address Family modifier
+
+R1#show bgp ipv4 un
+R1#show bgp ipv4 unicast ?
+  A.B.C.D            Network in the BGP routing table to display
+  A.B.C.D/nn         IP prefix <network>/<length>, e.g., 35.0.0.0/8
+  cidr-only          Display only routes with non-natural netmasks
+  community          Display routes matching the communities
+  community-list     Display routes matching the community-list
+  dampening          Display detailed information about dampening
+  extcommunity-list  Display routes matching the extcommunity-list
+  filter-list        Display routes conforming to the filter-list
+  inconsistent-as    Display only routes with inconsistent origin ASs
+  injected-paths     Display all injected paths
+  labels             Display Labels for IPv4 NLRI specific information
+  neighbors          Detailed information on TCP and BGP neighbor connections
+  oer-paths          Display all oer controlled paths
+  paths              Path information
+  peer-group         Display information on peer-groups
+  pending-prefixes   Display prefixes pending deletion
+  prefix-list        Display routes matching the prefix-list
+  quote-regexp       Display routes matching the AS path "regular expression"
+  regexp             Display routes matching the AS path regular expression
+  replication        Display replication status of update-group(s)
+  rib-failure        Display bgp routes that failed to install in the routing
+                     table (RIB)
+  route-map          Display routes matching the route-map
+  summary            Summary of BGP neighbor status
+  template           Display peer-policy/peer-session templates
+  update-group       Display information on update-groups
+  |                  Output modifiers
+  <cr>
+
+R1#show bgp ipv4 unicast su
+R1#show bgp ipv4 unicast summary 
+BGP router identifier 1.1.1.6, local AS number 100
+BGP table version is 1, main routing table version 1
+
+Neighbor        V    AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+10.1.2.2        4   200       7       7        1    0    0 00:04:25        0
+10.1.4.4        4   400       5       5        1    0    0 00:01:29        0
+R1#
+R1#
+R1#
+R1#
+R1#wr
+Building configuration...
+[OK]
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#show ip rou
+R1#show ip route bp
+R1#show ip route bp
+Translating "bp"
+                  ^
+% Invalid input detected at '^' marker.
+
+R1#
+R1#
+R1#
+R1#show bgp ipv4 unicast all     
+                          ^
+% Invalid input detected at '^' marker.
+
+R1#show bgp ipv4 unicast    
+
+R1#
+R1#
+R1#
+R1#
+R1#show bgp ipv4 unicast ?
+  A.B.C.D            Network in the BGP routing table to display
+  A.B.C.D/nn         IP prefix <network>/<length>, e.g., 35.0.0.0/8
+  cidr-only          Display only routes with non-natural netmasks
+  community          Display routes matching the communities
+  community-list     Display routes matching the community-list
+  dampening          Display detailed information about dampening
+  extcommunity-list  Display routes matching the extcommunity-list
+  filter-list        Display routes conforming to the filter-list
+  inconsistent-as    Display only routes with inconsistent origin ASs
+  injected-paths     Display all injected paths
+  labels             Display Labels for IPv4 NLRI specific information
+  neighbors          Detailed information on TCP and BGP neighbor connections
+  oer-paths          Display all oer controlled paths
+  paths              Path information
+  peer-group         Display information on peer-groups
+  pending-prefixes   Display prefixes pending deletion
+  prefix-list        Display routes matching the prefix-list
+  quote-regexp       Display routes matching the AS path "regular expression"
+  regexp             Display routes matching the AS path regular expression
+  replication        Display replication status of update-group(s)
+  rib-failure        Display bgp routes that failed to install in the routing
+                     table (RIB)
+  route-map          Display routes matching the route-map
+  summary            Summary of BGP neighbor status
+  template           Display peer-policy/peer-session templates
+  update-group       Display information on update-groups
+  |                  Output modifiers
+  <cr>
+
+R1#show bgp ipv4 unicast 
+
+R1#show ip bgp
+
+R1#
+R1#
+R1#
+R1#show ip rou
+R1#show ip int bri
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            10.1.2.1        YES manual up                    up      
+FastEthernet0/1            10.1.4.1        YES manual up                    up      
+FastEthernet1/0            unassigned      YES unset  up                    up      
+FastEthernet1/1            unassigned      YES unset  up                    up      
+FastEthernet1/2            unassigned      YES unset  up                    up      
+FastEthernet1/3            unassigned      YES unset  up                    up      
+FastEthernet1/4            unassigned      YES unset  up                    up      
+FastEthernet1/5            unassigned      YES unset  up                    up      
+FastEthernet1/6            unassigned      YES unset  up                    up      
+FastEthernet1/7            unassigned      YES unset  up                    up      
+FastEthernet1/8            unassigned      YES unset  up                    up      
+FastEthernet1/9            unassigned      YES unset  up                    up      
+FastEthernet1/10           unassigned      YES unset  up                    up      
+FastEthernet1/11           unassigned      YES unset  up                    up      
+FastEthernet1/12           unassigned      YES unset  up                    up      
+FastEthernet1/13           unassigned      YES unset  up                    up      
+FastEthernet1/14           unassigned      YES unset  up                    up      
+FastEthernet1/15           unassigned      YES unset  up                    up      
+Vlan1                      unassigned      YES unset  up                    up      
+Loopback1                  1.1.1.1         YES manual up                    up      
+Loopback2                  1.1.1.2         YES manual up                    up      
+Loopback3                  1.1.1.3         YES manual up                    up      
+Loopback4                  1.1.1.4         YES manual up                    up      
+Loopback5                  1.1.1.5         YES manual up                    up      
+Loopback6                  1.1.1.6         YES manual up                    up      
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#interface Loopback7
+R1(config-if)# ip address 1.1.1.7 255.255.255.
+*Mar  1 00:36:24.735: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback7, changed state to up
+R1(config-if)# ip address 1.1.1.7 255.255.255.
+R1(config-if)# ip address 1.1.1.7 255.255.255.
+R1(config-if)# ip address 1.1.1.7 255.255.255.254 ?
+  secondary  Make this IP address a secondary address
+  <cr>
+
+R1(config-if)# ip address 1.1.1.7 255.255.255.252 
+Bad mask /30 for address 1.1.1.7
+R1(config-if)# ip address 1.1.1.9 255.255.255.252
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#exit
+R1(config)#interface Loopback8                
+R1(config-if)# ip address 1.1.1.9 255.255.255.252
+*Mar  1 00:38:04.255: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback8, changed state to up
+R1(config-if)# ip address 1.1.1.9 255.255.255.252
+R1(config-if)#no in                               
+R1(config-if)#no int
+R1(config-if)#in    
+R1(config-if)#inlo
+R1(config-if)#int 
+R1(config-if)#exit
+R1(config)#in
+R1(config)#interface lo
+R1(config)#no interface loopback7
+R1(config)#
+R1(config)#
+R1(config)#
+R1(config)#
+R1(config)#
+*Mar  1 00:39:09.427: %LINK-5-CHANGED: Interface Loopback7, changed state to administratively down
+*Mar  1 00:39:10.427: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback7, changed state to down
+R1(config)#
+R1(config)#
+R1(config)#
+R1(config)#
+R1(config)#in
+R1(config)#interface lo
+R1(config)#interface loopback 7
+R1(config-if)#ip add
+R1(config-if)#ip address 1.1
+*Mar  1 00:39:19.011: %LINK-3-UPDOWN: Interface Loopback7, changed state to up
+*Mar  1 00:39:20.011: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback7, changed state to up.
+R1(config-if)#ip address 1.1.
+R1(config-if)#ip address 1.1.
+R1(config-if)#ip address 1.1.
+R1(config-if)#ip address 1.1.7.1 255.255.255.252
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#exit
+R1(config)#interface loopback 8              
+R1(config-if)#ip address 1.1.8.1 255.255.255.248
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#exit
+R1(config)#interface loopback 9              
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#exit                
+*Mar  1 00:40:13.295: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback9, changed state to up
+R1(config-if)#exit 
+R1(config-if)#ip address 1.1.9.1 255.255.255.240 
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#exit
+R1(config)#
+R1(config)#
+R1(config)#
+R1(config)#interface loopback 10             
+R1(config-if)#ip address 1.1.9.1 255.255.255.240
+*Mar  1 00:40:43.615: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback10, changed state to up
+R1(config-if)#ip address 1.1.9.1 255.255.255.240
+R1(config-if)#ip address 1.1.9.1 255.255.255.240
+R1(config-if)#ip address 1.1.9.1 255.255.255.240
+R1(config-if)#ip address 1.1.10.1 255.255.255.224 
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#exit
+R1(config)#interface loopback 11              
+R1(config-if)#ip address 1.1.10.1 255.255.255.224
+*Mar  1 00:41:18.899: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback11, changed state to up
+R1(config-if)#ip address 1.1.11.1 255.255.255.192 
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#in
+R1(config-if)#int
+R1(config-if)#exit
+R1(config)#in
+R1(config)#interface lo
+R1(config)#interface loopback 12
+R1(config-if)#ip address 1.1.11.1 255.255.255.192
+*Mar  1 00:42:02.175: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback12, changed state to up
+R1(config-if)#ip address 1.1.11.1 255.255.255.192
+R1(config-if)#ip address 1.1.11.1 255.255.255.192
+R1(config-if)#ip address 1.1.12.1 255.255.255.128  
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#^Z
+R1#
+R1#
+R1#wr
+Building configuration...
+[OK]
+R1#
+*Mar  1 00:42:22.683: %SYS-5-CONFIG_I: Configured from console by console'
+
+% Unknown command or computer name, or unable to find computer address
+R1#
+R1#
+R1#
+R1#
+R1#sh run
+Building configuration...
+
+Current configuration : 2064 bytes
+!
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no aaa new-model
+memory-size iomem 5
+ip cef
+!
+!
+!
+!
+no ip domain lookup
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+archive
+ log config
+  hidekeys
+! 
+!
+!
+!
+!
+!
+!
+!
+interface Loopback1
+ ip address 1.1.1.1 255.255.255.255
+!
+interface Loopback2
+ ip address 1.1.1.2 255.255.255.255
+!
+interface Loopback3
+ ip address 1.1.1.3 255.255.255.255
+!
+interface Loopback4
+ ip address 1.1.1.4 255.255.255.255
+!
+interface Loopback5
+ ip address 1.1.1.5 255.255.255.255
+!
+interface Loopback6
+ ip address 1.1.1.6 255.255.255.255
+!
+interface Loopback7
+ ip address 1.1.7.1 255.255.255.252
+!
+interface Loopback8
+ ip address 1.1.8.1 255.255.255.248
+!
+interface Loopback9
+ ip address 1.1.9.1 255.255.255.240
+!
+interface Loopback10
+ ip address 1.1.10.1 255.255.255.224
+!
+interface Loopback11
+ ip address 1.1.11.1 255.255.255.192
+!
+interface Loopback12
+ ip address 1.1.12.1 255.255.255.128
+!
+interface FastEthernet0/0
+ ip address 10.1.2.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ ip address 10.1.4.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet1/0
+!
+interface FastEthernet1/1
+!
+interface FastEthernet1/2
+!
+interface FastEthernet1/3
+!
+interface FastEthernet1/4
+!
+interface FastEthernet1/5
+!
+interface FastEthernet1/6
+!
+interface FastEthernet1/7
+!
+interface FastEthernet1/8
+!
+interface FastEthernet1/9
+!
+interface FastEthernet1/10
+!
+interface FastEthernet1/11
+!
+interface FastEthernet1/12
+!
+interface FastEthernet1/13
+!
+interface FastEthernet1/14
+!
+interface FastEthernet1/15
+!
+interface Vlan1
+ no ip address
+!
+router bgp 100
+ no synchronization
+ bgp log-neighbor-changes
+ neighbor 10.1.2.2 remote-as 200
+ neighbor 10.1.4.4 remote-as 400
+ no auto-summary
+!
+ip forward-protocol nd
+!
+!
+ip http server
+no ip http secure-server
+!
+!
+!
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ exec-timeout 0 0
+line aux 0
+line vty 0 4
+!
+!
+end
+
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#show in
+R1#show int
+R1#show interfaces de
+R1#show interfaces description 
+Interface                      Status         Protocol Description
+Fa0/0                          up             up       
+Fa0/1                          up             up       
+Fa1/0                          up             up       
+Fa1/1                          up             up       
+Fa1/2                          up             up       
+Fa1/3                          up             up       
+Fa1/4                          up             up       
+Fa1/5                          up             up       
+Fa1/6                          up             up       
+Fa1/7                          up             up       
+Fa1/8                          up             up       
+Fa1/9                          up             up       
+Fa1/10                         up             up       
+Fa1/11                         up             up       
+Fa1/12                         up             up       
+Fa1/13                         up             up       
+Fa1/14                         up             up       
+Fa1/15                         up             up       
+Vl1                            up             up       
+Lo1                            up             up       
+Lo2                            up             up       
+Lo3                            up             up       
+Lo4                            up             up       
+Lo5                            up             up       
+Lo6                            up             up       
+Lo7                            up             up       
+Lo8                            up             up       
+Lo9                            up             up       
+Lo10                           up             up       
+Lo11                           up             up       
+Lo12                           up             up       
+R1#
+R1#
+R1#
+R1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#rou
+R1(config)#routem
+R1(config)#route-m
+R1(config)#route-map con
+R1(config)#route-map connected per
+R1(config)#route-map connected permit 10
+R1(config-route-map)#
+R1(config-route-map)#
+R1(config-route-map)#
+R1(config-route-map)#mat
+R1(config-route-map)#match in
+R1(config-route-map)#match interface lo
+R1(config-route-map)#match interface loopback 1
+R1(config-route-map)#
+R1(config-route-map)#
+R1(config-route-map)#
+R1(config-route-map)#
+R1(config-route-map)#match interface loopback 2
+R1(config-route-map)#match interface loopback 3
+R1(config-route-map)#match interface loopback 4
+R1(config-route-map)#match interface loopback 5
+R1(config-route-map)#match interface loopback 6
+R1(config-route-map)#match interface loopback 7
+R1(config-route-map)#match interface loopback 8
+R1(config-route-map)#match interface loopback 9
+R1(config-route-map)#match interface loopback 10
+R1(config-route-map)#match interface loopback 11
+R1(config-route-map)#match interface loopback 12
+R1(config-route-map)#
+R1(config-route-map)#
+R1(config-route-map)#
+R1(config-route-map)#
+R1(config-route-map)#
+R1(config-route-map)#exit
+R1(config)#
+R1(config)#
+R1(config)#
+R1(config)#
+R1(config)#
+R1(config)#do sh run
+Building configuration...
+
+Current configuration : 2236 bytes
+!
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no aaa new-model
+memory-size iomem 5
+ip cef
+!
+!
+!
+!
+no ip domain lookup
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+archive
+ log config
+  hidekeys
+! 
+!
+!
+!
+!
+!
+!
+!
+interface Loopback1
+ ip address 1.1.1.1 255.255.255.255
+!
+interface Loopback2
+ ip address 1.1.1.2 255.255.255.255
+!
+interface Loopback3
+ ip address 1.1.1.3 255.255.255.255
+!
+interface Loopback4
+ ip address 1.1.1.4 255.255.255.255
+!
+interface Loopback5
+ ip address 1.1.1.5 255.255.255.255
+!
+interface Loopback6
+ ip address 1.1.1.6 255.255.255.255
+!
+interface Loopback7
+ ip address 1.1.7.1 255.255.255.252
+!
+interface Loopback8
+ ip address 1.1.8.1 255.255.255.248
+!
+interface Loopback9
+ ip address 1.1.9.1 255.255.255.240
+!
+interface Loopback10
+ ip address 1.1.10.1 255.255.255.224
+!
+interface Loopback11
+ ip address 1.1.11.1 255.255.255.192
+!
+interface Loopback12
+ ip address 1.1.12.1 255.255.255.128
+!
+interface FastEthernet0/0
+ ip address 10.1.2.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ ip address 10.1.4.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet1/0
+!
+interface FastEthernet1/1
+!
+interface FastEthernet1/2
+!
+interface FastEthernet1/3
+!
+interface FastEthernet1/4
+!
+interface FastEthernet1/5
+!
+interface FastEthernet1/6
+!
+interface FastEthernet1/7
+!
+interface FastEthernet1/8
+!
+interface FastEthernet1/9
+!
+interface FastEthernet1/10
+!
+interface FastEthernet1/11
+!
+interface FastEthernet1/12
+!
+interface FastEthernet1/13
+!
+interface FastEthernet1/14
+!
+interface FastEthernet1/15
+!
+interface Vlan1
+ no ip address
+!
+router bgp 100
+ no synchronization
+ bgp log-neighbor-changes
+ neighbor 10.1.2.2 remote-as 200
+ neighbor 10.1.4.4 remote-as 400
+ no auto-summary
+!
+ip forward-protocol nd
+!
+!
+ip http server
+no ip http secure-server
+!
+!
+!
+!
+route-map connected permit 10
+ match interface Loopback1 Loopback2 Loopback3 Loopback4 Loopback5 Loopback6 Loopback7 Loopback8 Loopback9 Loopback10 Loopback11 Loopback12
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ exec-timeout 0 0
+line aux 0
+line vty 0 4
+!
+!
+end
+
+R1(config)#
+R1(config)#
+R1(config)#
+R1(config)#
+R1(config)#rou
+R1(config)#route b
+% Ambiguous command:  "route b"
+R1(config)#router bg
+R1(config)#router bgp 100
+R1(config-router)#red
+R1(config-router)#redistribute conn
+R1(config-router)#redistribute connected rou
+R1(config-router)#redistribute connected route-map ?
+  WORD  Pointer to route-map entries
+
+R1(config-router)#redistribute connected route-map connected
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#^Z
+R1#
+R1#
+R1#
+R1#
+R1#
+*Mar  1 00:49:49.963: %SYS-5-CONFIG_I: Configured from console by consolesh ip b
+R1#sh ip bgp 
+BGP table version is 13, local router ID is 1.1.1.6
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*> 1.1.1.1/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.2/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.3/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.4/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.5/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.6/32       0.0.0.0                  0         32768 ?
+*> 1.1.7.0/30       0.0.0.0                  0         32768 ?
+*> 1.1.8.0/29       0.0.0.0                  0         32768 ?
+*> 1.1.9.0/28       0.0.0.0                  0         32768 ?
+*> 1.1.10.0/27      0.0.0.0                  0         32768 ?
+*> 1.1.11.0/26      0.0.0.0                  0         32768 ?
+*> 1.1.12.0/25      0.0.0.0                  0         32768 ?
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#wr
+Building configuration...
+[OK]
+R1#
+R1#
+R1#terminal length 0
+R1#write
+Building configuration...
+[OK]
+R1#quit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R1 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+R1>
+R1>
+R1>
+R1>
+R1>
+R1>en
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#sh run | bp
+             ^
+% Invalid input detected at '^' marker.
+
+R1#sh run | bgp
+             ^
+% Invalid input detected at '^' marker.
+
+R1#
+R1#
+R1#
+R1#sh run | bgp
+             ^
+% Invalid input detected at '^' marker.
+
+R1#
+R1#
+R1#
+R1#sh run bgp
+           ^
+% Invalid input detected at '^' marker.
+
+R1#
+R1#
+R1#show run
+Building configuration...
+
+Current configuration : 2280 bytes
+!
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no aaa new-model
+memory-size iomem 5
+ip cef
+!
+!
+!
+!
+no ip domain lookup
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+archive
+ log config
+  hidekeys
+! 
+!
+!
+!
+!
+!
+!
+!
+interface Loopback1
+ ip address 1.1.1.1 255.255.255.255
+!
+interface Loopback2
+ ip address 1.1.1.2 255.255.255.255
+!
+interface Loopback3
+ ip address 1.1.1.3 255.255.255.255
+!
+interface Loopback4
+ ip address 1.1.1.4 255.255.255.255
+!
+interface Loopback5
+ ip address 1.1.1.5 255.255.255.255
+!
+interface Loopback6
+ ip address 1.1.1.6 255.255.255.255
+!
+interface Loopback7
+ ip address 1.1.7.1 255.255.255.252
+!
+interface Loopback8
+ ip address 1.1.8.1 255.255.255.248
+!
+interface Loopback9
+ ip address 1.1.9.1 255.255.255.240
+!
+interface Loopback10
+ ip address 1.1.10.1 255.255.255.224
+!
+interface Loopback11
+ ip address 1.1.11.1 255.255.255.192
+!
+interface Loopback12
+ ip address 1.1.12.1 255.255.255.128
+!
+interface FastEthernet0/0
+ ip address 10.1.2.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ ip address 10.1.4.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet1/0
+!
+interface FastEthernet1/1
+!
+interface FastEthernet1/2
+!
+interface FastEthernet1/3
+!
+interface FastEthernet1/4
+!
+interface FastEthernet1/5
+!
+interface FastEthernet1/6
+!         
+interface FastEthernet1/7
+!
+interface FastEthernet1/8
+!
+interface FastEthernet1/9
+!
+interface FastEthernet1/10
+!
+interface FastEthernet1/11
+!
+interface FastEthernet1/12
+!
+interface FastEthernet1/13
+!
+interface FastEthernet1/14
+!
+interface FastEthernet1/15
+!
+interface Vlan1
+ no ip address
+!
+router bgp 100
+ no synchronization
+ bgp log-neighbor-changes
+ redistribute connected route-map connected
+ neighbor 10.1.2.2 remote-as 200
+ neighbor 10.1.4.4 remote-as 400
+ no auto-summary
+!
+ip forward-protocol nd
+!
+!
+ip http server
+no ip http secure-server
+!
+!
+!
+!
+route-map connected permit 10
+ match interface Loopback1 Loopback2 Loopback3 Loopback4 Loopback5 Loopback6 Loopback7 Loopback8 Loopback9 Loopback10 Loopback11 Loopback12
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ exec-timeout 0 0
+line aux 0
+line vty 0 4
+!
+!
+end
+
+R1#
+R1#
+R1#
+R1#
+R1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#router bgp 100
+R1(config-router)# no synchronization
+R1(config-router)# bgp log-neighbor-changes
+R1(config-router)# redistribute connected route-map connected
+R1(config-router)# neighbor 10.1.2.2 remote-as 200
+R1(config-router)# neighbor 10.1.2.2 ebgp-multihop 4
+R1(config-router)# neighbor 10.1.4.4 remote-as 400
+R1(config-router)# neighbor 10.1.4.4 ebgp-multihop 4
+R1(config-router)# no auto-summary
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#^Z
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+*Mar  1 00:58:16.043: %SYS-5-CONFIG_I: Configured from console by consolewr
+Building configuration...
+[OK]
+R1#
+R1#
+R1#sh run
+Building configuration...
+
+Current configuration : 2350 bytes
+!
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no aaa new-model
+memory-size iomem 5
+ip cef
+!
+!
+!
+!
+no ip domain lookup
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+archive
+ log config
+  hidekeys
+! 
+!
+!
+!
+!
+!
+!
+!
+interface Loopback1
+ ip address 1.1.1.1 255.255.255.255
+!
+interface Loopback2
+ ip address 1.1.1.2 255.255.255.255
+!
+interface Loopback3
+ ip address 1.1.1.3 255.255.255.255
+!
+interface Loopback4
+ ip address 1.1.1.4 255.255.255.255
+!
+interface Loopback5
+ ip address 1.1.1.5 255.255.255.255
+!
+interface Loopback6
+ ip address 1.1.1.6 255.255.255.255
+!
+interface Loopback7
+ ip address 1.1.7.1 255.255.255.252
+!
+interface Loopback8
+ ip address 1.1.8.1 255.255.255.248
+!
+interface Loopback9
+ ip address 1.1.9.1 255.255.255.240
+!
+interface Loopback10
+ ip address 1.1.10.1 255.255.255.224
+!
+interface Loopback11
+ ip address 1.1.11.1 255.255.255.192
+!
+interface Loopback12
+ ip address 1.1.12.1 255.255.255.128
+!
+interface FastEthernet0/0
+ ip address 10.1.2.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ ip address 10.1.4.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet1/0
+!
+interface FastEthernet1/1
+!
+interface FastEthernet1/2
+!
+interface FastEthernet1/3
+!
+interface FastEthernet1/4
+!
+interface FastEthernet1/5
+!
+interface FastEthernet1/6
+!         
+interface FastEthernet1/7
+!
+interface FastEthernet1/8
+!
+interface FastEthernet1/9
+!
+interface FastEthernet1/10
+!
+interface FastEthernet1/11
+!
+interface FastEthernet1/12
+!
+interface FastEthernet1/13
+!
+interface FastEthernet1/14
+!
+interface FastEthernet1/15
+!
+interface Vlan1
+ no ip address
+!
+router bgp 100
+ no synchronization
+ bgp log-neighbor-changes
+ redistribute connected route-map connected
+ neighbor 10.1.2.2 remote-as 200
+ neighbor 10.1.2.2 ebgp-multihop 4
+ neighbor 10.1.4.4 remote-as 400
+ neighbor 10.1.4.4 ebgp-multihop 4
+ no auto-summary
+!
+ip forward-protocol nd
+!
+!
+ip http server
+no ip http secure-server
+!
+!
+!
+!
+route-map connected permit 10
+ match interface Loopback1 Loopback2 Loopback3 Loopback4 Loopback5 Loopback6 Loopback7 Loopback8 Loopback9 Loopback10 Loopback11 Loopback12
+!
+!
+!         
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ exec-timeout 0 0
+line aux 0
+line vty 0 4
+!
+!
+end
+
+R1#       wr
+Building configuration...
+[OK]
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#sh ip b
+BGP table version is 13, local router ID is 1.1.1.6
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*> 1.1.1.1/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.2/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.3/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.4/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.5/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.6/32       0.0.0.0                  0         32768 ?
+*> 1.1.7.0/30       0.0.0.0                  0         32768 ?
+*> 1.1.8.0/29       0.0.0.0                  0         32768 ?
+*> 1.1.9.0/28       0.0.0.0                  0         32768 ?
+*> 1.1.10.0/27      0.0.0.0                  0         32768 ?
+*> 1.1.11.0/26      0.0.0.0                  0         32768 ?
+*> 1.1.12.0/25      0.0.0.0                  0         32768 ?
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#terminal length 0
+R1#write
+Building configuration...
+[OK]
+R1#quit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R1 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+Connected to Dynamips VM "R1" (ID 1, type c3725) - Console port
+Press ENTER to get the prompt.
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+archive
+ log config
+  hidekeys
+! 
+!
+!
+!
+!
+!
+!
+!
+interface Loopback1
+ ip address 1.1.1.1 255.255.255.255
+!
+interface Loopback2
+ ip address 1.1.1.2 255.255.255.255
+!
+interface Loopback3
+ ip address 1.1.1.3 255.255.255.255
+!
+interface Loopback4
+ ip address 1.1.1.4 255.255.255.255
+!
+interface Loopback5
+ ip address 1.1.1.5 255.255.255.255
+!
+interface Loopback6
+ ip address 1.1.1.6 255.255.255.255
+!
+interface Loopback7
+ ip address 1.1.7.1 255.255.255.252
+!
+interface Loopback8
+ ip address 1.1.8.1 255.255.255.248
+!
+interface Loopback9
+ ip address 1.1.9.1 255.255.255.240
+!
+interface Loopback10
+ ip address 1.1.10.1 255.255.255.224
+!
+interface Loopback11
+ ip address 1.1.11.1 255.255.255.192
+!
+interface Loopback12
+ ip address 1.1.12.1 255.255.255.128
+!
+interface FastEthernet0/0
+ ip address 10.1.2.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ ip address 10.1.4.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet1/0
+!
+interface FastEthernet1/1
+!
+interface FastEthernet1/2
+!
+interface FastEthernet1/3
+!
+interface FastEthernet1/4
+!
+interface FastEthernet1/5
+!
+interface FastEthernet1/6
+!         
+interface FastEthernet1/7
+!
+interface FastEthernet1/8
+!
+interface FastEthernet1/9
+!
+interface FastEthernet1/10
+!
+interface FastEthernet1/11
+!
+interface FastEthernet1/12
+!
+interface FastEthernet1/13
+!
+interface FastEthernet1/14
+!
+interface FastEthernet1/15
+!
+interface Vlan1
+ no ip address
+!
+router bgp 100
+ no synchronization
+ bgp log-neighbor-changes
+ redistribute connected route-map connected
+ neighbor 10.1.2.2 remote-as 200
+ neighbor 10.1.2.2 ebgp-multihop 4
+ neighbor 10.1.4.4 remote-as 400
+ neighbor 10.1.4.4 ebgp-multihop 4
+ no auto-summary
+!
+ip forward-protocol nd
+!
+!
+ip http server
+no ip http secure-server
+!
+!
+!
+!
+route-map connected permit 10
+ match interface Loopback1 Loopback2 Loopback3 Loopback4 Loopback5 Loopback6 Loopback7 Loopback8 Loopback9 Loopback10 Loopback11 Loopback12
+!
+!
+!         
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ exec-timeout 0 0
+line aux 0
+line vty 0 4
+!
+!
+end
+
+R1#       wr
+Building configuration...
+[OK]
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#sh ip b
+BGP table version is 13, local router ID is 1.1.1.6
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*> 1.1.1.1/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.2/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.3/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.4/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.5/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.6/32       0.0.0.0                  0         32768 ?
+*> 1.1.7.0/30       0.0.0.0                  0         32768 ?
+*> 1.1.8.0/29       0.0.0.0                  0         32768 ?
+*> 1.1.9.0/28       0.0.0.0                  0         32768 ?
+*> 1.1.10.0/27      0.0.0.0                  0         32768 ?
+*> 1.1.11.0/26      0.0.0.0                  0         32768 ?
+*> 1.1.12.0/25      0.0.0.0                  0         32768 ?
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#terminal length 0
+R1#write
+Building configuration...
+[OK]
+R1#quit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R1 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+R1>
+R1>
+R1>
+R1>
+R1>
+R1>
+R1>
+R1>
+R1>
+R1>
+R1>
+R1>
+R1>
+R1>
+R1>
+R1>
+R1>
+R1>
+R1>
+R1>
+R1>en
+R1#show run
+Building configuration...
+
+Current configuration : 2350 bytes
+!
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no aaa new-model
+memory-size iomem 5
+ip cef
+!
+!
+!
+!
+no ip domain lookup
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+archive
+ log config
+  hidekeys
+! 
+!
+!
+!
+!
+!
+!
+!
+interface Loopback1
+ ip address 1.1.1.1 255.255.255.255
+!
+interface Loopback2
+ ip address 1.1.1.2 255.255.255.255
+!
+interface Loopback3
+ ip address 1.1.1.3 255.255.255.255
+!
+interface Loopback4
+ ip address 1.1.1.4 255.255.255.255
+!
+interface Loopback5
+ ip address 1.1.1.5 255.255.255.255
+!
+interface Loopback6
+ ip address 1.1.1.6 255.255.255.255
+!
+interface Loopback7
+ ip address 1.1.7.1 255.255.255.252
+!
+interface Loopback8
+ ip address 1.1.8.1 255.255.255.248
+!
+interface Loopback9
+ ip address 1.1.9.1 255.255.255.240
+!
+interface Loopback10
+ ip address 1.1.10.1 255.255.255.224
+!
+interface Loopback11
+ ip address 1.1.11.1 255.255.255.192
+!
+interface Loopback12
+ ip address 1.1.12.1 255.255.255.128
+!
+interface FastEthernet0/0
+ ip address 10.1.2.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ ip address 10.1.4.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet1/0
+!
+interface FastEthernet1/1
+!
+interface FastEthernet1/2
+!
+interface FastEthernet1/3
+!
+interface FastEthernet1/4
+!
+interface FastEthernet1/5
+!
+interface FastEthernet1/6
+!         
+interface FastEthernet1/7
+!
+interface FastEthernet1/8
+!
+interface FastEthernet1/9
+!
+interface FastEthernet1/10
+!
+interface FastEthernet1/11
+!
+interface FastEthernet1/12
+!
+interface FastEthernet1/13
+!
+interface FastEthernet1/14
+!
+interface FastEthernet1/15
+!
+interface Vlan1
+ no ip address
+!
+router bgp 100
+ no synchronization
+ bgp log-neighbor-changes
+ redistribute connected route-map connected
+ neighbor 10.1.2.2 remote-as 200
+ neighbor 10.1.2.2 ebgp-multihop 4
+ neighbor 10.1.4.4 remote-as 400
+ neighbor 10.1.4.4 ebgp-multihop 4
+ no auto-summary
+!
+ip forward-protocol nd
+!
+!
+ip http server
+no ip http secure-server
+!
+!
+!
+!
+route-map connected permit 10
+ match interface Loopback1 Loopback2 Loopback3 Loopback4 Loopback5 Loopback6 Loopback7 Loopback8 Loopback9 Loopback10 Loopback11 Loopback12
+!
+!
+!         
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ exec-timeout 0 0
+line aux 0
+line vty 0 4
+!
+!
+end
+
+R1#            
+R1#
+R1#
+R1#
+R1#sh ip b
+BGP table version is 13, local router ID is 1.1.1.6
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*> 1.1.1.1/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.2/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.3/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.4/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.5/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.6/32       0.0.0.0                  0         32768 ?
+*> 1.1.7.0/30       0.0.0.0                  0         32768 ?
+*> 1.1.8.0/29       0.0.0.0                  0         32768 ?
+*> 1.1.9.0/28       0.0.0.0                  0         32768 ?
+*> 1.1.10.0/27      0.0.0.0                  0         32768 ?
+*> 1.1.11.0/26      0.0.0.0                  0         32768 ?
+*> 1.1.12.0/25      0.0.0.0                  0         32768 ?
+R1#
+*Mar  1 03:32:43.819: %BGP-5-ADJCHANGE: neighbor 10.1.4.4 Down BGP Notification sent
+*Mar  1 03:32:43.819: %BGP-3-NOTIFICATION: sent to neighbor 10.1.4.4 4/0 (hold time expired) 0 bytes 
+R1#
+R1#terminal length 0
+R1#write
+Building configuration...
+[OK]
+R1#quit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R1 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+*Mar  1 03:34:16.883: %BGP-5-ADJCHANGE: neighbor 10.1.4.4 Up 
+R1>
+R1>
+R1>
+R1>
+R1>en
+R1#
+R1#
+R1#
+R1#
+R1#terminal length 0
+R1#
+R1#
+R1#
+R1#
+R1#show ip b
+BGP table version is 13, local router ID is 1.1.1.6
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*> 1.1.1.1/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.2/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.3/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.4/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.5/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.6/32       0.0.0.0                  0         32768 ?
+*> 1.1.7.0/30       0.0.0.0                  0         32768 ?
+*> 1.1.8.0/29       0.0.0.0                  0         32768 ?
+*> 1.1.9.0/28       0.0.0.0                  0         32768 ?
+*> 1.1.10.0/27      0.0.0.0                  0         32768 ?
+*> 1.1.11.0/26      0.0.0.0                  0         32768 ?
+*> 1.1.12.0/25      0.0.0.0                  0         32768 ?
+R1# clear ip bgp * soft 
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#show ip ro
+R1#sho           
+R1#show  run
+Building configuration...
+
+Current configuration : 2350 bytes
+!
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no aaa new-model
+memory-size iomem 5
+ip cef
+!
+!
+!
+!
+no ip domain lookup
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+archive
+ log config
+  hidekeys
+! 
+!
+!
+!
+!
+!
+!
+!
+interface Loopback1
+ ip address 1.1.1.1 255.255.255.255
+!
+interface Loopback2
+ ip address 1.1.1.2 255.255.255.255
+!
+interface Loopback3
+ ip address 1.1.1.3 255.255.255.255
+!
+interface Loopback4
+ ip address 1.1.1.4 255.255.255.255
+!
+interface Loopback5
+ ip address 1.1.1.5 255.255.255.255
+!
+interface Loopback6
+ ip address 1.1.1.6 255.255.255.255
+!
+interface Loopback7
+ ip address 1.1.7.1 255.255.255.252
+!
+interface Loopback8
+ ip address 1.1.8.1 255.255.255.248
+!
+interface Loopback9
+ ip address 1.1.9.1 255.255.255.240
+!
+interface Loopback10
+ ip address 1.1.10.1 255.255.255.224
+!
+interface Loopback11
+ ip address 1.1.11.1 255.255.255.192
+!
+interface Loopback12
+ ip address 1.1.12.1 255.255.255.128
+!
+interface FastEthernet0/0
+ ip address 10.1.2.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ ip address 10.1.4.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet1/0
+!
+interface FastEthernet1/1
+!
+interface FastEthernet1/2
+!
+interface FastEthernet1/3
+!
+interface FastEthernet1/4
+!
+interface FastEthernet1/5
+!
+interface FastEthernet1/6
+!
+interface FastEthernet1/7
+!
+interface FastEthernet1/8
+!
+interface FastEthernet1/9
+!
+interface FastEthernet1/10
+!
+interface FastEthernet1/11
+!
+interface FastEthernet1/12
+!
+interface FastEthernet1/13
+!
+interface FastEthernet1/14
+!
+interface FastEthernet1/15
+!
+interface Vlan1
+ no ip address
+!
+router bgp 100
+ no synchronization
+ bgp log-neighbor-changes
+ redistribute connected route-map connected
+ neighbor 10.1.2.2 remote-as 200
+ neighbor 10.1.2.2 ebgp-multihop 4
+ neighbor 10.1.4.4 remote-as 400
+ neighbor 10.1.4.4 ebgp-multihop 4
+ no auto-summary
+!
+ip forward-protocol nd
+!
+!
+ip http server
+no ip http secure-server
+!
+!
+!
+!
+route-map connected permit 10
+ match interface Loopback1 Loopback2 Loopback3 Loopback4 Loopback5 Loopback6 Loopback7 Loopback8 Loopback9 Loopback10 Loopback11 Loopback12
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ exec-timeout 0 0
+line aux 0
+line vty 0 4
+!
+!
+end
+
+Connected to Dynamips VM "R1" (ID 1, type c3725) - Console port
+Press ENTER to get the prompt.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R1 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+*Mar  1 03:34:16.883: %BGP-5-ADJCHANGE: neighbor 10.1.4.4 Up 
+R1>
+R1>
+R1>
+R1>
+R1>en
+R1#
+R1#
+R1#
+R1#
+R1#terminal length 0
+R1#
+R1#
+R1#
+R1#
+R1#show ip b
+BGP table version is 13, local router ID is 1.1.1.6
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*> 1.1.1.1/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.2/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.3/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.4/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.5/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.6/32       0.0.0.0                  0         32768 ?
+*> 1.1.7.0/30       0.0.0.0                  0         32768 ?
+*> 1.1.8.0/29       0.0.0.0                  0         32768 ?
+*> 1.1.9.0/28       0.0.0.0                  0         32768 ?
+*> 1.1.10.0/27      0.0.0.0                  0         32768 ?
+*> 1.1.11.0/26      0.0.0.0                  0         32768 ?
+*> 1.1.12.0/25      0.0.0.0                  0         32768 ?
+R1# clear ip bgp * soft 
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#show ip ro
+R1#sho           
+R1#show  run
+Building configuration...
+
+Current configuration : 2350 bytes
+!
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no aaa new-model
+memory-size iomem 5
+ip cef
+!
+!
+!
+!
+no ip domain lookup
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+archive
+ log config
+  hidekeys
+! 
+!
+!
+!
+!
+!
+!
+!
+interface Loopback1
+ ip address 1.1.1.1 255.255.255.255
+!
+interface Loopback2
+ ip address 1.1.1.2 255.255.255.255
+!
+interface Loopback3
+ ip address 1.1.1.3 255.255.255.255
+!
+interface Loopback4
+ ip address 1.1.1.4 255.255.255.255
+!
+interface Loopback5
+ ip address 1.1.1.5 255.255.255.255
+!
+interface Loopback6
+ ip address 1.1.1.6 255.255.255.255
+!
+interface Loopback7
+ ip address 1.1.7.1 255.255.255.252
+!
+interface Loopback8
+ ip address 1.1.8.1 255.255.255.248
+!
+interface Loopback9
+ ip address 1.1.9.1 255.255.255.240
+!
+interface Loopback10
+ ip address 1.1.10.1 255.255.255.224
+!
+interface Loopback11
+ ip address 1.1.11.1 255.255.255.192
+!
+interface Loopback12
+ ip address 1.1.12.1 255.255.255.128
+!
+interface FastEthernet0/0
+ ip address 10.1.2.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ ip address 10.1.4.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet1/0
+!
+interface FastEthernet1/1
+!
+interface FastEthernet1/2
+!
+interface FastEthernet1/3
+!
+interface FastEthernet1/4
+!
+interface FastEthernet1/5
+!
+interface FastEthernet1/6
+!
+interface FastEthernet1/7
+!
+interface FastEthernet1/8
+!
+interface FastEthernet1/9
+!
+interface FastEthernet1/10
+!
+interface FastEthernet1/11
+!
+interface FastEthernet1/12
+!
+interface FastEthernet1/13
+!
+interface FastEthernet1/14
+!
+interface FastEthernet1/15
+!
+interface Vlan1
+ no ip address
+!
+router bgp 100
+ no synchronization
+ bgp log-neighbor-changes
+ redistribute connected route-map connected
+ neighbor 10.1.2.2 remote-as 200
+ neighbor 10.1.2.2 ebgp-multihop 4
+ neighbor 10.1.4.4 remote-as 400
+ neighbor 10.1.4.4 ebgp-multihop 4
+ no auto-summary
+!
+ip forward-protocol nd
+!
+!
+ip http server
+no ip http secure-server
+!
+!
+!
+!
+route-map connected permit 10
+ match interface Loopback1 Loopback2 Loopback3 Loopback4 Loopback5 Loopback6 Loopback7 Loopback8 Loopback9 Loopback10 Loopback11 Loopback12
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ exec-timeout 0 0
+line aux 0
+line vty 0 4
+!
+!
+end
+
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#show bgp ipv4 unicast summary
+BGP router identifier 1.1.1.6, local AS number 100
+BGP table version is 13, main routing table version 13
+12 network entries using 1440 bytes of memory
+12 path entries using 624 bytes of memory
+2/1 BGP path/bestpath attribute entries using 248 bytes of memory
+0 BGP route-map cache entries using 0 bytes of memory
+0 BGP filter-list cache entries using 0 bytes of memory
+Bitfield cache entries: current 1 (at peak 1) using 32 bytes of memory
+BGP using 2344 total bytes of memory
+BGP activity 12/0 prefixes, 12/0 paths, scan interval 60 secs
+
+Neighbor        V    AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+10.1.2.2        4   200     239     239       13    0    0 03:52:23        0
+10.1.4.4        4   400     237     240       13    0    0 00:45:53        0
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#show bgp ipv4 unicast summary
+BGP router identifier 1.1.1.6, local AS number 100
+BGP table version is 13, main routing table version 13
+12 network entries using 1440 bytes of memory
+12 path entries using 624 bytes of memory
+2/1 BGP path/bestpath attribute entries using 248 bytes of memory
+0 BGP route-map cache entries using 0 bytes of memory
+0 BGP filter-list cache entries using 0 bytes of memory
+Bitfield cache entries: current 1 (at peak 1) using 32 bytes of memory
+BGP using 2344 total bytes of memory
+BGP activity 12/0 prefixes, 12/0 paths, scan interval 60 secs
+
+Neighbor        V    AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+10.1.2.2        4   200     239     239       13    0    0 03:52:38        0
+10.1.4.4        4   400     238     241       13    0    0 00:46:08        0
+R1#show bgp ipv4 unicast 
+BGP table version is 13, local router ID is 1.1.1.6
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*> 1.1.1.1/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.2/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.3/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.4/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.5/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.6/32       0.0.0.0                  0         32768 ?
+*> 1.1.7.0/30       0.0.0.0                  0         32768 ?
+*> 1.1.8.0/29       0.0.0.0                  0         32768 ?
+*> 1.1.9.0/28       0.0.0.0                  0         32768 ?
+*> 1.1.10.0/27      0.0.0.0                  0         32768 ?
+*> 1.1.11.0/26      0.0.0.0                  0         32768 ?
+*> 1.1.12.0/25      0.0.0.0                  0         32768 ?
+Connected to Dynamips VM "R1" (ID 1, type c3725) - Console port
+Press ENTER to get the prompt.
+ate to down
+*Mar  1 00:00:04.455: %LINK-3-UPDOWN: Interface FastEthernet1/5, changed state to down
+*Mar  1 00:00:04.455: %LINK-3-UPDOWN: Interface FastEthernet1/6, changed state to down
+*Mar  1 00:00:04.455: %LINK-3-UPDOWN: Interface FastEthernet1/7, changed state to down
+*Mar  1 00:00:04.459: %LINK-3-UPDOWN: Interface FastEthernet1/8, changed state to down
+*Mar  1 00:00:04.459: %LINK-3-UPDOWN: Interface FastEthernet1/9, changed state to down
+*Mar  1 00:00:04.463: %LINK-3-UPDOWN: Interface FastEthernet1/10, changed state to down
+*Mar  1 00:00:04.463: %LINK-3-UPDOWN: Interface FastEthernet1/11, changed state to down
+*Mar  1 00:00:04.467: %LINK-3-UPDOWN: Interface FastEthernet1/12, changed state to down
+*Mar  1 00:00:04.467: %LINK-3-UPDOWN: Interface FastEthernet1/13, changed state to down
+*Mar  1 00:00:04.471: %LINK-3-UPDOWN: Interface FastEthernet1/14, changed state to down
+*Mar  1 00:00:04.471: %LINK-3-UPDOWN: Interface FastEthernet1/15, changed state to down
+*Mar  1 00:00:05.007: %SYS-5-CONFIG_I: Configured from memory by console
+*Mar  1 00:00:05.331: %SYS-5-RESTART: System restarted --
+Cisco IOS Software, 3700 Software (C3725-ADVENTERPRISEK9-M), Version 12.4(15)T7, RELEASE SOFTWARE (fc3)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2008 by Cisco Systems, Inc.
+Compiled Wed 13-Aug-08 21:36 by prod_rel_team
+*Mar  1 00:00:05.347: %SNMP-5-COLDSTART: SNMP agent on host R1 is undergoing a cold start
+*Mar  1 00:00:05.535: %LINK-3-UPDOWN: Interface FastEthernet0/0, changed state to up
+*Mar  1 00:00:05.539: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to up
+*Mar  1 00:00:05.619: %CRYPTO-6-ISAKMP_ON_OFF: ISAKMP is OFF
+*Mar  1 00:00:05.619: %CRYPTO-6-GDOI_ON_OFF: GDOI is OFF
+*Mar  1 00:00:05.631: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback1, changed state to up
+*Mar  1 00:00:05.755: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback2, changed state to up
+*Mar  1 00:00:05.859: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback3, changed state to up
+*Mar  1 00:00:05.863: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback4, changed state to up
+*Mar  1 00:00:05.863: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback5, changed state to up
+*Mar  1 00:00:05.863: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback6, changed state to up
+*Mar  1 00:00:05.863: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback7, changed state to up
+*Mar  1 00:00:05.863: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback8, changed state to up
+*Mar  1 00:00:06.423: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to up
+*Mar  1 00:00:06.535: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up
+*Mar  1 00:00:06.535: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+*Mar  1 00:00:08.019: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/15, changed state to up
+*Mar  1 00:00:08.027: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/14, changed state to up
+*Mar  1 00:00:08.031: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/13, changed state to up
+*Mar  1 00:00:08.035: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/12, changed state to up
+*Mar  1 00:00:08.043: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/11, changed state to up
+*Mar  1 00:00:08.047: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/10, changed state to up
+*Mar  1 00:00:08.051: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/9, changed state to up
+*Mar  1 00:00:08.055: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/8, changed state to up
+*Mar  1 00:00:08.063: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/7, changed state to up
+*Mar  1 00:00:08.067: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/6, changed state to up
+*Mar  1 00:00:35.371: %BGP-5-ADJCHANGE: neighbor 10.1.4.4 Up 
+*Mar  1 00:00:35.939: %BGP-5-ADJCHANGE: neighbor 10.1.2.2 Up 
+R1>
+R1>
+R1>
+R1>
+R1>
+R1>
+R1>
+R1>
+R1>
+R1>en
+R1#show ip b
+BGP table version is 13, local router ID is 1.1.12.1
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*> 1.1.1.1/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.2/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.3/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.4/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.5/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.6/32       0.0.0.0                  0         32768 ?
+*> 1.1.7.0/30       0.0.0.0                  0         32768 ?
+*> 1.1.8.0/29       0.0.0.0                  0         32768 ?
+*> 1.1.9.0/28       0.0.0.0                  0         32768 ?
+*> 1.1.10.0/27      0.0.0.0                  0         32768 ?
+*> 1.1.11.0/26      0.0.0.0                  0         32768 ?
+*> 1.1.12.0/25      0.0.0.0                  0         32768 ?
+R1#
+R1#
+R1#
+R1#ter
+R1#terminal le
+R1#terminal length 0
+R1#
+R1#
+R1#
+R1#
+R1#show bgp ipv4 unicast summary
+BGP router identifier 1.1.12.1, local AS number 100
+BGP table version is 13, main routing table version 13
+12 network entries using 1440 bytes of memory
+12 path entries using 624 bytes of memory
+2/1 BGP path/bestpath attribute entries using 248 bytes of memory
+0 BGP route-map cache entries using 0 bytes of memory
+0 BGP filter-list cache entries using 0 bytes of memory
+Bitfield cache entries: current 1 (at peak 1) using 32 bytes of memory
+BGP using 2344 total bytes of memory
+BGP activity 12/0 prefixes, 12/0 paths, scan interval 60 secs
+
+Neighbor        V    AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+10.1.2.2        4   200      12      12       13    0    0 00:08:55        0
+10.1.4.4        4   400      12      12       13    0    0 00:08:55        0
+R1#
+R1#
+R1#
+R1#
+R1#ping 1.1.1.1
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 1.1.1.1, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 1/1/4 ms
+R1#
+R1#
+R1#sh run
+Building configuration...
+
+Current configuration : 2357 bytes
+!
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no aaa new-model
+memory-size iomem 5
+ip cef
+!
+!
+!
+!
+no ip domain lookup
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+archive
+ log config
+  hidekeys
+! 
+!
+!
+!
+!
+!
+!
+!
+interface Loopback1
+ ip address 1.1.1.1 255.255.255.255
+!
+interface Loopback2
+ ip address 1.1.1.2 255.255.255.255
+!
+interface Loopback3
+ ip address 1.1.1.3 255.255.255.255
+!
+interface Loopback4
+ ip address 1.1.1.4 255.255.255.255
+!
+interface Loopback5
+ ip address 1.1.1.5 255.255.255.255
+!
+interface Loopback6
+ ip address 1.1.1.6 255.255.255.255
+!
+interface Loopback7
+ ip address 1.1.7.1 255.255.255.252
+!
+interface Loopback8
+ ip address 1.1.8.1 255.255.255.248
+!
+interface Loopback9
+ ip address 1.1.9.1 255.255.255.240
+!
+interface Loopback10
+ ip address 1.1.10.1 255.255.255.224
+!
+interface Loopback11
+ ip address 1.1.11.1 255.255.255.192
+!
+interface Loopback12
+ ip address 1.1.12.1 255.255.255.128
+!
+interface FastEthernet0/0
+ ip address 10.1.2.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ ip address 10.1.4.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet1/0
+!
+interface FastEthernet1/1
+!
+interface FastEthernet1/2
+!
+interface FastEthernet1/3
+!
+interface FastEthernet1/4
+!
+interface FastEthernet1/5
+!
+interface FastEthernet1/6
+!
+interface FastEthernet1/7
+!
+interface FastEthernet1/8
+!
+interface FastEthernet1/9
+!
+interface FastEthernet1/10
+!
+interface FastEthernet1/11
+!
+interface FastEthernet1/12
+!
+interface FastEthernet1/13
+!
+interface FastEthernet1/14
+!
+interface FastEthernet1/15
+!
+interface Vlan1
+ no ip address
+!
+router bgp 100
+ no synchronization
+ bgp log-neighbor-changes
+ redistribute connected route-map connected
+ neighbor 10.1.2.2 remote-as 200
+ neighbor 10.1.2.2 ebgp-multihop 4
+ neighbor 10.1.4.4 remote-as 400
+ neighbor 10.1.4.4 ebgp-multihop 4
+ no auto-summary
+!
+ip forward-protocol nd
+!
+!
+ip http server
+no ip http secure-server
+!
+!
+!
+!
+route-map connected permit 10
+ match interface Loopback1 Loopback2 Loopback3 Loopback4 Loopback5 Loopback6 Loopback7 Loopback8 Loopback9 Loopback10 Loopback11 Loopback12
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ exec-timeout 0 0
+line aux 0
+line vty 0 4
+ login
+!
+!
+end
+
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+Connected to Dynamips VM "R1" (ID 1, type c3725) - Console port
+Press ENTER to get the prompt.
+2768 ?
+*> 1.1.11.0/26      0.0.0.0                  0         32768 ?
+*> 1.1.12.0/25      0.0.0.0                  0         32768 ?
+R1#
+R1#
+R1#
+R1#ter
+R1#terminal le
+R1#terminal length 0
+R1#
+R1#
+R1#
+R1#
+R1#show bgp ipv4 unicast summary
+BGP router identifier 1.1.12.1, local AS number 100
+BGP table version is 13, main routing table version 13
+12 network entries using 1440 bytes of memory
+12 path entries using 624 bytes of memory
+2/1 BGP path/bestpath attribute entries using 248 bytes of memory
+0 BGP route-map cache entries using 0 bytes of memory
+0 BGP filter-list cache entries using 0 bytes of memory
+Bitfield cache entries: current 1 (at peak 1) using 32 bytes of memory
+BGP using 2344 total bytes of memory
+BGP activity 12/0 prefixes, 12/0 paths, scan interval 60 secs
+
+Neighbor        V    AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+10.1.2.2        4   200      12      12       13    0    0 00:08:55        0
+10.1.4.4        4   400      12      12       13    0    0 00:08:55        0
+R1#
+R1#
+R1#
+R1#
+R1#ping 1.1.1.1
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 1.1.1.1, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 1/1/4 ms
+R1#
+R1#
+R1#sh run
+Building configuration...
+
+Current configuration : 2357 bytes
+!
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no aaa new-model
+memory-size iomem 5
+ip cef
+!
+!
+!
+!
+no ip domain lookup
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+archive
+ log config
+  hidekeys
+! 
+!
+!
+!
+!
+!
+!
+!
+interface Loopback1
+ ip address 1.1.1.1 255.255.255.255
+!
+interface Loopback2
+ ip address 1.1.1.2 255.255.255.255
+!
+interface Loopback3
+ ip address 1.1.1.3 255.255.255.255
+!
+interface Loopback4
+ ip address 1.1.1.4 255.255.255.255
+!
+interface Loopback5
+ ip address 1.1.1.5 255.255.255.255
+!
+interface Loopback6
+ ip address 1.1.1.6 255.255.255.255
+!
+interface Loopback7
+ ip address 1.1.7.1 255.255.255.252
+!
+interface Loopback8
+ ip address 1.1.8.1 255.255.255.248
+!
+interface Loopback9
+ ip address 1.1.9.1 255.255.255.240
+!
+interface Loopback10
+ ip address 1.1.10.1 255.255.255.224
+!
+interface Loopback11
+ ip address 1.1.11.1 255.255.255.192
+!
+interface Loopback12
+ ip address 1.1.12.1 255.255.255.128
+!
+interface FastEthernet0/0
+ ip address 10.1.2.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ ip address 10.1.4.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet1/0
+!
+interface FastEthernet1/1
+!
+interface FastEthernet1/2
+!
+interface FastEthernet1/3
+!
+interface FastEthernet1/4
+!
+interface FastEthernet1/5
+!
+interface FastEthernet1/6
+!
+interface FastEthernet1/7
+!
+interface FastEthernet1/8
+!
+interface FastEthernet1/9
+!
+interface FastEthernet1/10
+!
+interface FastEthernet1/11
+!
+interface FastEthernet1/12
+!
+interface FastEthernet1/13
+!
+interface FastEthernet1/14
+!
+interface FastEthernet1/15
+!
+interface Vlan1
+ no ip address
+!
+router bgp 100
+ no synchronization
+ bgp log-neighbor-changes
+ redistribute connected route-map connected
+ neighbor 10.1.2.2 remote-as 200
+ neighbor 10.1.2.2 ebgp-multihop 4
+ neighbor 10.1.4.4 remote-as 400
+ neighbor 10.1.4.4 ebgp-multihop 4
+ no auto-summary
+!
+ip forward-protocol nd
+!
+!
+ip http server
+no ip http secure-server
+!
+!
+!
+!
+route-map connected permit 10
+ match interface Loopback1 Loopback2 Loopback3 Loopback4 Loopback5 Loopback6 Loopback7 Loopback8 Loopback9 Loopback10 Loopback11 Loopback12
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ exec-timeout 0 0
+line aux 0
+line vty 0 4
+ login
+!
+!
+end
+
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+*Mar  1 00:39:29.663: %BGP-5-ADJCHANGE: neighbor 10.1.2.2 Down Peer closed the session
+*Mar  1 00:40:27.127: %BGP-5-ADJCHANGE: neighbor 10.1.2.2 Up 
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#show ip b
+BGP table version is 13, local router ID is 1.1.12.1
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*> 1.1.1.1/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.2/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.3/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.4/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.5/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.6/32       0.0.0.0                  0         32768 ?
+*> 1.1.7.0/30       0.0.0.0                  0         32768 ?
+*> 1.1.8.0/29       0.0.0.0                  0         32768 ?
+*> 1.1.9.0/28       0.0.0.0                  0         32768 ?
+*> 1.1.10.0/27      0.0.0.0                  0         32768 ?
+*> 1.1.11.0/26      0.0.0.0                  0         32768 ?
+*> 1.1.12.0/25      0.0.0.0                  0         32768 ?
+R1#
+R1#
+R1#
+R1#
+R1#
+Connected to Dynamips VM "R1" (ID 1, type c3725) - Console port
+Press ENTER to get the prompt.
+abort.
+Sending 5, 100-byte ICMP Echos to 1.1.1.1, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 1/1/4 ms
+R1#
+R1#
+R1#sh run
+Building configuration...
+
+Current configuration : 2357 bytes
+!
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no aaa new-model
+memory-size iomem 5
+ip cef
+!
+!
+!
+!
+no ip domain lookup
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+archive
+ log config
+  hidekeys
+! 
+!
+!
+!
+!
+!
+!
+!
+interface Loopback1
+ ip address 1.1.1.1 255.255.255.255
+!
+interface Loopback2
+ ip address 1.1.1.2 255.255.255.255
+!
+interface Loopback3
+ ip address 1.1.1.3 255.255.255.255
+!
+interface Loopback4
+ ip address 1.1.1.4 255.255.255.255
+!
+interface Loopback5
+ ip address 1.1.1.5 255.255.255.255
+!
+interface Loopback6
+ ip address 1.1.1.6 255.255.255.255
+!
+interface Loopback7
+ ip address 1.1.7.1 255.255.255.252
+!
+interface Loopback8
+ ip address 1.1.8.1 255.255.255.248
+!
+interface Loopback9
+ ip address 1.1.9.1 255.255.255.240
+!
+interface Loopback10
+ ip address 1.1.10.1 255.255.255.224
+!
+interface Loopback11
+ ip address 1.1.11.1 255.255.255.192
+!
+interface Loopback12
+ ip address 1.1.12.1 255.255.255.128
+!
+interface FastEthernet0/0
+ ip address 10.1.2.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ ip address 10.1.4.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet1/0
+!
+interface FastEthernet1/1
+!
+interface FastEthernet1/2
+!
+interface FastEthernet1/3
+!
+interface FastEthernet1/4
+!
+interface FastEthernet1/5
+!
+interface FastEthernet1/6
+!
+interface FastEthernet1/7
+!
+interface FastEthernet1/8
+!
+interface FastEthernet1/9
+!
+interface FastEthernet1/10
+!
+interface FastEthernet1/11
+!
+interface FastEthernet1/12
+!
+interface FastEthernet1/13
+!
+interface FastEthernet1/14
+!
+interface FastEthernet1/15
+!
+interface Vlan1
+ no ip address
+!
+router bgp 100
+ no synchronization
+ bgp log-neighbor-changes
+ redistribute connected route-map connected
+ neighbor 10.1.2.2 remote-as 200
+ neighbor 10.1.2.2 ebgp-multihop 4
+ neighbor 10.1.4.4 remote-as 400
+ neighbor 10.1.4.4 ebgp-multihop 4
+ no auto-summary
+!
+ip forward-protocol nd
+!
+!
+ip http server
+no ip http secure-server
+!
+!
+!
+!
+route-map connected permit 10
+ match interface Loopback1 Loopback2 Loopback3 Loopback4 Loopback5 Loopback6 Loopback7 Loopback8 Loopback9 Loopback10 Loopback11 Loopback12
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ exec-timeout 0 0
+line aux 0
+line vty 0 4
+ login
+!
+!
+end
+
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+*Mar  1 00:39:29.663: %BGP-5-ADJCHANGE: neighbor 10.1.2.2 Down Peer closed the session
+*Mar  1 00:40:27.127: %BGP-5-ADJCHANGE: neighbor 10.1.2.2 Up 
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#show ip b
+BGP table version is 13, local router ID is 1.1.12.1
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*> 1.1.1.1/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.2/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.3/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.4/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.5/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.6/32       0.0.0.0                  0         32768 ?
+*> 1.1.7.0/30       0.0.0.0                  0         32768 ?
+*> 1.1.8.0/29       0.0.0.0                  0         32768 ?
+*> 1.1.9.0/28       0.0.0.0                  0         32768 ?
+*> 1.1.10.0/27      0.0.0.0                  0         32768 ?
+*> 1.1.11.0/26      0.0.0.0                  0         32768 ?
+*> 1.1.12.0/25      0.0.0.0                  0         32768 ?
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#show ip b
+BGP table version is 13, local router ID is 1.1.12.1
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*> 1.1.1.1/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.2/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.3/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.4/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.5/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.6/32       0.0.0.0                  0         32768 ?
+*> 1.1.7.0/30       0.0.0.0                  0         32768 ?
+*> 1.1.8.0/29       0.0.0.0                  0         32768 ?
+*> 1.1.9.0/28       0.0.0.0                  0         32768 ?
+*> 1.1.10.0/27      0.0.0.0                  0         32768 ?
+*> 1.1.11.0/26      0.0.0.0                  0         32768 ?
+*> 1.1.12.0/25      0.0.0.0                  0         32768 ?
+R1#
+R1#
+R1#
+R1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#router bgp nei
+R1(config)#router bgp 100
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#re
+R1(config-router)#redistribute co
+R1(config-router)#redistribute connected ?
+  metric     Metric for redistributed routes
+  route-map  Route map reference
+  <cr>
+
+R1(config-router)#redistribute connected 
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#^Z
+R1#
+R1#
+R1#
+R1#
+*Mar  1 01:38:24.407: %SYS-5-CONFIG_I: Configured from console by console
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#show ip b
+BGP table version is 20, local router ID is 1.1.12.1
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*> 1.1.1.1/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.2/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.3/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.4/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.5/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.6/32       0.0.0.0                  0         32768 ?
+*> 1.1.7.0/30       0.0.0.0                  0         32768 ?
+*> 1.1.8.0/29       0.0.0.0                  0         32768 ?
+*> 1.1.9.0/28       0.0.0.0                  0         32768 ?
+*> 1.1.10.0/27      0.0.0.0                  0         32768 ?
+*> 1.1.11.0/26      0.0.0.0                  0         32768 ?
+*> 1.1.12.0/25      0.0.0.0                  0         32768 ?
+r  10.1.2.0/24      10.1.4.4                               0 400 300 200 ?
+r>                  10.1.2.2                 0             0 200 ?
+r> 10.1.4.0/24      10.1.4.4                 0             0 400 ?
+*  10.2.3.0/24      10.1.4.4                               0 400 300 ?
+*>                  10.1.2.2                 0             0 200 ?
+*> 10.3.4.0/24      10.1.4.4                 0             0 400 ?
+*                   10.1.2.2                               0 200 300 ?
+R1#
+R1#
+R1#
+R1#
+R1#
+Connected to Dynamips VM "R1" (ID 1, type c3725) - Console port
+Press ENTER to get the prompt.
+          0         32768 ?
+*> 1.1.1.4/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.5/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.6/32       0.0.0.0                  0         32768 ?
+*> 1.1.7.0/30       0.0.0.0                  0         32768 ?
+*> 1.1.8.0/29       0.0.0.0                  0         32768 ?
+*> 1.1.9.0/28       0.0.0.0                  0         32768 ?
+*> 1.1.10.0/27      0.0.0.0                  0         32768 ?
+*> 1.1.11.0/26      0.0.0.0                  0         32768 ?
+*> 1.1.12.0/25      0.0.0.0                  0         32768 ?
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#show ip b
+BGP table version is 13, local router ID is 1.1.12.1
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*> 1.1.1.1/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.2/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.3/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.4/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.5/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.6/32       0.0.0.0                  0         32768 ?
+*> 1.1.7.0/30       0.0.0.0                  0         32768 ?
+*> 1.1.8.0/29       0.0.0.0                  0         32768 ?
+*> 1.1.9.0/28       0.0.0.0                  0         32768 ?
+*> 1.1.10.0/27      0.0.0.0                  0         32768 ?
+*> 1.1.11.0/26      0.0.0.0                  0         32768 ?
+*> 1.1.12.0/25      0.0.0.0                  0         32768 ?
+R1#
+R1#
+R1#
+R1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#router bgp nei
+R1(config)#router bgp 100
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#re
+R1(config-router)#redistribute co
+R1(config-router)#redistribute connected ?
+  metric     Metric for redistributed routes
+  route-map  Route map reference
+  <cr>
+
+R1(config-router)#redistribute connected 
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#^Z
+R1#
+R1#
+R1#
+R1#
+*Mar  1 01:38:24.407: %SYS-5-CONFIG_I: Configured from console by console
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#show ip b
+BGP table version is 20, local router ID is 1.1.12.1
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*> 1.1.1.1/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.2/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.3/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.4/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.5/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.6/32       0.0.0.0                  0         32768 ?
+*> 1.1.7.0/30       0.0.0.0                  0         32768 ?
+*> 1.1.8.0/29       0.0.0.0                  0         32768 ?
+*> 1.1.9.0/28       0.0.0.0                  0         32768 ?
+*> 1.1.10.0/27      0.0.0.0                  0         32768 ?
+*> 1.1.11.0/26      0.0.0.0                  0         32768 ?
+*> 1.1.12.0/25      0.0.0.0                  0         32768 ?
+r  10.1.2.0/24      10.1.4.4                               0 400 300 200 ?
+r>                  10.1.2.2                 0             0 200 ?
+r> 10.1.4.0/24      10.1.4.4                 0             0 400 ?
+*  10.2.3.0/24      10.1.4.4                               0 400 300 ?
+*>                  10.1.2.2                 0             0 200 ?
+*> 10.3.4.0/24      10.1.4.4                 0             0 400 ?
+*                   10.1.2.2                               0 200 300 ?
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#TR
+R1#TRaceroute 10.3.4.3
+
+Type escape sequence to abort.
+Tracing the route to 10.3.4.3
+
+  1 10.1.4.4 16 msec 20 msec 20 msec
+  2 10.3.4.3 [AS 400] 44 msec *  28 msec
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+*Mar  1 03:17:27.951: %BGP-5-ADJCHANGE: neighbor 10.1.2.2 Down BGP Notification sent
+*Mar  1 03:17:27.951: %BGP-3-NOTIFICATION: sent to neighbor 10.1.2.2 4/0 (hold time expired) 0 bytes 
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#show ip bgp re
+R1#show ip bgp ? 
+  A.B.C.D            Network in the BGP routing table to display
+  A.B.C.D/nn         IP prefix <network>/<length>, e.g., 35.0.0.0/8
+  all                All address families
+  cidr-only          Display only routes with non-natural netmasks
+  community          Display routes matching the communities
+  community-list     Display routes matching the community-list
+  dampening          Display detailed information about dampening
+  extcommunity-list  Display routes matching the extcommunity-list
+  filter-list        Display routes conforming to the filter-list
+  inconsistent-as    Display only routes with inconsistent origin ASs
+  injected-paths     Display all injected paths
+  ipv4               Address family
+  ipv6               Address family
+  labels             Display Labels for IPv4 NLRI specific information
+  neighbors          Detailed information on TCP and BGP neighbor connections
+  nsap               Address family
+  oer-paths          Display all oer controlled paths
+  paths              Path information
+  peer-group         Display information on peer-groups
+  pending-prefixes   Display prefixes pending deletion
+  prefix-list        Display routes matching the prefix-list
+  quote-regexp       Display routes matching the AS path "regular expression"
+  regexp             Display routes matching the AS path regular expression
+  replication        Display replication status of update-group(s)
+  rib-failure        Display bgp routes that failed to install in the routing
+                     table (RIB)
+  route-map          Display routes matching the route-map
+  summary            Summary of BGP neighbor status
+  template           Display peer-policy/peer-session templates
+  update-group       Display information on update-groups
+  vpnv4              Address family
+  |                  Output modifiers
+  <cr>
+
+R1#show ip bgp r?
+regexp  replication  rib-failure  route-map
+
+R1#show ip bgp re
+R1#show ip bgp reg
+R1#show ip bgp regexp res
+R1#show ip bgp regexp reg
+R1#show ip bgp regexp reg?
+LINE    <cr>
+
+R1#show ip bgp regexp ?  
+  LINE  A regular-expression to match BGP AS paths. Use "ctrl-v ?" to enter "?"
+
+Connected to Dynamips VM "R1" (ID 1, type c3725) - Console port
+Press ENTER to get the prompt.
+ROMMON emulation microcode.
+
+                           Launching IOS image at 0x80008000...
+
+                                                               Smart Init is disabled. IOMEM set to: 5  
+
+                                                                                                        Using iomem percentage: 5
+
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software, 3700 Software (C3725-ADVENTERPRISEK9-M), Version 12.4(15)T7, RELEASE SOFTWARE (fc3)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2008 by Cisco Systems, Inc.
+Compiled Wed 13-Aug-08 21:36 by prod_rel_team
+Image text-base: 0x60008930, data-base: 0x63652000
+
+
+ BIST FAILED...
+Unknown file system detected.
+Use format command to format the card as DOS File System.
+Or use erase command to format the card as Low End File System.
+
+Unknown file system detected.
+Use format command to format the card as DOS File System.
+Or use erase command to format the card as Low End File System.
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+Cisco 3725 (R7000) processor (revision 0.1) with 249856K/12288K bytes of memory.
+Processor board ID FTX0945W0MY
+R7000 CPU at 240MHz, Implementation 39, Rev 2.1, 256KB L2, 512KB L3 Cache
+18 FastEthernet interfaces
+DRAM configuration is 64 bits wide with parity enabled.
+55K bytes of NVRAM.
+131072K bytes of ATA System CompactFlash (Read/Write)
+131072K bytes of ATA Slot0 CompactFlash (Read/Write)
+Installed image archive
+
+
+
+Press RETURN to get started!
+
+
+*Mar  1 00:00:04.023: %LINEPROTO-5-UPDOWN: Line protocol on Interface VoIP-Null0, changed state to up
+*Mar  1 00:00:04.023: %LINEPROTO-5-UPDOWN: Line protocol on Interface IPv6-mpls, changed state to up
+*Mar  1 00:00:04.027: %LINK-3-UPDOWN: Interface FastEthernet1/0, changed state to down
+*Mar  1 00:00:04.031: %LINK-3-UPDOWN: Interface FastEthernet1/1, changed state to down
+*Mar  1 00:00:04.031: %LINK-3-UPDOWN: Interface FastEthernet1/2, changed state to down
+*Mar  1 00:00:04.035: %LINK-3-UPDOWN: Interface FastEthernet1/3, changed state to down
+*Mar  1 00:00:04.035: %LINK-3-UPDOWN: Interface FastEthernet1/4, changed state to down
+*Mar  1 00:00:04.039: %LINK-3-UPDOWN: Interface FastEthernet1/5, changed state to down
+*Mar  1 00:00:04.039: %LINK-3-UPDOWN: Interface FastEthernet1/6, changed state to down
+*Mar  1 00:00:04.043: %LINK-3-UPDOWN: Interface FastEthernet1/7, changed state to down
+*Mar  1 00:00:04.043: %LINK-3-UPDOWN: Interface FastEthernet1/8, changed state to down
+*Mar  1 00:00:04.047: %LINK-3-UPDOWN: Interface FastEthernet1/9, changed state to down
+*Mar  1 00:00:04.047: %LINK-3-UPDOWN: Interface FastEthernet1/10, changed state to down
+*Mar  1 00:00:04.047: %LINK-3-UPDOWN: Interface FastEthernet1/11, changed state to down
+*Mar  1 00:00:04.051: %LINK-3-UPDOWN: Interface FastEthernet1/12, changed state to down
+*Mar  1 00:00:04.051: %LINK-3-UPDOWN: Interface FastEthernet1/13, changed state to down
+*Mar  1 00:00:04.055: %LINK-3-UPDOWN: Interface FastEthernet1/14, changed state to down
+*Mar  1 00:00:04.055: %LINK-3-UPDOWN: Interface FastEthernet1/15, changed state to down
+*Mar  1 00:00:04.631: %SYS-5-CONFIG_I: Configured from memory by console
+*Mar  1 00:00:04.915: %SYS-5-RESTART: System restarted --
+Cisco IOS Software, 3700 Software (C3725-ADVENTERPRISEK9-M), Version 12.4(15)T7, RELEASE SOFTWARE (fc3)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2008 by Cisco Systems, Inc.
+Compiled Wed 13-Aug-08 21:36 by prod_rel_team
+*Mar  1 00:00:04.931: %SNMP-5-COLDSTART: SNMP agent on host R1 is undergoing a cold start
+*Mar  1 00:00:05.203: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to up
+*Mar  1 00:00:05.211: %LINK-3-UPDOWN: Interface FastEthernet0/0, changed state to up
+*Mar  1 00:00:05.375: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback1, changed state to up
+*Mar  1 00:00:05.379: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback2, changed state to up
+*Mar  1 00:00:05.383: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback3, changed state to up
+*Mar  1 00:00:05.463: %CRYPTO-6-ISAKMP_ON_OFF: ISAKMP is OFF
+*Mar  1 00:00:05.463: %CRYPTO-6-GDOI_ON_OFF: GDOI is OFF
+*Mar  1 00:00:05.471: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback4, changed state to up
+*Mar  1 00:00:05.471: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback5, changed state to up
+*Mar  1 00:00:05.471: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback6, changed state to up
+*Mar  1 00:00:05.471: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback7, changed state to up
+*Mar  1 00:00:05.471: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback8, changed state to up
+*Mar  1 00:00:06.071: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to up
+*Mar  1 00:00:06.203: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+*Mar  1 00:00:06.207: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up
+*Mar  1 00:00:07.639: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/15, changed state to up
+*Mar  1 00:00:07.647: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/14, changed state to up
+*Mar  1 00:00:07.655: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/13, changed state to up
+*Mar  1 00:00:07.659: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/12, changed state to up
+*Mar  1 00:00:07.663: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/11, changed state to up
+*Mar  1 00:00:07.667: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/10, changed state to up
+*Mar  1 00:00:07.675: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/9, changed state to up
+*Mar  1 00:00:07.679: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/8, changed state to up
+*Mar  1 00:00:07.683: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/7, changed state to up
+*Mar  1 00:00:07.691: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/6, changed state to up
+*Mar  1 00:00:35.379: %BGP-5-ADJCHANGE: neighbor 10.1.4.4 Up 
+*Mar  1 00:00:38.311: %BGP-5-ADJCHANGE: neighbor 10.1.2.2 Up 
+R1>
+R1>
+R1>
+R1>
+R1>
+R1>
+R1>
+R1>en
+R1#show ip b
+BGP table version is 1, local router ID is 1.1.12.1
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*  1.1.1.1/32       0.0.0.0                  0         32768 ?
+*  1.1.1.2/32       0.0.0.0                  0         32768 ?
+*  1.1.1.3/32       0.0.0.0                  0         32768 ?
+*  1.1.1.4/32       0.0.0.0                  0         32768 ?
+*  1.1.1.5/32       0.0.0.0                  0         32768 ?
+*  1.1.1.6/32       0.0.0.0                  0         32768 ?
+*  1.1.7.0/30       0.0.0.0                  0         32768 ?
+*  1.1.8.0/29       0.0.0.0                  0         32768 ?
+*  1.1.9.0/28       0.0.0.0                  0         32768 ?
+*  1.1.10.0/27      0.0.0.0                  0         32768 ?
+*  1.1.11.0/26      0.0.0.0                  0         32768 ?
+*  1.1.12.0/25      0.0.0.0                  0         32768 ?
+R1#
+R1#
+R1#
+R1#ter
+R1#terminal le
+R1#terminal length 0
+R1#show bgp ipv4 unicast summary
+BGP router identifier 1.1.12.1, local AS number 100
+BGP table version is 18, main routing table version 18
+15 network entries using 1800 bytes of memory
+17 path entries using 884 bytes of memory
+5/3 BGP path/bestpath attribute entries using 620 bytes of memory
+3 BGP AS-PATH entries using 72 bytes of memory
+0 BGP route-map cache entries using 0 bytes of memory
+0 BGP filter-list cache entries using 0 bytes of memory
+Bitfield cache entries: current 1 (at peak 1) using 32 bytes of memory
+BGP using 3408 total bytes of memory
+BGP activity 15/0 prefixes, 17/0 paths, scan interval 60 secs
+
+Neighbor        V    AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+10.1.2.2        4   200       8       8       18    0    0 00:02:00        3
+10.1.4.4        4   400       8       8       18    0    0 00:02:03        2
+Connected to Dynamips VM "R1" (ID 1, type c3725) - Console port
+Press ENTER to get the prompt.
+Connected to Dynamips VM "R1" (ID 1, type c3725) - Console port
+Press ENTER to get the prompt.
+Connected to Dynamips VM "R1" (ID 1, type c3725) - Console port
+Press ENTER to get the prompt.
+Connected to Dynamips VM "R1" (ID 1, type c3725) - Console port
+Press ENTER to get the prompt.
+ROMMON emulation microcode.
+
+                           Launching IOS image at 0x80008000...
+
+                                                               Smart Init is disabled. IOMEM set to: 5  
+
+                                                                                                        Using iomem percentage: 5
+
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software, 3700 Software (C3725-ADVENTERPRISEK9-M), Version 12.4(15)T7, RELEASE SOFTWARE (fc3)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2008 by Cisco Systems, Inc.
+Compiled Wed 13-Aug-08 21:36 by prod_rel_team
+Image text-base: 0x60008930, data-base: 0x63652000
+
+
+Original NVCONFIG doesnt have correct MAGIC number
+
+Backup NVCONFIG also doesnt have correct MAGIC number
+
+ BIST FAILED...
+Unknown file system detected.
+Use format command to format the card as DOS File System.
+Or use erase command to format the card as Low End File System.
+
+Unknown file system detected.
+Use format command to format the card as DOS File System.
+Or use erase command to format the card as Low End File System.
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+Cisco 3725 (R7000) processor (revision 0.1) with 249856K/12288K bytes of memory.
+Processor board ID FTX0945W0MY
+R7000 CPU at 240MHz, Implementation 39, Rev 2.1, 256KB L2, 512KB L3 Cache
+2 FastEthernet interfaces
+DRAM configuration is 64 bits wide with parity enabled.
+55K bytes of NVRAM.
+131072K bytes of ATA System CompactFlash (Read/Write)
+131072K bytes of ATA Slot0 CompactFlash (Read/Write)
+
+
+         --- System Configuration Dialog ---
+
+Would you like to enter the initial configuration dialog? [yes/no]: Installed image archive
+
+% Please answer 'yes' or 'no'.
+Would you like to enter the initial configuration dialog? [yes/no]: 
+% Please answer 'yes' or 'no'.
+Would you like to enter the initial configuration dialog? [yes/no]: 
+% Please answer 'yes' or 'no'.
+Would you like to enter the initial configuration dialog? [yes/no]: no
+
+
+Press RETURN to get started!
+
+
+*Mar  1 00:00:04.107: %LINEPROTO-5-UPDOWN: Line protocol on Interface VoIP-Null0, changed state to up
+*Mar  1 00:00:04.107: %LINEPROTO-5-UPDOWN: Line protocol on Interface IPv6-mpls, changed state to up
+*Mar  1 00:00:19.851: %LINK-5-CHANGED: Interface FastEthernet0/1, changed state to administratively down
+*Mar  1 00:00:19.855: %LINK-5-CHANGED: Interface FastEthernet0/0, changed state to administratively down
+*Mar  1 00:00:19.955: %SYS-5-RESTART: System restarted --
+Cisco IOS Software, 3700 Software (C3725-ADVENTERPRISEK9-M), Version 12.4(15)T7, RELEASE SOFTWARE (fc3)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2008 by Cisco Systems, Inc.
+Compiled Wed 13-Aug-08 21:36 by prod_rel_team
+*Mar  1 00:00:19.967: %SNMP-5-COLDSTART: SNMP agent on host Router is undergoing a cold start
+*Mar  1 00:00:20.007: %CRYPTO-6-ISAKMP_ON_OFF: ISAKMP is OFF
+*Mar  1 00:00:20.007: %CRYPTO-6-GDOI_ON_OFF: GDOI is OFF
+*Mar  1 00:00:20.851: %LINEPROTO-5-UPDOWN: Line proto
+Router>
+Routecol on Interface FastEthernet0/1, changed state to down
+*Mar  1 00:00:20.855: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to downr>
+Router>
+Router>
+Router>
+Router>
+Router>
+Router>en
+Router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#
+Router(config)#
+Router(config)#
+Router(config)#
+Router(config)#
+Router(config)#
+Router(config)#!
+Router(config)#version 12.4
+Router(config)#service timestamps debug datetime msec
+Router(config)#service timestamps log datetime msec
+Router(config)#no service password-encryption
+Router(config)#!
+Router(config)#hostname R1
+R1(config)#!
+R1(config)#boot-start-marker
+R1(config)#boot-end-marker
+R1(config)#!
+R1(config)#!
+R1(config)#no aaa new-model
+R1(config)#memory-size iomem 5
+R1(config)#ip cef
+R1(config)#!
+R1(config)#!
+R1(config)#!
+R1(config)#!
+R1(config)#no ip domain lookup
+R1(config)#!
+R1(config)#multilink bundle-name authenticated
+R1(config)#!
+R1(config)#!
+R1(config)#!
+R1(config)#!
+R1(config)#!
+R1(config)#!
+R1(config)#!
+R1(config)#!
+R1(config)#!
+R1(config)#!
+R1(config)#!
+R1(config)#!
+R1(config)#!
+R1(config)#!
+R1(config)#!
+R1(config)#!
+R1(config)#!
+R1(config)#!
+R1(config)#!
+R1(config)#!
+R1(config)#!
+R1(config)#archive
+R1(config-archive)# log config
+R1(config-archive-log-cfg)#  hidekeys
+R1(config-archive-log-cfg)#! 
+R1(config-archive-log-cfg)#!
+R1(config-archive-log-cfg)#!
+R1(config-archive-log-cfg)#!
+R1(config-archive-log-cfg)#!
+R1(config-archive-log-cfg)#!
+R1(config-archive-log-cfg)#!
+R1(config-archive-log-cfg)#!
+R1(config-archive-log-cfg)#interface Loopback1
+R1(config-if)# ip address 1.1.1.1 255.255.255.255
+R1(config-if)#!
+R1(config-if)#interface Loopback2
+R1(config-if)# ip address 1.1.1.2 255.255.255.255
+R1(config-if)#!
+R1(config-if)#interface Loopback3
+R1(config-if)# ip address 1.1.1.3 255.255.255.255
+R1(config-if)#!
+R1(config-if)#interface Loopback4
+R1(config-if)# ip address 1.1.1.4 255.255.255.255
+R1(config-if)#!
+R1(config-if)#interface Loopback5
+R1(config-if)# ip address 1.1.1.5 255.255.255.255
+R1(config-if)#!
+R1(config-if)#interface Loopback6
+R1(config-if)# ip address 1.1.1.6 255.255.255.255
+R1(config-if)#!
+R1(config-if)#interface Loopback7
+R1(config-if)# ip address 1.1.7.1 255.255.255.252
+R1(config-if)#!
+R1(config-if)#interface Loopback8
+R1(config-if)# ip address 1.1.8.1 255.255.255.248
+R1(config-if)#!
+R1(config-if)#interface Loopback9
+R1(config-if)# ip address 1.1.9.1 255.255.255.240
+R1(config-if)#!
+R1(config-if)#interface Loopback10
+R1(config-if)# ip address 1.1.10.1 255.255.255.224
+R1(config-if)#!
+R1(config-if)#interface Loopback11
+R1(config-
+*Mar  1 00:00:45.571: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback1, changed state to up
+*Mar  1 00:00:45.735: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback2, changed state to up
+*Mar  1 00:00:45.807: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback3, changed state to up
+*Mar  1 00:00:45.815: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback4, changed state to up
+*Mar  1 00:00:45.823: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback5, changed state to up
+*Mar  1 00:00:45.831: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback6, changed state to up
+*Mar  1 00:00:45.847: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback7, changed state to up
+*Mar  1 00:00:45.883: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback8, changed state to up
+*Mar  1 00:00:45.927: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback9, changed state to up
+*Mar  1 00:00:46.003: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback10, changed state to upif)# ip address 1.1.11.1 255.255.255.192
+R1(config-if)#!
+R1(config-if)#interface Loopback12
+R1(config-if)# ip address 1.1.12.1 255.255.255.128
+R1(config-if)#!
+R1(config-if)#interface FastEthernet0/0
+R1(config-if)# ip address 10.1.2.1 255.255.255.0
+R1(config-if)# duplex auto
+R1(config-if)# speed auto
+R1(config-if)#!
+R1(config-if)#interface FastEthernet0/1
+R1(config-if)# ip address 10.1.4.1 255.255.255.0
+R1(config-if)# duplex auto
+R1(config-if)# speed auto
+R1(config-if)#!
+R1(config-if)#interface FastEthernet1/0
+                        ^
+% Invalid input detected at '^' marker.
+
+R1(config)#!
+R1(config)#interface FastEthernet1/1
+                     ^
+% Invalid input detected at '^' marker.
+
+R1(config)#!
+R1(config)#interface FastEthernet1/2
+                                   ^
+% Invalid input detected at '^' marker.
+
+R1(config)#!
+R1(config)#interface FastEthernet1/3
+                                   ^
+% Invalid input detected at '^' marker.
+
+R1(config)#!
+R1(config)#interface FastEthernet1/4
+                                   ^
+% Invalid input detected at '^' marker.
+
+R1(config)#!
+R1(config)#interface FastEthernet1/5
+                                   ^
+% Invalid input detected at '^' marker.
+
+R1(config)#!
+R1(config)#interface FastEthernet1/6
+                                   ^
+% Invalid input detected at '^' marker.
+
+R1(config)#!
+R1(config)#interface FastEthernet1/7
+                                   ^
+% Invalid input detected at '^' marker.
+
+R1(config)#!
+R1(config)#interface FastEthernet1/8
+                                   ^
+% Invalid input detected at '^' marker.
+
+R1(config)#!
+R1(config)#interface FastEthernet1/9
+                                   ^
+% Invalid input detected at '^' marker.
+
+R1(config)#!
+R1(config)#interface FastEthernet1/10
+                                    ^
+% Invalid input detected at '^' marker.
+
+R1(config)#!
+R1(config)#interface FastEthernet1/11
+                                    ^
+% Invalid input detected at '^' marker.
+
+R1(config)#!
+R1(config)
+*Mar  1 00:00:48.579: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback12, changed state to up#interface FastEthernet1/12
+                                    ^
+% Invalid input detected at '^' marker.
+
+R1(config)#!
+R1(config)#interface FastEthernet1/13
+                                    ^
+% Invalid input detected at '^' marker.
+
+R1(config)#!
+R1(config)#interface FastEthernet1/14
+                                    ^
+% Invalid input detected at '^' marker.
+
+R1(config)#!
+R1(config)#interface FastEthernet1/15
+                                    ^
+% Invalid input detected at '^' marker.
+
+R1(config)#!
+R1(config)#interface Vlan1
+                      ^
+% Invalid input detected at '^' marker.
+
+R1(config)# no ip address
+% Incomplete command.
+
+R1(config)#!
+R1(config)#router bgp 100
+R1(config-router)# no synchronization
+R1(config-router)# bgp log-neighbor-changes
+R1(config-router)# redistribute connected
+R1(config-router)# neighbor 10.1.2.2 remote-as 200
+R1(config-router)# neighbor 10.1.2.2 ebgp-multihop 8
+R1(config-router)# neighbor 10.1.4.4 remote-as 400
+R1(config-router)# neighbor 10.1.4.4 ebgp-multihop 8
+R1(config-router)# no auto-summary
+R1(config-router)#!
+R1(config-router)#ip forward-protocol nd
+R1(config)#!
+R1(config)#!
+R1(config)#ip http server
+R1(config)#no ip http secure-server
+R1(config)#!
+R1(config)#!
+R1(config)#!
+R1(config)#!
+R1(config)#!
+R1(config)#!
+R1(config)#!
+R1(config)#!
+R1(config)#control-plane
+R1(config-cp)#!
+R1(config-cp)#!
+R1(config-cp)#!
+R1(config-cp)#!
+R1(config-cp)#!
+R1(config-cp)#!
+R1(config-cp)#!
+R1(config-cp)#!
+R1(config-cp)#!
+R1(config-cp)#!
+R1(config-cp)#line con 0
+R1(config-line)# exec-timeout 0 0
+R1(config-line)#line aux 0
+R1(config-line)#line vty 0 4
+R1(config-line)# login
+% Login disabled on line 98, until 'password' is set
+% Login disabled on line 99, until 'password' is set
+% Login disabled on line 100, until 'password' is set
+% Login disabled on line 101, until 'password' is set
+% Login disabled on line 102, until 'password' is set
+R1(config-line)#!
+R1(config-line)#!
+R1(config-line)#end
+R1#
+*Mar  1 00:00:51.755: %SYS-5-CONFIG_I: Configured from console by console
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#wr
+Building configuration...
+[OK]
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#show ip b
+BGP table version is 1, local router ID is 1.1.12.1
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*  1.1.1.1/32       0.0.0.0                  0         32768 ?
+*  1.1.1.2/32       0.0.0.0                  0         32768 ?
+*  1.1.1.3/32       0.0.0.0                  0         32768 ?
+*  1.1.1.4/32       0.0.0.0                  0         32768 ?
+*  1.1.1.5/32       0.0.0.0                  0         32768 ?
+*  1.1.1.6/32       0.0.0.0                  0         32768 ?
+*  1.1.7.0/30       0.0.0.0                  0         32768 ?
+*  1.1.8.0/29       0.0.0.0                  0         32768 ?
+*  1.1.9.0/28       0.0.0.0                  0         32768 ?
+*  1.1.10.0/27      0.0.0.0                  0         32768 ?
+*  1.1.11.0/26      0.0.0.0                  0         32768 ?
+*  1.1.12.0/25      0.0.0.0                  0         32768 ?
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#show ip int bri
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            10.1.2.1        YES manual administratively down down    
+FastEthernet0/1            10.1.4.1        YES manual administratively down down    
+Loopback1                  1.1.1.1         YES manual up                    up      
+Loopback2                  1.1.1.2         YES manual up                    up      
+Loopback3                  1.1.1.3         YES manual up                    up      
+Loopback4                  1.1.1.4         YES manual up                    up      
+Loopback5                  1.1.1.5         YES manual up                    up      
+Loopback6                  1.1.1.6         YES manual up                    up      
+Loopback7                  1.1.7.1         YES manual up                    up      
+Loopback8                  1.1.8.1         YES manual up                    up      
+Loopback9                  1.1.9.1         YES manual up                    up      
+          
+R1#
+R1#
+R1#
+R1#
+R1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#rou
+R1(config)#in   
+R1(config)#interface FastEthernet0/0
+R1(config-if)#no shut
+R1(config-if)#exi
+R1(config)#
+*Mar  1 00:04:02.167: %LINK-3-UPDOWN: Interface FastEthernet0/0, changed state to up
+*Mar  1 00:04:03.167: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to upno shut
+R1(config)#interface FastEthernet0/1
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#no shut
+R1(config-if)#
+*Mar  1 00:04:14.339: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to up
+*Mar  1 00:04:15.339: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up^Z
+R1#
+R1#
+R1#
+R1#wr
+Building configuration...
+
+*Mar  1 00:04:16.319: %SYS-5-CONFIG_I: Configured from console by console[OK]
+R1#show ip int bri
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            10.1.2.1        YES manual up                    up      
+FastEthernet0/1            10.1.4.1        YES manual up                    up      
+Loopback1                  1.1.1.1         YES manual up                    up      
+Loopback2                  1.1.1.2         YES manual up                    up      
+Loopback3                  1.1.1.3         YES manual up                    up      
+Loopback4                  1.1.1.4         YES manual up                    up      
+Loopback5                  1.1.1.5         YES manual up                    up      
+Loopback6                  1.1.1.6         YES manual up                    up      
+Loopback7                  1.1.7.1         YES manual up                    up      
+Loopback8                  1.1.8.1         YES manual up                    up      
+Loopback9                  1.1.9.1         YES manual up                    up      
+ --More-- 
+*Mar  1 00:05:00.923: %BGP-5-ADJCHANGE: neighbor 10Loopback10                 1.1.10.1        YES manual up                    up      
+Loopback11                 1.1.11.1        YES manual up                    up      
+Loopback12                 1.1.12.1        YES manual up                    up      
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#sh ip b
+BGP table version is 16, local router ID is 1.1.12.1
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*> 1.1.1.1/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.2/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.3/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.4/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.5/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.6/32       0.0.0.0                  0         32768 ?
+*> 1.1.7.0/30       0.0.0.0                  0         32768 ?
+*> 1.1.8.0/29       0.0.0.0                  0         32768 ?
+*> 1.1.9.0/28       0.0.0.0                  0         32768 ?
+*> 1.1.10.0/27      0.0.0.0                  0         32768 ?
+*> 1.1.11.0/26      0.0.0.0                  0         32768 ?
+*> 1.1.12.0/25      0.0.0.0                  0         32768 ?
+*  10.1.2.0/24      10.1.2.2                 0             0 200 ?
+*>                  0.0.0.0                  0         32768 ?
+*> 10.1.4.0/24      0.0.0.0                  0         32768 ?
+*> 10.2.3.0/24      10.1.2.2                 0             0 200 ?
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+*Mar  1 00:06:10.551: %BGP-5-ADJCHANGE: neighbor 10.1.4.4 Up ter
+R1#terminal le
+R1#terminal length 0
+R1#wr
+Building configuration...
+[OK]
+R1#
+R1#
+R1#terminal length 0
+R1#write
+Building configuration...
+[OK]
+R1#quit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R1 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+R1>
+R1>
+R1>
+R1>
+R1>
+R1>
+R1>
+R1>en
+R1#
+R1#
+R1#
+R1#
+R1#
+*Mar  1 00:09:01.983: %BGP-5-ADJCHANGE: neighbor 10.1.2.2 Down Peer closed the session
+R1#
+R1#
+R1#
+R1#en
+R1#
+R1#
+R1#
+R1#
+R1#
+*Mar  1 00:09:22.615: %BGP-5-ADJCHANGE: neighbor 10.1.2.2 Up 
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#show ip b
+BGP table version is 20, local router ID is 1.1.12.1
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*> 1.1.1.1/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.2/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.3/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.4/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.5/32       0.0.0.0                  0         32768 ?
+*> 1.1.1.6/32       0.0.0.0                  0         32768 ?
+*> 1.1.7.0/30       0.0.0.0                  0         32768 ?
+*> 1.1.8.0/29       0.0.0.0                  0         32768 ?
+*> 1.1.9.0/28       0.0.0.0                  0         32768 ?
+*> 1.1.10.0/27      0.0.0.0                  0         32768 ?
+*> 1.1.11.0/26      0.0.0.0                  0         32768 ?
+*> 1.1.12.0/25      0.0.0.0                  0         32768 ?
+*  10.1.2.0/24      10.1.2.2                 0             0 200 ?
+*>                  0.0.0.0                  0         32768 ?
+*> 10.1.4.0/24      0.0.0.0                  0         32768 ?
+*> 10.2.3.0/24      10.1.2.2                 0             0 200 ?
+*                   10.1.4.4                               0 400 300 ?
+*  10.3.4.0/24      10.1.2.2                               0 200 300 ?
+*>                  10.1.4.4                               0 400 300 ?
+R1#
+R1#
+R1#
+R1#
+R1#ter
+R1#terminal le
+R1#terminal length 0
+R1#
+R1#
+R1#
+R1#
+R1#
+*Mar  1 00:10:54.211: %BGP-5-ADJCHANGE: neighbor 10.1.4.4 Down Peer closed the session
+*Mar  1 00:10:54.459: %BGP-5-ADJCHANGE: neighbor 10.1.4.4 Up 
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#router bgp 100
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#re
+R1(config-router)#redistribute co
+R1(config-router)#no redistribute connected 
+R1(config-router)#
+R1#
+*Mar  1 00:15:47.247: %SYS-5-CONFIG_I: Configured from console by console
+R1#
+R1#
+R1#wr
+Building configuration...
+[OK]
+R1#
+R1#
+R1#
+R1#
+R1#show ip b
+
+R1#
+R1#
+R1#
+R1#
+R1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#router bgp 100
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#ne
+R1(config-router)#net
+R1(config-router)#do sh ip int bri
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            10.1.2.1        YES manual up                    up      
+FastEthernet0/1            10.1.4.1        YES manual up                    up      
+Loopback1                  1.1.1.1         YES manual up                    up      
+Loopback2                  1.1.1.2         YES manual up                    up      
+Loopback3                  1.1.1.3         YES manual up                    up      
+Loopback4                  1.1.1.4         YES manual up                    up      
+Loopback5                  1.1.1.5         YES manual up                    up      
+Loopback6                  1.1.1.6         YES manual up                    up      
+Loopback7                  1.1.7.1         YES manual up                    up      
+Loopback8                  1.1.8.1         YES manual up                    up      
+Loopback9                  1.1.9.1         YES manual up                    up      
+Loopback10                 1.1.10.1        YES manual up                    up      
+Loopback11                 1.1.11.1        YES manual up                    up      
+Loopback12                 1.1.12.1        YES manual up                    up      
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#ne
+R1(config-router)#net
+R1(config-router)#network 10.0.0.0
+R1(config-router)#net
+R1(config-router)#network 1.0.0.0
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#^Z
+R1#
+R1#
+R1#
+R1#
+*Mar  1 00:19:08.975: %SYS-5-CONFIG_I: Configured from console by console
+R1#
+R1#
+R1#
+R1#
+R1#show ip b
+
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#show ip b
+
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#rou
+R1(config)#router bgp
+R1(config)#router bgp 100
+R1(config-router)#no network 1.0.0.0
+R1(config-router)#no network 10.0.0.0
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#ne
+R1(config-router)#net
+R1(config-router)#network 10.1.2.0 m
+R1(config-router)#network 10.1.2.0 mask 255.255.255.0
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#network 10.1.4.0 mask 255.255.255.0
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#do sh ip b
+BGP table version is 42, local router ID is 1.1.12.1
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*> 10.1.2.0/24      0.0.0.0                  0         32768 i
+*> 10.1.4.0/24      0.0.0.0                  0         32768 i
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#do show ip b
+BGP table version is 45, local router ID is 1.1.12.1
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*  10.1.2.0/24      10.1.2.2                 0             0 200 i
+*>                  0.0.0.0                  0         32768 i
+*> 10.1.4.0/24      0.0.0.0                  0         32768 i
+*  10.2.3.0/24      10.1.4.4                               0 400 300 i
+*>                  10.1.2.2                 0             0 200 i
+*> 10.3.4.0/24      10.1.4.4                 0             0 400 i
+*                   10.1.2.2                               0 200 300 i
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#exit
+R1(config)#
+R1(config)#
+R1(config)#
+R1(config)#
+R1(config)#
+R1(config)#router bgp 100                     
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#net
+R1(config-router)#network 1.1.1.1 ma
+R1(config-router)#network 1.1.1.1 mask 255.255.255.255
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#network 1.1.1.2 mask 255.255.255.255
+R1(config-router)#
+R1#
+*Mar  1 00:25:11.083: %SYS-5-CONFIG_I: Configured from console by console
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#router bgp 100
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#network 1.1.1.2 mask 255.255.255.255
+R1(config-router)#network 1.1.1.3 mask 255.255.255.255
+R1(config-router)#network 1.1.1.4 mask 255.255.255.255
+R1(config-router)#network 1.1.1.5 mask 255.255.255.255
+R1(config-router)#network 1.1.1.6 mask 255.255.255.255
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#do sh ip int bri
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            10.1.2.1        YES manual up                    up      
+FastEthernet0/1            10.1.4.1        YES manual up                    up      
+Loopback1                  1.1.1.1         YES manual up                    up      
+Loopback2                  1.1.1.2         YES manual up                    up      
+Loopback3                  1.1.1.3         YES manual up                    up      
+Loopback4                  1.1.1.4         YES manual up                    up      
+Loopback5                  1.1.1.5         YES manual up                    up      
+Loopback6                  1.1.1.6         YES manual up                    up      
+Loopback7                  1.1.7.1         YES manual up                    up      
+Loopback8                  1.1.8.1         YES manual up                    up      
+Loopback9                  1.1.9.1         YES manual up                    up      
+Loopback10                 1.1.10.1        YES manual up                    up      
+Loopback11                 1.1.11.1        YES manual up                    up      
+Loopback12                 1.1.12.1        YES manual up                    up      
+R1(config-router)#do sh run
+Building configuration...
+
+Current configuration : 1956 bytes
+!
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no aaa new-model
+memory-size iomem 5
+ip cef
+!
+!
+!
+!
+no ip domain lookup
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+archive
+ log config
+  hidekeys
+! 
+!
+!
+!
+!
+!
+!
+!
+interface Loopback1
+ ip address 1.1.1.1 255.255.255.255
+!
+interface Loopback2
+ ip address 1.1.1.2 255.255.255.255
+!
+interface Loopback3
+ ip address 1.1.1.3 255.255.255.255
+!
+interface Loopback4
+ ip address 1.1.1.4 255.255.255.255
+!
+interface Loopback5
+ ip address 1.1.1.5 255.255.255.255
+!
+interface Loopback6
+ ip address 1.1.1.6 255.255.255.255
+!
+interface Loopback7
+ ip address 1.1.7.1 255.255.255.252
+!
+interface Loopback8
+ ip address 1.1.8.1 255.255.255.248
+!
+interface Loopback9
+ ip address 1.1.9.1 255.255.255.240
+!
+interface Loopback10
+ ip address 1.1.10.1 255.255.255.224
+!
+interface Loopback11
+ ip address 1.1.11.1 255.255.255.192
+!
+interface Loopback12
+ ip address 1.1.12.1 255.255.255.128
+!
+interface FastEthernet0/0
+ ip address 10.1.2.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ ip address 10.1.4.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+router bgp 100
+ no synchronization
+ bgp log-neighbor-changes
+ network 1.1.1.1 mask 255.255.255.255
+ network 1.1.1.2 mask 255.255.255.255
+ network 1.1.1.3 mask 255.255.255.255
+ network 1.1.1.4 mask 255.255.255.255
+ network 1.1.1.5 mask 255.255.255.255
+ network 1.1.1.6 mask 255.255.255.255
+ network 10.1.2.0 mask 255.255.255.0
+ network 10.1.4.0 mask 255.255.255.0
+ neighbor 10.1.2.2 remote-as 200
+ neighbor 10.1.2.2 ebgp-multihop 8
+ neighbor 10.1.4.4 remote-as 400
+ neighbor 10.1.4.4 ebgp-multihop 8
+ no auto-summary
+!
+ip forward-protocol nd
+!
+!
+ip http server
+no ip http secure-server
+!
+!
+!
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ exec-timeout 0 0
+line aux 0
+line vty 0 4
+ login
+!
+!
+end
+
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#network 1.1.7.0 mask 255.255.255.252
+R1(config-router)#network 1.1.8.0 mask 255.255.255.248
+R1(config-router)#network 1.1.9.0 mask 255.255.255.240
+R1(config-router)#network 1.1.10.0 mask 255.255.255.224
+R1(config-router)#network 1.1.11.0 mask 255.255.255.192
+R1(config-router)#network 1.1.12.0 mask 255.255.255.128
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#
+R1(config-router)#^Z
+R1#
+R1#
+R1#
+R1#wr
+Building configuration...
+
+*Mar  1 00:28:16.603: %SYS-5-CONFIG_I: Configured from console by console[OK]
+R1#
+R1#
+R1#
+R1#show ip b
+BGP table version is 57, local router ID is 1.1.12.1
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*> 1.1.1.1/32       0.0.0.0                  0         32768 i
+*> 1.1.1.2/32       0.0.0.0                  0         32768 i
+*> 1.1.1.3/32       0.0.0.0                  0         32768 i
+*> 1.1.1.4/32       0.0.0.0                  0         32768 i
+*> 1.1.1.5/32       0.0.0.0                  0         32768 i
+*> 1.1.1.6/32       0.0.0.0                  0         32768 i
+*> 1.1.7.0/30       0.0.0.0                  0         32768 i
+*> 1.1.8.0/29       0.0.0.0                  0         32768 i
+*> 1.1.9.0/28       0.0.0.0                  0         32768 i
+*> 1.1.10.0/27      0.0.0.0                  0         32768 i
+*> 1.1.11.0/26      0.0.0.0                  0         32768 i
+*> 1.1.12.0/25      0.0.0.0                  0         32768 i
+*  10.1.2.0/24      10.1.2.2                 0             0 200 i
+*>                  0.0.0.0                  0         32768 i
+*  10.1.4.0/24      10.1.4.4                 0             0 400 i
+*>                  0.0.0.0                  0         32768 i
+*  10.2.3.0/24      10.1.4.4                               0 400 300 i
+*>                  10.1.2.2                 0             0 200 i
+*> 10.3.4.0/24      10.1.4.4                 0             0 400 i
+*                   10.1.2.2                               0 200 300 i
+R1#
+R1#
+R1#wr
+Building configuration...
+[OK]
+R1#
+R1#
+R1#
+R1#show run
+Building configuration...
+
+Current configuration : 2187 bytes
+!
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no aaa new-model
+memory-size iomem 5
+ip cef
+!
+!
+!
+!
+no ip domain lookup
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+archive
+ log config
+  hidekeys
+! 
+!
+!
+!
+!
+!
+!
+!
+interface Loopback1
+ ip address 1.1.1.1 255.255.255.255
+!
+interface Loopback2
+ ip address 1.1.1.2 255.255.255.255
+!
+interface Loopback3
+ ip address 1.1.1.3 255.255.255.255
+!
+interface Loopback4
+ ip address 1.1.1.4 255.255.255.255
+!
+interface Loopback5
+ ip address 1.1.1.5 255.255.255.255
+!
+interface Loopback6
+ ip address 1.1.1.6 255.255.255.255
+!
+interface Loopback7
+ ip address 1.1.7.1 255.255.255.252
+!
+interface Loopback8
+ ip address 1.1.8.1 255.255.255.248
+!
+interface Loopback9
+ ip address 1.1.9.1 255.255.255.240
+!
+interface Loopback10
+ ip address 1.1.10.1 255.255.255.224
+!
+interface Loopback11
+ ip address 1.1.11.1 255.255.255.192
+!
+interface Loopback12
+ ip address 1.1.12.1 255.255.255.128
+!
+interface FastEthernet0/0
+ ip address 10.1.2.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ ip address 10.1.4.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+router bgp 100
+ no synchronization
+ bgp log-neighbor-changes
+ network 1.1.1.1 mask 255.255.255.255
+ network 1.1.1.2 mask 255.255.255.255
+ network 1.1.1.3 mask 255.255.255.255
+ network 1.1.1.4 mask 255.255.255.255
+ network 1.1.1.5 mask 255.255.255.255
+ network 1.1.1.6 mask 255.255.255.255
+ network 1.1.7.0 mask 255.255.255.252
+ network 1.1.8.0 mask 255.255.255.248
+ network 1.1.9.0 mask 255.255.255.240
+ network 1.1.10.0 mask 255.255.255.224
+ network 1.1.11.0 mask 255.255.255.192
+ network 1.1.12.0 mask 255.255.255.128
+ network 10.1.2.0 mask 255.255.255.0
+ network 10.1.4.0 mask 255.255.255.0
+ neighbor 10.1.2.2 remote-as 200
+ neighbor 10.1.2.2 ebgp-multihop 8
+ neighbor 10.1.4.4 remote-as 400
+ neighbor 10.1.4.4 ebgp-multihop 8
+ no auto-summary
+!
+ip forward-protocol nd
+!
+!
+ip http server
+no ip http secure-server
+!
+!
+!
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ exec-timeout 0 0
+line aux 0
+line vty 0 4
+ login
+!
+!
+end
+
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+Connected to Dynamips VM "R1" (ID 1, type c3725) - Console port
+Press ENTER to get the prompt.
+ed, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*> 1.1.1.1/32       0.0.0.0                  0         32768 i
+*> 1.1.1.2/32       0.0.0.0                  0         32768 i
+*> 1.1.1.3/32       0.0.0.0                  0         32768 i
+*> 1.1.1.4/32       0.0.0.0                  0         32768 i
+*> 1.1.1.5/32       0.0.0.0                  0         32768 i
+*> 1.1.1.6/32       0.0.0.0                  0         32768 i
+*> 1.1.7.0/30       0.0.0.0                  0         32768 i
+*> 1.1.8.0/29       0.0.0.0                  0         32768 i
+*> 1.1.9.0/28       0.0.0.0                  0         32768 i
+*> 1.1.10.0/27      0.0.0.0                  0         32768 i
+*> 1.1.11.0/26      0.0.0.0                  0         32768 i
+*> 1.1.12.0/25      0.0.0.0                  0         32768 i
+*  10.1.2.0/24      10.1.2.2                 0             0 200 i
+*>                  0.0.0.0                  0         32768 i
+*  10.1.4.0/24      10.1.4.4                 0             0 400 i
+*>                  0.0.0.0                  0         32768 i
+*  10.2.3.0/24      10.1.4.4                               0 400 300 i
+*>                  10.1.2.2                 0             0 200 i
+*> 10.3.4.0/24      10.1.4.4                 0             0 400 i
+*                   10.1.2.2                               0 200 300 i
+R1#
+R1#
+R1#wr
+Building configuration...
+[OK]
+R1#
+R1#
+R1#
+R1#show run
+Building configuration...
+
+Current configuration : 2187 bytes
+!
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no aaa new-model
+memory-size iomem 5
+ip cef
+!
+!
+!
+!
+no ip domain lookup
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+archive
+ log config
+  hidekeys
+! 
+!
+!
+!
+!
+!
+!
+!
+interface Loopback1
+ ip address 1.1.1.1 255.255.255.255
+!
+interface Loopback2
+ ip address 1.1.1.2 255.255.255.255
+!
+interface Loopback3
+ ip address 1.1.1.3 255.255.255.255
+!
+interface Loopback4
+ ip address 1.1.1.4 255.255.255.255
+!
+interface Loopback5
+ ip address 1.1.1.5 255.255.255.255
+!
+interface Loopback6
+ ip address 1.1.1.6 255.255.255.255
+!
+interface Loopback7
+ ip address 1.1.7.1 255.255.255.252
+!
+interface Loopback8
+ ip address 1.1.8.1 255.255.255.248
+!
+interface Loopback9
+ ip address 1.1.9.1 255.255.255.240
+!
+interface Loopback10
+ ip address 1.1.10.1 255.255.255.224
+!
+interface Loopback11
+ ip address 1.1.11.1 255.255.255.192
+!
+interface Loopback12
+ ip address 1.1.12.1 255.255.255.128
+!
+interface FastEthernet0/0
+ ip address 10.1.2.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ ip address 10.1.4.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+router bgp 100
+ no synchronization
+ bgp log-neighbor-changes
+ network 1.1.1.1 mask 255.255.255.255
+ network 1.1.1.2 mask 255.255.255.255
+ network 1.1.1.3 mask 255.255.255.255
+ network 1.1.1.4 mask 255.255.255.255
+ network 1.1.1.5 mask 255.255.255.255
+ network 1.1.1.6 mask 255.255.255.255
+ network 1.1.7.0 mask 255.255.255.252
+ network 1.1.8.0 mask 255.255.255.248
+ network 1.1.9.0 mask 255.255.255.240
+ network 1.1.10.0 mask 255.255.255.224
+ network 1.1.11.0 mask 255.255.255.192
+ network 1.1.12.0 mask 255.255.255.128
+ network 10.1.2.0 mask 255.255.255.0
+ network 10.1.4.0 mask 255.255.255.0
+ neighbor 10.1.2.2 remote-as 200
+ neighbor 10.1.2.2 ebgp-multihop 8
+ neighbor 10.1.4.4 remote-as 400
+ neighbor 10.1.4.4 ebgp-multihop 8
+ no auto-summary
+!
+ip forward-protocol nd
+!
+!
+ip http server
+no ip http secure-server
+!
+!
+!
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ exec-timeout 0 0
+line aux 0
+line vty 0 4
+ login
+!
+!
+end
+
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#

@@ -1,0 +1,30 @@
+hostname R20
+!
+no ip domain lookup
+!
+interface Loopback0
+ ip address 20.20.20.1 255.255.255.0
+!
+interface FastEthernet0/0
+ ip address 10.18.20.20 255.255.255.0
+ no shut
+!
+interface FastEthernet1/0
+ ip address 10.17.20.20 255.255.255.0
+ no shut
+!
+line con 0
+ no exec-timeout 0
+!
+router bgp 100
+ bgp router-id 20.20.20.1
+ bgp log-neighbor-changes
+ neighbor 10.18.20.18 remote-as 123
+ neighbor 10.18.20.18 next-hop-self
+ neighbor 10.18.20.18 send-community
+ neighbor 10.18.20.18 allowas-in
+
+ neighbor 10.17.20.17 remote-as 123
+ neighbor 10.17.20.17 next-hop-self
+ neighbor 10.17.20.17 send-community
+ neighbor 10.17.20.17 allowas-in

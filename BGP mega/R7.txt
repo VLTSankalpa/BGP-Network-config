@@ -1,0 +1,81 @@
+hostname R7
+!
+no ip domain lookup
+!
+router isis 1
+ net 02.0000.0000.0007.00
+exit
+!
+interface Loopback0
+ ip address 7.7.7.1 255.255.255.0
+ ip router isis 1
+!
+interface FastEthernet0/0
+ ip address 10.7.9.7 255.255.255.0
+ no shut
+ ip router isis 1
+ isis circuit-type level-1
+!
+interface FastEthernet1/0
+ ip address 10.7.8.7 255.255.255.0
+ no shut
+ ip router isis 1
+ isis circuit-type level-1
+!
+interface FastEthernet2/0
+ ip address 10.2.7.7 255.255.255.0
+ no shut
+ ip router isis 1
+ isis circuit-type level-2
+!
+interface FastEthernet3/0
+ ip address 10.7.10.7 255.255.255.0
+ no shut
+ ip router isis 1
+ isis circuit-type level-2
+!
+line con 0
+ no exec-timeout 0
+!
+router isis 1
+ passive-interface Loopback0
+exit
+!
+router bgp 65002
+ template peer-policy IBGP_RR
+  route-reflector-client
+  next-hop-self
+  send-community
+ exit-peer-policy
+ !
+ template peer-session IBGP
+  remote-as 65002
+  update-source Loopback0
+ exit-peer-session
+ !
+ bgp router-id 7.7.7.1
+ bgp cluster-id 65002
+ bgp log-neighbor-changes
+ bgp confederation identifier 123
+ neighbor 8.8.8.1 inherit peer-session IBGP
+ neighbor 9.9.9.1 inherit peer-session IBGP
+ bgp confederation peers 65001
+ neighbor 10.2.7.2 remote-as 65001
+ bgp confederation peers 65003
+ neighbor 10.7.10.10 remote-as 65003
+ !
+ address-family ipv4
+  neighbor 8.8.8.1 activate
+  neighbor 8.8.8.1 inherit peer-policy IBGP_RR
+  neighbor 9.9.9.1 activate
+  neighbor 9.9.9.1 inherit peer-policy IBGP_RR
+  neighbor 10.2.7.2 activate
+  neighbor 10.2.7.2 send-community
+  neighbor 10.2.7.2 next-hop-self
+  neighbor 10.7.10.10 activate
+  neighbor 10.7.10.10 send-community
+  neighbor 10.7.10.10 next-hop-self
+  no auto-summary
+  no synchronization
+ exit-address-family
+ 

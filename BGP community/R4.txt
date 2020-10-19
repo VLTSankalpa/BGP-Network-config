@@ -1,0 +1,157 @@
+
+!
+upgrade fpd auto
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R4
+!
+boot-start-marker
+boot-end-marker
+!
+logging message-counter syslog
+!
+no aaa new-model
+ip source-route
+ip cef
+!
+!
+!
+!
+no ip domain lookup
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+archive
+ log config
+  hidekeys
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 192.168.4.1 255.255.255.0
+!
+interface Loopback1
+ ip address 192.168.10.1 255.255.255.0
+!
+interface Loopback2
+ ip address 192.168.20.1 255.255.255.0
+!
+interface Loopback3
+ ip address 192.168.30.1 255.255.255.0
+!
+interface Loopback4
+ ip address 192.168.40.1 255.255.255.0
+!
+interface FastEthernet0/0
+ ip address 10.3.4.4 255.255.255.0
+ duplex half
+!
+interface FastEthernet1/0
+ ip address 10.1.4.4 255.255.255.0
+ duplex half
+!
+interface FastEthernet2/0
+ no ip address
+ shutdown
+ duplex half
+!
+interface FastEthernet3/0
+ no ip address
+ shutdown
+ duplex half
+!
+router bgp 400
+ no synchronization
+ bgp log-neighbor-changes
+ network 10.3.4.0 mask 255.255.255.0
+ network 192.168.4.0 route-map COM10
+ network 192.168.10.0
+ network 192.168.20.0
+ network 192.168.30.0
+ network 192.168.40.0
+ neighbor 10.1.4.1 remote-as 123
+ neighbor 10.1.4.1 send-community
+ neighbor 10.1.4.1 route-map COM11 out
+ neighbor 10.3.4.3 remote-as 123
+ neighbor 10.3.4.3 send-community
+ neighbor 10.3.4.3 route-map COM11 out
+ no auto-summary
+!
+ip forward-protocol nd
+ip http server
+no ip http secure-server
+!
+ip bgp-community new-format
+!
+!
+access-list 55 permit 192.168.4.0 0.0.0.255
+access-list 56 permit 192.168.10.0 0.0.0.255
+access-list 56 permit 192.168.20.0 0.0.0.255
+access-list 57 permit 192.168.30.0 0.0.0.255
+access-list 57 permit 192.168.40.0 0.0.0.255
+!
+!
+!
+!
+route-map COM10 permit 10
+ match ip address 55
+ set community internet
+!
+route-map COM10 permit 20
+!
+route-map COM11 permit 10
+ match ip address 56
+ set community 500:10
+!
+route-map COM11 permit 20
+ match ip address 57
+ set community 500:20
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+gatekeeper
+ shutdown
+!
+!
+line con 0
+ exec-timeout 0 0
+ stopbits 1
+line aux 0
+ stopbits 1
+line vty 0 4
+ login
+!
+end
