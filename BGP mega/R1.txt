@@ -14,25 +14,23 @@ interface FastEthernet0/0
  ip address 10.1.6.1 255.255.255.0
  no shut
  ip router isis 1
- isis circuit-type level-1
 !
 interface FastEthernet1/0
  ip address 10.1.2.1 255.255.255.0
  no shut
  ip router isis 1
- isis circuit-type level-1
 !
 interface FastEthernet2/0
  ip address 10.1.14.1 255.255.255.0
  no shut
  ip router isis 1
- isis circuit-type level-2
 !
 line con 0
  no exec-timeout 0
 !
 router isis 1
  passive-interface Loopback0
+ is-type level-2
 exit
 !
 router bgp 65001

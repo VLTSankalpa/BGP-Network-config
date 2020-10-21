@@ -3,7 +3,7 @@ hostname R12
 no ip domain lookup
 !
 router isis 1
- net 03.0000.0000.0012.00
+ net 01.0000.0000.0012.00
 exit
 !
 interface Loopback0
@@ -25,7 +25,7 @@ line con 0
 !
 router isis 1
  passive-interface Loopback0
-is-type level-1
+ is-type level-2
 exit
 !
 router bgp 65003

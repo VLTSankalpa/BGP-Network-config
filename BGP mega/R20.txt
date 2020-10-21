@@ -19,6 +19,7 @@ line con 0
 router bgp 100
  bgp router-id 20.20.20.1
  bgp log-neighbor-changes
+ network 20.20.20.0 mask 255.255.255.0
  neighbor 10.18.20.18 remote-as 123
  neighbor 10.18.20.18 next-hop-self
  neighbor 10.18.20.18 send-community

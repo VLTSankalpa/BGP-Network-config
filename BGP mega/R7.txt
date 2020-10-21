@@ -3,7 +3,7 @@ hostname R7
 no ip domain lookup
 !
 router isis 1
- net 02.0000.0000.0007.00
+ net 01.0000.0000.0007.00
 exit
 !
 interface Loopback0
@@ -14,31 +14,28 @@ interface FastEthernet0/0
  ip address 10.7.9.7 255.255.255.0
  no shut
  ip router isis 1
- isis circuit-type level-1
 !
 interface FastEthernet1/0
  ip address 10.7.8.7 255.255.255.0
  no shut
  ip router isis 1
- isis circuit-type level-1
 !
 interface FastEthernet2/0
  ip address 10.2.7.7 255.255.255.0
  no shut
  ip router isis 1
- isis circuit-type level-2
 !
 interface FastEthernet3/0
  ip address 10.7.10.7 255.255.255.0
  no shut
  ip router isis 1
- isis circuit-type level-2
 !
 line con 0
  no exec-timeout 0
 !
 router isis 1
  passive-interface Loopback0
+ is-type level-2
 exit
 !
 router bgp 65002

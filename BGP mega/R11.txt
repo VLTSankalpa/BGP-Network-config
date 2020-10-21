@@ -3,7 +3,7 @@ hostname R11
 no ip domain lookup
 !
 router isis 1
- net 03.0000.0000.0011.00
+ net 01.0000.0000.0011.00
 exit
 !
 interface Loopback0
@@ -14,25 +14,23 @@ interface FastEthernet0/0
  ip address 10.10.11.11 255.255.255.0
  no shut
  ip router isis 1
- isis circuit-type level-1
 !
 interface FastEthernet1/0
  ip address 10.11.12.11 255.255.255.0
  no shut
  ip router isis 1
- isis circuit-type level-1
 !
 interface FastEthernet2/0
  ip address 10.11.13.11 255.255.255.0
  no shut
  ip router isis 1
- isis circuit-type level-2
 !
 line con 0
  no exec-timeout 0
 !
 router isis 1
  passive-interface Loopback0
+ is-type level-2
 exit
 !
 router bgp 65003
