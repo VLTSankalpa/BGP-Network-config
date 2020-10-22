@@ -1,6 +1,6 @@
-hostname R1
+hostname XR1
 !
-no ip domain lookup
+domain lookup disable
 !
 router isis 1
  net 01.0000.0000.0001.00
@@ -10,23 +10,23 @@ interface Loopback0
  ip address 1.1.1.1 255.255.255.0
  ip router isis 1
 !
-interface FastEthernet0/0
+interface GigabitEthernet0/0/0/0
  ip address 10.1.6.1 255.255.255.0
  no shut
  ip router isis 1
 !
-interface FastEthernet1/0
+interface GigabitEthernet0/0/0/1
  ip address 10.1.2.1 255.255.255.0
  no shut
  ip router isis 1
 !
-interface FastEthernet2/0
+interface GigabitEthernet0/0/0/2
  ip address 10.1.14.1 255.255.255.0
  no shut
  ip router isis 1
 !
 line con 0
- no exec-timeout 0
+ exec-timeout 0
 !
 router isis 1
  passive-interface Loopback0

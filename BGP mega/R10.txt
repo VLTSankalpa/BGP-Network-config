@@ -6,6 +6,15 @@ router isis 1
  net 01.0000.0000.0010.00
 exit
 !
+access-list 20 permit 21.21.0.0 0.0.255.255
+!
+route-map DAMP permit 10
+ match ip address 20
+ set dampening 2 750 2000 8
+ exit
+route-map DAMP permit 20
+ exit
+!
 interface Loopback0
  ip address 10.10.10.1 255.255.255.0
  ip router isis 1
@@ -53,6 +62,7 @@ router bgp 65003
  bgp cluster-id 65003
  bgp log-neighbor-changes
  bgp confederation identifier 123
+ bgp dampening route-map DAMP
  neighbor 11.11.11.1 inherit peer-session IBGP
  neighbor 12.12.12.1 inherit peer-session IBGP
  bgp confederation peers 65002

@@ -2,8 +2,32 @@ hostname R21
 !
 no ip domain lookup
 !
+access-list 10 permit 21.21.1.0 0.0.0.255
+access-list 10 permit 21.21.3.0 0.0.0.255
+access-list 10 permit 21.21.5.0 0.0.0.255
+access-list 10 permit 21.21.7.0 0.0.0.255
+access-list 20 permit 21.21.0.0 0.0.255.255
+!
+route-map SUP_MAP permit 10
+ match ip address 10
+ exit
+!
 interface Loopback0
  ip address 21.21.21.1 255.255.255.0
+interface Loopback1
+ ip address 21.21.1.1 255.255.255.0
+interface Loopback2
+ ip address 21.21.2.1 255.255.255.0
+interface Loopback3
+ ip address 21.21.3.1 255.255.255.0
+interface Loopback4
+ ip address 21.21.4.1 255.255.255.0
+interface Loopback5
+ ip address 21.21.5.1 255.255.255.0
+interface Loopback6
+ ip address 21.21.6.1 255.255.255.0
+interface Loopback7
+ ip address 21.21.7.1 255.255.255.0
 !
 interface FastEthernet0/0
  ip address 10.10.21.21 255.255.255.0
@@ -20,6 +44,14 @@ router bgp 100
  bgp router-id 21.21.21.1
  bgp log-neighbor-changes
  network 21.21.21.0 mask 255.255.255.0
+ network 21.21.1.0 mask 255.255.255.0
+ network 21.21.2.0 mask 255.255.255.0
+ network 21.21.3.0 mask 255.255.255.0
+ network 21.21.4.0 mask 255.255.255.0
+ network 21.21.5.0 mask 255.255.255.0
+ network 21.21.6.0 mask 255.255.255.0
+ network 21.21.7.0 mask 255.255.255.0
+ aggregate-address 21.21.0.0 255.255.248.0 suppress-map SUP_MAP
  neighbor 10.10.21.10 remote-as 123
  neighbor 10.10.21.10 next-hop-self
  neighbor 10.10.21.10 send-community

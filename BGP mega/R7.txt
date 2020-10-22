@@ -6,6 +6,9 @@ router isis 1
  net 01.0000.0000.0007.00
 exit
 !
+access-list 20 deny   21.21.0.0 0.0.255.255
+access-list 20 permit any
+!
 interface Loopback0
  ip address 7.7.7.1 255.255.255.0
  ip router isis 1
@@ -69,6 +72,7 @@ router bgp 65002
   neighbor 10.2.7.2 activate
   neighbor 10.2.7.2 send-community
   neighbor 10.2.7.2 next-hop-self
+  neighbor 10.2.7.2 distribute-list 20 out
   neighbor 10.7.10.10 activate
   neighbor 10.7.10.10 send-community
   neighbor 10.7.10.10 next-hop-self
