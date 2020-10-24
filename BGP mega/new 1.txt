@@ -1,34 +1,30 @@
-hostname XR7
+hostname XR14
 logging console notifications
 domain lookup disable
 line console
  exec-timeout 0 0
 !
 interface Loopback0
- ipv4 address 7.7.7.1 255.255.255.0
+ ipv4 address 14.14.14.1 255.255.255.0
 !
 interface MgmtEth0/0/CPU0/0
  shutdown
 !
 interface GigabitEthernet0/0/0/0
- ipv4 address 10.7.8.7 255.255.255.0
+ ipv4 address 10.13.14.14 255.255.255.0
  no shut
 !
 interface GigabitEthernet0/0/0/1
- ipv4 address 10.7.9.7 255.255.255.0
+ ipv4 address 10.14.15.14 255.255.255.0
  no shut
 !
 interface GigabitEthernet0/0/0/2
- ipv4 address 10.2.7.7 255.255.255.0
- no shut
-!
-interface GigabitEthernet0/0/0/3
- ipv4 address 10.7.10.7 255.255.255.0
+ ipv4 address 10.1.14.14 255.255.255.0
  no shut
 !
 router isis 1
  is-type level-2-only
- net 01.0000.0000.0007.00
+ net 01.0000.0000.0014.00
  log adjacency changes
  interface Loopback0
   passive
@@ -47,14 +43,10 @@ router isis 1
   address-family ipv4 unicast
   !
  !
- interface GigabitEthernet0/0/0/3
-  address-family ipv4 unicast
-  !
- !
 !
 router bgp 123
- bgp router-id 7.7.7.1
- bgp cluster-id 2
+ bgp router-id 14.14.14.1
+ bgp cluster-id 4
  bgp log neighbor changes detail
  address-family ipv4 unicast
  !
@@ -66,25 +58,19 @@ router bgp 123
   remote-as 123
   update-source Loopback0
  !
- neighbor 8.8.8.1
+ neighbor 13.13.13.1
   use session-group IBGP
   address-family ipv4 unicast
    use af-group IBGP_RR
   !
  !
- neighbor 9.9.9.1
+ neighbor 15.15.15.1
   use session-group IBGP
   address-family ipv4 unicast
    use af-group IBGP_RR
   !
  !
- neighbor 2.2.2.1
-  use session-group IBGP
-  address-family ipv4 unicast
-   use af-group IBGP_RR
-  !
- !
- neighbor 10.10.10.1
+ neighbor 1.1.1.1
   use session-group IBGP
   address-family ipv4 unicast
    use af-group IBGP_RR

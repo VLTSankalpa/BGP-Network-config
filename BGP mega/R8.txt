@@ -1,69 +1,58 @@
-hostname R8
-!
-no ip domain lookup
-!
-router isis 1
- net 01.0000.0000.0008.00
-exit
-!
-access-list 20 permit 21.21.0.0 0.0.255.255
-!
-route-map DAMP permit 10
- match ip address 20
- set dampening 2 750 2000 8
- exit
-route-map DAMP permit 20
- exit
+hostname XR8
+logging console notifications
+domain lookup disable
+line console
+ exec-timeout 0 0
 !
 interface Loopback0
- ip address 8.8.8.1 255.255.255.0
- ip router isis 1
+ ipv4 address 8.8.8.1 255.255.255.0
 !
-interface FastEthernet0/0
- ip address 10.7.8.8 255.255.255.0
- no shut
- ip router isis 1
+interface MgmtEth0/0/CPU0/0
+ shutdown
 !
-interface FastEthernet1/0
- ip address 10.8.9.8 255.255.255.0
- no shut
- ip router isis 1
-!
-interface FastEthernet2/0
- ip address 10.8.21.8 255.255.255.0
+interface GigabitEthernet0/0/0/0
+ ipv4 address 10.8.9.8 255.255.255.0
  no shut
 !
-line con 0
- no exec-timeout 0
+interface GigabitEthernet0/0/0/1
+ ipv4 address 10.7.8.8 255.255.255.0
+ no shut
 !
 router isis 1
- passive-interface Loopback0
- is-type level-2
-exit
+ is-type level-2-only
+ net 01.0000.0000.0008.00
+ log adjacency changes
+ interface Loopback0
+  passive
+  address-family ipv4 unicast
+  !
+ !
+ interface GigabitEthernet0/0/0/0
+  address-family ipv4 unicast
+  !
+ !
+ interface GigabitEthernet0/0/0/1
+  address-family ipv4 unicast
+  !
+ !
 !
-router bgp 65002
- template peer-policy IBGP_RR
-  next-hop-self
-  send-community
- exit-peer-policy
- !
- template peer-session IBGP
-  remote-as 65002
-  update-source Loopback0
- exit-peer-session
- !
+router bgp 123
  bgp router-id 8.8.8.1
- bgp log-neighbor-changes
- bgp confederation identifier 123
- bgp dampening route-map DAMP
- neighbor 7.7.7.1 inherit peer-session IBGP
- neighbor 10.8.21.21 remote-as 100
- neighbor 10.8.21.21 next-hop-self
- neighbor 10.8.21.21 send-community
+ bgp log neighbor changes detail
+ address-family ipv4 unicast
  !
- address-family ipv4
-  neighbor 7.7.7.1 activate
-  neighbor 7.7.7.1 inherit peer-policy IBGP_RR
-  no auto-summary
-  no synchronization
- exit-address-family
+ af-group IBGP_NON_RR address-family ipv4 unicast
+  next-hop-self
+ !
+ session-group IBGP
+  remote-as 123
+  update-source Loopback0
+ !
+ neighbor 7.7.7.1
+  use session-group IBGP
+  address-family ipv4 unicast
+   use af-group IBGP_NON_RR 
+  !
+ !
+!
+end

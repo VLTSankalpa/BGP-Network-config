@@ -1,31 +1,46 @@
-hostname R20
-!
-no ip domain lookup
+hostname XR20
+logging console notifications
+domain lookup disable
+line console
+ exec-timeout 0 0
 !
 interface Loopback0
- ip address 20.20.20.1 255.255.255.0
+ ipv4 address 20.20.20.1 255.255.255.0
 !
-interface FastEthernet0/0
- ip address 10.18.20.20 255.255.255.0
+interface MgmtEth0/0/CPU0/0
+ shutdown
+!
+interface GigabitEthernet0/0/0/0
+ ipv4 address 10.18.20.20 255.255.255.0
  no shut
 !
-interface FastEthernet1/0
- ip address 10.17.20.20 255.255.255.0
+interface GigabitEthernet0/0/0/1
+ ipv4 address 10.17.20.20 255.255.255.0
  no shut
-!
-line con 0
- no exec-timeout 0
 !
 router bgp 100
  bgp router-id 20.20.20.1
- bgp log-neighbor-changes
- network 20.20.20.0 mask 255.255.255.0
- neighbor 10.18.20.18 remote-as 123
- neighbor 10.18.20.18 next-hop-self
- neighbor 10.18.20.18 send-community
- neighbor 10.18.20.18 allowas-in
-
- neighbor 10.17.20.17 remote-as 123
- neighbor 10.17.20.17 next-hop-self
- neighbor 10.17.20.17 send-community
- neighbor 10.17.20.17 allowas-in
+ bgp log neighbor changes detail
+ address-family ipv4 unicast
+ !
+ af-group EBGP_NON_RR address-family ipv4 unicast
+  send-community-ebgp
+  next-hop-self
+ !
+ session-group EBGP
+  remote-as 123
+ !
+ neighbor 10.17.20.17
+  use session-group EBGP
+  address-family ipv4 unicast
+   use af-group EBGP_NON_RR 
+  !
+ !
+ neighbor 10.18.20.18
+  use session-group EBGP
+  address-family ipv4 unicast
+   use af-group EBGP_NON_RR  
+  !
+ !
+!
+end

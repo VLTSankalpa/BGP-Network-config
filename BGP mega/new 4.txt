@@ -4,14 +4,15 @@ domain lookup disable
 line console
  exec-timeout 0 0
 !
-ipv4 access-list 10
- 10 permit ipv4 21.21.1.0 0.0.0.255 any
- 20 permit ipv4 21.21.3.0 0.0.0.255 any
- 30 permit ipv4 21.21.5.0 0.0.0.255 any
- 40 permit ipv4 21.21.7.0 0.0.0.255 any
+access-list 10 permit 21.21.1.0 0.0.0.255
+access-list 10 permit 21.21.3.0 0.0.0.255
+access-list 10 permit 21.21.5.0 0.0.0.255
+access-list 10 permit 21.21.7.0 0.0.0.255
+access-list 20 permit 21.21.0.0 0.0.255.255
 !
-ipv4 access-list 20
- 10 permit ipv4 21.21.0.0 0.0.255.255 any
+route-map SUP_MAP permit 10
+ match ip address 10
+ exit
 !
 interface Loopback0
  ipv4 address 21.21.21.1 255.255.255.0
@@ -52,14 +53,6 @@ router bgp 100
  bgp router-id 21.21.21.1
  bgp log neighbor changes detail
  address-family ipv4 unicast
-  network 21.21.1.0/24
-  network 21.21.2.0/24
-  network 21.21.3.0/24
-  network 21.21.4.0/24
-  network 21.21.5.0/24
-  network 21.21.6.0/24
-  network 21.21.7.0/24
-  network 21.21.21.0/24
  !
  af-group EBGP_NON_RR address-family ipv4 unicast
   send-community-ebgp
@@ -71,13 +64,13 @@ router bgp 100
  neighbor 10.9.21.9
   use session-group EBGP
   address-family ipv4 unicast
-   use af-group EBGP_NON_RR
+   use af-group EBGP_NON_RR 
   !
  !
  neighbor 10.10.21.10
   use session-group EBGP
   address-family ipv4 unicast
-   use af-group EBGP_NON_RR
+   use af-group EBGP_NON_RR  
   !
  !
 !

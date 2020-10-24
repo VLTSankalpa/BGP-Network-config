@@ -1,63 +1,81 @@
-hostname R17
-!
-no ip domain lookup
-!
-router isis 1
- net 01.0000.0000.0017.00
-exit
+hostname XR17
+logging console notifications
+domain lookup disable
+line console
+ exec-timeout 0 0
 !
 interface Loopback0
- ip address 17.17.17.1 255.255.255.0
- ip router isis 1
+ ipv4 address 17.17.17.1 255.255.255.0
 !
-interface FastEthernet0/0
- ip address 10.16.17.17 255.255.255.0
- no shut
- ip router isis 1
+interface MgmtEth0/0/CPU0/0
+ shutdown
 !
-interface FastEthernet1/0
- ip address 10.17.18.17 255.255.255.0
- no shut
- ip router isis 1
-!
-interface FastEthernet2/0
- ip address 10.17.20.17 255.255.255.0
+interface GigabitEthernet0/0/0/0
+ ipv4 address 10.16.17.17 255.255.255.0
  no shut
 !
-line con 0
- no exec-timeout 0
+interface GigabitEthernet0/0/0/1
+ ipv4 address 10.17.18.17 255.255.255.0
+ no shut
+!
+interface GigabitEthernet0/0/0/2
+ ipv4 address 10.17.20.17 255.255.255.0
+ no shut
 !
 router isis 1
- passive-interface Loopback0
- is-type level-2
-exit
+ is-type level-2-only
+ net 01.0000.0000.0017.00
+ log adjacency changes
+ interface Loopback0
+  passive
+  address-family ipv4 unicast
+  !
+ !
+ interface GigabitEthernet0/0/0/0
+  address-family ipv4 unicast
+  !
+ !
+ interface GigabitEthernet0/0/0/1
+  address-family ipv4 unicast
+  !
+ !
 !
-router bgp 65004
- template peer-policy IBGP_RR
-  next-hop-self
-  send-community
- exit-peer-policy
- !
- template peer-session IBGP
-  remote-as 65004
-  update-source Loopback0
- exit-peer-session
- !
+router bgp 123
  bgp router-id 17.17.17.1
- bgp cluster-id 65004
- bgp log-neighbor-changes
- bgp confederation identifier 123
- neighbor 13.13.13.1 inherit peer-session IBGP
- neighbor 14.14.14.1 inherit peer-session IBGP
- neighbor 10.17.20.20 remote-as 100
- neighbor 10.17.20.20 next-hop-self
- neighbor 10.17.20.20 send-community
+ bgp log neighbor changes detail
+ address-family ipv4 unicast
  !
- address-family ipv4
-  neighbor 13.13.13.1 activate
-  neighbor 13.13.13.1 inherit peer-policy IBGP_RR
-  neighbor 14.14.14.1 activate
-  neighbor 14.14.14.1 inherit peer-policy IBGP_RR
-  no auto-summary
-  no synchronization
- exit-address-family
+ af-group IBGP_NON_RR address-family ipv4 unicast
+  next-hop-self
+ !
+ af-group EBGP_NON_RR address-family ipv4 unicast
+  send-community-ebgp
+  next-hop-self
+ !
+ session-group IBGP
+  remote-as 123
+  update-source Loopback0
+ !
+ session-group EBGP
+  remote-as 100
+ !
+ neighbor 14.14.14.1
+  use session-group IBGP
+  address-family ipv4 unicast
+   use af-group IBGP_NON_RR 
+  !
+ !
+ neighbor 13.13.13.1
+  use session-group IBGP
+  address-family ipv4 unicast
+   use af-group IBGP_NON_RR 
+  !
+ !
+ neighbor 10.17.20.20
+  use session-group EBGP
+  address-family ipv4 unicast
+   use af-group EBGP_NON_RR 
+  !
+ !
+!
+end

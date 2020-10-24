@@ -1,76 +1,98 @@
-hostname R2
-!
-no ip domain lookup
-!
-router isis 1
- net 01.0000.0000.0002.00
-exit
+hostname XR2
+logging console notifications
+domain lookup disable
+line console
+ exec-timeout 0 0
 !
 interface Loopback0
- ip address 2.2.2.1 255.255.255.0
- ip router isis 1
+ ipv4 address 2.2.2.1 255.255.255.0
 !
-interface FastEthernet0/0
- ip address 10.1.2.2 255.255.255.0
+interface MgmtEth0/0/CPU0/0
+ shutdown
+!
+interface GigabitEthernet0/0/0/0
+ ipv4 address 10.1.2.2 255.255.255.0
  no shut
- ip router isis 1
 !
-interface FastEthernet1/0
- ip address 10.2.3.2 255.255.255.0
+interface GigabitEthernet0/0/0/1
+ ipv4 address 10.2.3.2 255.255.255.0
  no shut
- ip router isis 1
 !
-interface FastEthernet2/0
- ip address 10.2.7.2 255.255.255.0
+interface GigabitEthernet0/0/0/2
+ ipv4 address 10.2.7.2 255.255.255.0
  no shut
- ip router isis 1
-!
-line con 0
- no exec-timeout 0
 !
 router isis 1
- passive-interface Loopback0
- is-type level-2
-exit
+ is-type level-2-only
+ net 01.0000.0000.0002.00
+ log adjacency changes
+ interface Loopback0
+  passive
+  address-family ipv4 unicast
+  !
+ !
+ interface GigabitEthernet0/0/0/0
+  address-family ipv4 unicast
+  !
+ !
+ interface GigabitEthernet0/0/0/1
+  address-family ipv4 unicast
+  !
+ !
+ interface GigabitEthernet0/0/0/2
+  address-family ipv4 unicast
+  !
+ !
 !
-router bgp 65001
- template peer-policy IBGP_RR
+router bgp 123
+ bgp router-id 2.2.2.1
+ bgp cluster-id 1
+ bgp log neighbor changes detail
+ address-family ipv4 unicast
+ !
+ af-group IBGP_RR address-family ipv4 unicast
   route-reflector-client
   next-hop-self
-  send-community
- exit-peer-policy
  !
- template peer-session IBGP
-  remote-as 65001
+ session-group IBGP
+  remote-as 123
   update-source Loopback0
- exit-peer-session
  !
- bgp router-id 2.2.2.1
- bgp cluster-id 65001
- bgp log-neighbor-changes
- bgp confederation identifier 123
- neighbor 1.1.1.1 inherit peer-session IBGP
- neighbor 3.3.3.1 inherit peer-session IBGP
- neighbor 4.4.4.1 inherit peer-session IBGP
- neighbor 5.5.5.1 inherit peer-session IBGP
- neighbor 6.6.6.1 inherit peer-session IBGP
- bgp confederation peers 65002
- neighbor 10.2.7.7 remote-as 65002
+ neighbor 1.1.1.1
+  use session-group IBGP
+  address-family ipv4 unicast
+   use af-group IBGP_RR
+  !
  !
- address-family ipv4
-  neighbor 1.1.1.1 activate
-  neighbor 1.1.1.1 inherit peer-policy IBGP_RR
-  neighbor 3.3.3.1 activate
-  neighbor 3.3.3.1 inherit peer-policy IBGP_RR
-  neighbor 4.4.4.1 activate
-  neighbor 4.4.4.1 inherit peer-policy IBGP_RR
-  neighbor 5.5.5.1 activate
-  neighbor 5.5.5.1 inherit peer-policy IBGP_RR
-  neighbor 6.6.6.1 activate
-  neighbor 6.6.6.1 inherit peer-policy IBGP_RR
-  neighbor 10.2.7.7 activate
-  neighbor 10.2.7.7 send-community
-  neighbor 10.2.7.7 next-hop-self
-  no auto-summary
-  no synchronization
- exit-address-family
+ neighbor 3.3.3.1
+  use session-group IBGP
+  address-family ipv4 unicast
+   use af-group IBGP_RR
+  !
+ !
+ neighbor 4.4.4.1
+  use session-group IBGP
+  address-family ipv4 unicast
+   use af-group IBGP_RR
+  !
+ !
+ neighbor 5.5.5.1
+  use session-group IBGP
+  address-family ipv4 unicast
+   use af-group IBGP_RR
+  !
+ !
+ neighbor 6.6.6.1
+  use session-group IBGP
+  address-family ipv4 unicast
+   use af-group IBGP_RR
+  !
+ !
+ neighbor 7.7.7.1
+  use session-group IBGP
+  address-family ipv4 unicast
+   use af-group IBGP_RR
+  !
+ !
+!
+end

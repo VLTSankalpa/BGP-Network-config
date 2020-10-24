@@ -1,60 +1,81 @@
-hostname R19
-!
-no ip domain lookup
-!
-router isis 1
- net 05.0000.0000.0019.00
-exit
+hostname XR19
+logging console notifications
+domain lookup disable
+line console
+ exec-timeout 0 0
 !
 interface Loopback0
- ip address 19.19.19.1 255.255.255.0
- ip router isis 1
+ ipv4 address 19.19.19.1 255.255.255.0
 !
-interface FastEthernet0/0
- ip address 10.15.19.19 255.255.255.0
+interface MgmtEth0/0/CPU0/0
+ shutdown
+!
+interface GigabitEthernet0/0/0/0
+ ipv4 address 10.15.19.19 255.255.255.0
  no shut
 !
-interface FastEthernet1/0
- ip address 10.19.22.19 255.255.255.0
- no shut
- ip router isis 1
-!
-interface FastEthernet2/0
- ip address 10.6.19.19 255.255.255.0
+interface GigabitEthernet0/0/0/1
+ ipv4 address 10.19.22.19 255.255.255.0
  no shut
 !
-interface FastEthernet3/0
- ip address 10.19.23.19 255.255.255.0
+interface GigabitEthernet0/0/0/2
+ ipv4 address 10.19.23.19 255.255.255.0
  no shut
- ip router isis 1
-!
-line con 0
- no exec-timeout 0
 !
 router isis 1
- passive-interface Loopback0
-is-type level-2
-exit
+ is-type level-2-only
+ net 02.0000.0000.0019.00
+ log adjacency changes
+ interface Loopback0
+  passive
+  address-family ipv4 unicast
+  !
+ !
+ interface GigabitEthernet0/0/0/1
+  address-family ipv4 unicast
+  !
+ !
+ interface GigabitEthernet0/0/0/2
+  address-family ipv4 unicast
+  !
+ !
 !
 router bgp 100
  bgp router-id 19.19.19.1
- bgp log-neighbor-changes
- neighbor 10.15.19.15 remote-as 123
- neighbor 10.15.19.15 next-hop-self
- neighbor 10.15.19.15 send-community
- neighbor 10.15.19.15 allowas-in
-
- neighbor 10.6.19.6 remote-as 123
- neighbor 10.6.19.6 next-hop-self
- neighbor 10.6.19.6 send-community
- neighbor 10.6.19.6 allowas-in
-
- neighbor 22.22.22.1 remote-as 100
- neighbor 22.22.22.1 next-hop-self
- neighbor 22.22.22.1 send-community
- neighbor 22.22.22.1 update-source Loopback0
-
- neighbor 23.23.23.1 remote-as 100
- neighbor 23.23.23.1 next-hop-self
- neighbor 23.23.23.1 send-community
- neighbor 23.23.23.1 update-source Loopback0
+ bgp log neighbor changes detail
+ address-family ipv4 unicast
+ !
+ af-group IBGP_NON_RR address-family ipv4 unicast
+  next-hop-self
+ !
+ af-group EBGP_NON_RR address-family ipv4 unicast
+  send-community-ebgp
+  next-hop-self
+ !
+ session-group IBGP
+  remote-as 100
+  update-source Loopback0
+ !
+ session-group EBGP
+  remote-as 123
+ !
+ neighbor 22.22.22.1
+  use session-group IBGP
+  address-family ipv4 unicast
+   use af-group IBGP_NON_RR 
+  !
+ !
+ neighbor 23.23.23.1
+  use session-group IBGP
+  address-family ipv4 unicast
+   use af-group IBGP_NON_RR 
+  !
+ !
+ neighbor 10.15.19.15
+  use session-group EBGP
+  address-family ipv4 unicast
+   use af-group EBGP_NON_RR 
+  !
+ !
+!
+end
