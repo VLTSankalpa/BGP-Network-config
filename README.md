@@ -1,27 +1,18 @@
-# Initial Configurations
+#EVE-ng Core BGP LAB on IOS-XR
 
-## BGP-Network-config
-Section 1: BGP Basics
+EVE project file and all configuration templates available at 
 
-Section 2: Internal BGP Neighbors
+#LAB objectives
+-Implementing core BGP routing on Cisco IOS XR 
+-use of IS-IS as IGP in SP Network (ISIS L2 plat network for TCP connectivity)
+-config RR clusters to divide large AS to smaller segments
+-use of IOS-XR configuration templates (af-group, session-group, and neighbor-group)
+-use of weight and local pref attributes to manipulate outbound traffic flow
+-use of as path prepend and MED to manipulate inbound traffic flow
+-use of routing policy language 
+-use of community attribute to bundle routes together 
+-BGP route filtering using ACL, prefix-list, route maps and as-path filers with regex
+-BGP route aggregation with AS-set option, suppress and unsuppressed maps
+-dampening unstable routes
 
-Section 3: External BGP neighbors
-
-Section 4: BGP Attributes
-
-Section 5: Influencing BGP Route Selection using Weight & Local Preference
-
-Section 6: Influencing BGP Route Selection Using AS-path Preprend & MED
-
-Section 7: BGP Summarization
-
-Section 8: BGP Communities
-
-Section 9: Route Filtering in BGP
-
-Section 10: AS-Path Filters
-
-Section 11: BGP Advance Options
-
-Section 12: BGP for IPV6 Networks
 
