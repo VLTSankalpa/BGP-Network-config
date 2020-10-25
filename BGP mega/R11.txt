@@ -76,5 +76,29 @@ router bgp 123
    use af-group IBGP_RR
   !
  !
+ neighbor 1.1.1.1
+  use session-group IBGP
+  address-family ipv4 unicast
+   use af-group IBGP_RR
+  !
+ !
+ neighbor 2.2.2.1
+  use session-group IBGP
+  address-family ipv4 unicast
+   use af-group IBGP_RR
+  !
+ !
+ neighbor 7.7.7.1
+  use session-group IBGP
+  address-family ipv4 unicast
+   use af-group IBGP_RR
+  !
+ !
+ neighbor 14.14.14.1
+  use session-group IBGP
+  address-family ipv4 unicast
+   use af-group IBGP_RR
+  !
+ !
 !
 end

@@ -48,6 +48,10 @@ interface GigabitEthernet0/0/0/1
  ipv4 address 10.9.21.21 255.255.255.0
  no shut
 !
+route-policy NLRI_advertise
+  pass
+end-policy
+!
 router bgp 100
  bgp router-id 21.21.21.1
  bgp log neighbor changes detail
@@ -64,6 +68,8 @@ router bgp 100
  af-group EBGP_NON_RR address-family ipv4 unicast
   send-community-ebgp
   next-hop-self
+  route-policy NLRI_advertise in
+  route-policy NLRI_advertise out
  !
  session-group EBGP
   remote-as 123

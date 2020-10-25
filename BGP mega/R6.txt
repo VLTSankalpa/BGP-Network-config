@@ -22,6 +22,10 @@ interface GigabitEthernet0/0/0/2
  ipv4 address 10.6.22.6 255.255.255.0
  no shut
 !
+route-policy NLRI_advertise
+  pass
+end-policy
+!
 router isis 1
  is-type level-2-only
  net 01.0000.0000.0006.00
@@ -42,7 +46,6 @@ router isis 1
 !
 router bgp 123
  bgp router-id 6.6.6.1
- bgp cluster-id 1
  bgp log neighbor changes detail
  address-family ipv4 unicast
  !
@@ -52,6 +55,9 @@ router bgp 123
  af-group EBGP_NON_RR address-family ipv4 unicast
   send-community-ebgp
   next-hop-self
+  as-override
+  route-policy NLRI_advertise in
+  route-policy NLRI_advertise out
  !
  session-group IBGP
   remote-as 123

@@ -40,6 +40,7 @@ router bgp 100
  bgp router-id 23.23.23.1
  bgp log neighbor changes detail
  address-family ipv4 unicast
+  network 23.23.23.0/24
  !
  af-group IBGP_NON_RR address-family ipv4 unicast
   next-hop-self

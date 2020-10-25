@@ -88,6 +88,30 @@ router bgp 123
    use af-group IBGP_RR
   !
  !
+ neighbor 7.7.7.1
+  use session-group IBGP
+  address-family ipv4 unicast
+   use af-group IBGP_RR
+  !
+ !
+ neighbor 10.10.10.1
+  use session-group IBGP
+  address-family ipv4 unicast
+   use af-group IBGP_RR
+  !
+ !
+ neighbor 11.11.11.1
+  use session-group IBGP
+  address-family ipv4 unicast
+   use af-group IBGP_RR
+  !
+ !
+ neighbor 13.13.13.1
+  use session-group IBGP
+  address-family ipv4 unicast
+   use af-group IBGP_RR
+  !
+ !
  neighbor 14.14.14.1
   use session-group IBGP
   address-family ipv4 unicast

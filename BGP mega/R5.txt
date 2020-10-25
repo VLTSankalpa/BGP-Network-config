@@ -38,7 +38,6 @@ router isis 1
 !
 router bgp 123
  bgp router-id 5.5.5.1
- bgp cluster-id 1
  bgp log neighbor changes detail
  address-family ipv4 unicast
  !
